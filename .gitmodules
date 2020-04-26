@@ -1,0 +1,3 @@
+[submodule "sec_proj"]
+	path = sec_proj
+	url = https://github.com/redaigbaria/sec_proj.git
