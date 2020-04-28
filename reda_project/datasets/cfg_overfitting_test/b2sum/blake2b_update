@@ -1,0 +1,2 @@
+blake2b|update DUM,test|rdx|rdx|	|je|const_1|	|xor|eax|eax|	|ret|	|CONS|<Bool|__eq__|reg_rdx|const_0|>	,DUM
+blake2b|update DUM,test|rdx|rdx|	|je|const_1|	|sub|rsp|8|	|call|const_2|	|xor|eax|eax|	|add|rsp|8|	|ret|	|CONS|<Bool|Not|__eq__|reg_rdx|const_0|>	,DUM

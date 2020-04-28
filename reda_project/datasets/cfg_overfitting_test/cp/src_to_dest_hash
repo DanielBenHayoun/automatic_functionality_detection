@@ -1,0 +1,1 @@
+src|to|dest|hash DUM,mov|rax|qword|ptr|rdi|	|xor|edx|edx|	|div|rsi|	|mov|rax|rdx|	|ret|	|CONS|<Bool|__le__|reg_rdi|const_2|>	|<Bool|__eq__|reg_rdi|const_1|>	|<Bool|__ne__|reg_rsi|const_0|>	,DUM

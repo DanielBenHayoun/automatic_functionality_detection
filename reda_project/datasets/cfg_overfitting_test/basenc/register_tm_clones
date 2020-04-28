@@ -1,0 +1,1 @@
+register|tm|clones DUM,lea|rdi|rip|+|const_3|	|lea|rsi|rip|+|const_2|	|push|rbp|	|sub|rsi|rdi|	|mov|rbp|rsp|	|sar|rsi|3|	|mov|rax|rsi|	|shr|rax|const_0|	|add|rsi|rax|	|sar|rsi|1|	|je|const_1|	|pop|rbp|	|ret|	|CONS|,DUM

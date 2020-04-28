@@ -1,0 +1,1 @@
+base32|decode|ctx|wrapper DUM,push|rbx|	|mov|rbx|rdi|	|lea|rdi|rdi|+|4|	|call|const_0|	|mov|edx|dword|ptr|rbx|+|4|	|mov|dword|ptr|rbx|edx|	|pop|rbx|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_1|>	,DUM

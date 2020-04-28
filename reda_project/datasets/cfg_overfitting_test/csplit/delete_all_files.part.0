@@ -1,0 +1,1 @@
+delete|all|files.part.0 DUM,mov|eax|dword|ptr|rip|+|const_2|	|test|eax|eax|	|je|const_1|	|mov|dword|ptr|rip|+|const_0|0|	|ret|	|CONS|,DUM

@@ -1,0 +1,1 @@
+ignorable|failure DUM,cmp|byte|ptr|rip|+|const_1|0|	|push|r12|	|push|rbp|	|push|rbx|	|je|const_0|	|xor|ebx|ebx|	|mov|eax|ebx|	|pop|rbx|	|pop|rbp|	|pop|r12|	|ret|	|CONS|,DUM

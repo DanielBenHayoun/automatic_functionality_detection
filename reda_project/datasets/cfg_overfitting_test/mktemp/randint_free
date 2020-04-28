@@ -1,0 +1,1 @@
+randint|free DUM,push|rbx|	|mov|rdx|-1|	|mov|rbx|rdi|	|mov|esi|const_2|	|call|const_1|	|mov|rdi|rbx|	|pop|rbx|	|jmp|const_3|	|jmp|qword|ptr|rip|+|const_0|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|,DUM

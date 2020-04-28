@@ -1,0 +1,1 @@
+wd|hasher DUM,movsxd|rax|dword|ptr|rdi|+|const_1|	|xor|edx|edx|	|div|rsi|	|mov|rax|rdx|	|ret|	|CONS|<Bool|__le__|__add__|reg_rdi|const_1|const_3|>	|<Bool|__eq__|__add__|reg_rdi|const_1|const_2|>	|<Bool|__ne__|reg_rsi|const_0|>	,DUM

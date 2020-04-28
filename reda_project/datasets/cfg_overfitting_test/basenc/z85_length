@@ -1,0 +1,1 @@
+z85|length DUM,lea|edx|rdi|+|rdi*4|	|lea|eax|rdx|+|3|	|test|edx|edx|	|cmovns|eax|edx|	|sar|eax|2|	|ret|	|CONS|,DUM

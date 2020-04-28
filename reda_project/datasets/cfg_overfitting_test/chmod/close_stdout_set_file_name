@@ -1,0 +1,1 @@
+close|stdout|set|file|name DUM,mov|qword|ptr|rip|+|const_0|rdi|	|ret|	|CONS|,DUM

@@ -1,0 +1,1 @@
+print|lineno DUM,sub|rsp|8|	|mov|edx|dword|ptr|rip|+|const_8|	|mov|r8|qword|ptr|rip|+|const_2|	|mov|rcx|qword|ptr|rip|+|const_7|	|mov|rsi|qword|ptr|rip|+|const_1|	|xor|eax|eax|	|mov|edi|1|	|call|const_6|	|mov|rax|qword|ptr|rip|+|const_5|	|mov|rdx|qword|ptr|rip|+|const_0|	|add|rdx|rax|	|cmp|rax|rdx|	|jg|const_3|	|mov|qword|ptr|rip|+|const_4|rdx|	|add|rsp|8|	|ret|	|CONS|,DUM

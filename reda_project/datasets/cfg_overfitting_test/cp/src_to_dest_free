@@ -1,0 +1,1 @@
+src|to|dest|free DUM,push|rbx|	|mov|rbx|rdi|	|mov|rdi|qword|ptr|rdi|+|const_1|	|call|const_2|	|mov|rdi|rbx|	|pop|rbx|	|jmp|const_2|	|jmp|qword|ptr|rip|+|const_0|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|<Bool|__eq__|reg_rdi|const_3|>	,DUM

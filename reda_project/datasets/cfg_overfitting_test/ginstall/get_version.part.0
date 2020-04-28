@@ -1,0 +1,1 @@
+get|version.part.0 DUM,sub|rsp|8|	|mov|r9|qword|ptr|rip|+|const_0|	|lea|rdx|rip|+|const_3|	|lea|rcx|rip|+|const_2|	|mov|r8d|4|	|call|const_1|	|lea|rdx|rip|+|const_5|	|mov|eax|dword|ptr|rdx|+|rax*4|	|add|rsp|8|	|ret|	|CONS|<Bool|__eq__|Extract|61|0|ret_0|const_4|>	,DUM

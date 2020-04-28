@@ -1,0 +1,2 @@
+direntry|cmp|inode DUM,mov|rax|qword|ptr|rsi|+|8|	|cmp|qword|ptr|rdi|+|8|rax|	|jb|const_1|	|mov|eax|const_2|	|ret|	|CONS|<Bool|__eq__|reg_rsi|const_4|>	|<Bool|__le__|__add__|reg_rdi|const_3|const_5|>	|<Bool|__eq__|__add__|reg_rdi|const_3|const_0|>	|<Bool|__lt__|mem_1|mem_0|>	,DUM
+direntry|cmp|inode DUM,mov|rax|qword|ptr|rsi|+|8|	|cmp|qword|ptr|rdi|+|8|rax|	|jb|const_1|	|seta|al|	|movzx|eax|al|	|ret|	|CONS|<Bool|__eq__|reg_rsi|const_4|>	|<Bool|__le__|__add__|reg_rdi|const_3|const_5|>	|<Bool|__eq__|__add__|reg_rdi|const_3|const_0|>	|<Bool|__ge__|mem_1|mem_0|>	,DUM

@@ -1,0 +1,1 @@
+try|symlink DUM,mov|rax|rsi|	|mov|rdx|rdi|	|mov|esi|dword|ptr|rsi|+|8|	|mov|rdi|qword|ptr|rax|	|jmp|const_2|	|jmp|qword|ptr|rip|+|const_1|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|<Bool|__eq__|reg_rsi|const_0|>	,DUM

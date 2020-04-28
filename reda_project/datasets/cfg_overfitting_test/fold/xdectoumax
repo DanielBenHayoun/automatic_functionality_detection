@@ -1,0 +1,1 @@
+xdectoumax DUM,sub|rsp|const_1|	|push|r9|	|mov|r9|r8|	|mov|r8|rcx|	|mov|rcx|rdx|	|mov|rdx|rsi|	|mov|esi|const_0|	|call|const_3|	|add|rsp|const_2|	|ret|	|CONS|,DUM

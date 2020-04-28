@@ -1,0 +1,1 @@
+raw|hasher DUM,mov|rax|rdi|	|xor|edx|edx|	|ror|rax|3|	|div|rsi|	|mov|rax|rdx|	|ret|	|CONS|<Bool|__ne__|reg_rsi|const_0|>	,DUM

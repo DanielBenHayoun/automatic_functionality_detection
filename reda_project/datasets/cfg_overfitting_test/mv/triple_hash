@@ -1,0 +1,1 @@
+triple|hash DUM,push|rbp|	|push|rbx|	|mov|rbp|rdi|	|mov|rbx|rsi|	|sub|rsp|8|	|mov|rdi|qword|ptr|rdi|	|call|const_0|	|xor|rax|qword|ptr|rbp|+|8|	|xor|edx|edx|	|add|rsp|8|	|div|rbx|	|pop|rbx|	|pop|rbp|	|mov|rax|rdx|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_1|>	|<Bool|Not|__eq__|reg_rsi|const_2|>	,DUM

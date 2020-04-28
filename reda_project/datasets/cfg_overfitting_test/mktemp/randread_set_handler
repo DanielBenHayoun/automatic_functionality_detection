@@ -1,0 +1,1 @@
+randread|set|handler DUM,mov|qword|ptr|rdi|+|8|rsi|	|ret|	|CONS|<Bool|__le__|__add__|reg_rdi|const_1|const_0|>	|<Bool|__eq__|__add__|reg_rdi|const_1|const_0|>	,DUM

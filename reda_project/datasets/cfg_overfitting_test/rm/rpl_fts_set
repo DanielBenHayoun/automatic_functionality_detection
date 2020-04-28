@@ -1,0 +1,2 @@
+rpl|fts|set DUM,cmp|edx|4|	|ja|const_3|	|mov|word|ptr|rsi|+|const_2|dx|	|xor|eax|eax|	|ret|	|CONS|<Bool|__eq__|Extract|31|3|reg_rdx|const_0|>	|<Bool|ULE|Extract|2|0|reg_rdx|4|>	|<Bool|__le__|__add__|reg_rsi|const_2|const_1|>	|<Bool|__eq__|__add__|reg_rsi|const_2|const_1|>	,DUM
+rpl|fts|set DUM,cmp|edx|4|	|ja|const_3|	|sub|rsp|8|	|call|const_4|	|mov|dword|ptr|rax|const_5|	|mov|eax|1|	|add|rsp|8|	|ret|	|CONS|<Bool|Or|Not|__eq__|Extract|31|3|reg_rdx|const_0|Not|ULE|Extract|2|0|reg_rdx|4|>	|<Bool|__eq__|ret_0|const_1|>	,DUM
