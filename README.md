@@ -1,7 +1,12 @@
 # automatic_functionality_detection
 
 availdbale for  Ubuntu 18.04.3 LTS.
-for start clone into this repo. the following instruction assume the current location is ~/automatic_functionality_detection/
+for start clone into this repo.
+```sh
+git clone https://github.com/DanielBenHayoun/automatic_functionality_detection.git --recursive
+```
+
+the following instruction assume the current location is ~/automatic_functionality_detection/
 
 ## enviroment setup
 **install Anaconda:**
