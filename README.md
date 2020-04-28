@@ -13,7 +13,7 @@ the following instruction assume the current location is ~/automatic_functionali
 ###### run the following commands:
 ```sh
 $ wget https://repo.continuum.io/archive/Anaconda3-2020.02-Linux-x86_64.sh
-$ bash ~/<path_to_downloaded_script>/Anaconda3-2020.02-Linux-x86_64.sh
+$ bash /path_to_downloaded_script/Anaconda3-2020.02-Linux-x86_64.sh
 ```
 where `path_to_downloaded_script` is the path for Anaconda3-2020.02-Linux-x86_64.sh on your machine. or follow [instalation_guide](https://docs.anaconda.com/anaconda/install/linux/)
 
