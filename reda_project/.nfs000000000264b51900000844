@@ -1,0 +1,130 @@
+from typing import Dict, Any
+
+import angr
+import os
+import pickle
+import re
+import time
+import logging
+import json
+import argparse
+import itertools
+from glob import glob
+
+
+
+
+
+
+def get_analysed_funcs(dataset_path):
+    binaries = os.scandir(dataset_path)
+    analysed_funcs = set()
+    for entry in binaries:
+        funcs = glob(f"{entry.path}/*")
+        analysed_funcs.update(map(lambda x: x[:-len(".pkl")] if x.endswith(".pkl") else x, map(os.path.basename, funcs)))
+
+    return analysed_funcs
+
+
+
+def analyse_binary(analysed_funcs, binary_name, dataset_dir):
+    excluded = {'main', 'usage', 'exit'}.union(analysed_funcs)
+    proj = angr.Project(binary_name, auto_load_libs=False)
+    cfg = proj.analyses.CFGFast()
+    binary_name = os.path.basename(binary_name)
+    binary_dir = os.path.join(dataset_dir, f"{binary_name}")
+    os.makedirs(binary_dir, exist_ok=True)
+    funcs = get_cfg_funcs(proj, binary_name, excluded)
+    print(f"{binary_name} have {len(funcs)} funcs")
+    for test_func in funcs:
+        if test_func.name in analysed_funcs:
+            print(f"skipping {test_func.name}")
+            continue
+        print(f"analyzing {binary_name}/{test_func.name}")
+        output = open(os.path.join(binary_dir, f"{test_func.name}"), "w")
+        # bases_dict.clear()
+        # replacement_dict.clear()
+        analysed_funcs.add(test_func.name)
+        try:
+            sm: angr.sim_manager.SimulationManager = analyze_func(proj, test_func, cfg)
+            # we first tried to save the analysis results as a pickle file, but some pickle dumps failed..
+            # sm_file = open(os.path.join(binary_dir, f"{test_func.name}.pkl"), "wb")
+            # pickle.dump(sm, sm_file)
+            # sm_file.close()
+            sm_to_output(sm, output, test_func.name)
+        except Exception as e:
+            logging.error(str(e))
+            logging.error(f"got an error while analyzing {test_func.name}")
+        output.close()
+    return analysed_funcs
+	
+	
+	
+	
+	def analyze_func(proj, fun, cfg):
+    print(f"started running {fun.name}")
+    call_state = proj.factory.call_state(fun.addr, add_options={
+        'CALLLESS': True, 'NO_SYMBOLIC_SYSCALL_RESOLUTION': True
+    })
+    # dropped the relativization in the last moment due to time consedirations, and we think that the address_breakfun
+    # need to be checked again...
+    # call_state.inspect.b('address_concretization', when=angr.BP_AFTER, action=address_breakfun)
+    sm = proj.factory.simulation_manager(call_state)
+    sm.use_technique(angr.exploration_techniques.LoopSeer(cfg=cfg, bound=2))
+    global start_time
+    start_time = time.time()
+    sm.run(until=time_limit_check)
+    print(f"finished {fun.name}")
+    return sm
+
+
+
+def sm_to_output(sm: angr.sim_manager.SimulationManager, output_file, func_name):
+    counters = {'mem': itertools.count(), 'ret': itertools.count()}
+    var_map = {}
+    skipped_lines = 0
+    constants_mapper = dict()
+    constants_counter = itertools.count()
+    proj = sm._project
+    for exec_paths in sm.stashes.values():
+        for exec_path in exec_paths:
+            blocks = [proj.factory.block(baddr) for baddr in exec_path.history.bbl_addrs]
+            processsed_code = "|".join(list(filter(None, map(block_to_ins, blocks))))
+            var_map, relified_consts = varify_cons(exec_path.solver.constraints, var_map=var_map, counters=counters)
+            relified_consts = "|".join(relified_consts)
+            line = f"{tokenize_function_name(func_name)} DUM,{processsed_code}|CONS|{relified_consts},DUM\n"
+            found_constants = set(re.findall(r"0[xX][0-9a-fA-F]+", line))
+            for constant in found_constants:
+                if constant not in constants_mapper:
+                    constants_mapper[constant] = f"const_{next(constants_counter)}"
+
+            for constant, replacement in sorted(constants_mapper.items(), key=lambda x: len(x[0]), reverse=True):
+                line = line.replace(constant, replacement)
+            if len(line) <= 3000:
+                output_file.write(line)
+            else:
+                skipped_lines += 1
+    print(f"skipped {skipped_lines} lines")
+	
+	
+	def varify_cons(cons, var_map=None, counters=None, max_depth=8):
+    """
+    abstract away constants from the constraints
+    """
+    counters = {'mem': itertools.count(), 'ret': itertools.count()} if counters is None else counters
+    var_map = {} if var_map is None else var_map
+    new_cons = []
+
+    for con in cons:
+        if con.concrete:
+            continue
+        for v in con.leaf_asts():
+            if v.cache_key not in var_map and v.op in { 'BVS', 'BoolS', 'FPS' }:
+                new_name = gen_new_name(v.args[0], counters=counters)
+                var_map[v.cache_key] = v._rename(new_name)
+        new_cons.append(con_to_str(con.replace_dict(var_map), max_depth=max_depth))
+
+    return var_map, new_cons
+
+
+
