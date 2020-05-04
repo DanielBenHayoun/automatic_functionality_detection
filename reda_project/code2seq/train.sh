@@ -8,10 +8,10 @@
 #   on the final (held-out) test set, change 'val' to 'test'.
 type=really_final_constantless
 dataset_name=really_final_constantless
-data_dir=/home/redaigbaria/sec_proj/code2seq/data/really_final_constantless
+data_dir=data/really_final_constantless
 data=${data_dir}/${dataset_name}
 test_data=${data_dir}/${dataset_name}.val.c2s
-model_dir=/home/redaigbaria/sec_proj/code2seq/models/${type}
+model_dir=models/${type}
 
 mkdir -p ${model_dir}
 python3 -u code2seq.py --data ${data} --test ${test_data} --save_prefix ${model_dir}/model &
