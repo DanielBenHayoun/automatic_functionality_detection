@@ -28,6 +28,7 @@ dependencies:
   - dgl
   - graphviz
   - swig
+  - tensorflow=1.12
   - pip
   - pip:
       # spaCy models
@@ -38,3 +39,4 @@ dependencies:
     - box2d-py
     - torchviz
     - angr
+    - rouge
