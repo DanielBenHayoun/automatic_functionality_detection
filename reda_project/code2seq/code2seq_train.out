@@ -1,0 +1,121 @@
+Namespace(data_path='data/really_final_constantless/really_final_constantless', debug=False, load_path=None, predict=False, release=False, save_path_prefix='models/really_final_constantless/model', seed=239, test_path='data/really_final_constantless/really_final_constantless.val.c2s')
+2020-05-04 16:39:15.349501: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-05-04 16:39:15.382174: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Dictionaries loaded.
+Loaded subtoken vocab. size: 3
+Loaded target word vocab. size: 878
+Loaded nodes vocab. size: 2672
+Created model
+Starting training
+WARNING:tensorflow:From /home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/ops/sparse_ops.py:1165: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+Training batch size:			 8
+Dataset path:				 data/really_final_constantless/really_final_constantless
+Training file path:			 data/really_final_constantless/really_final_constantless.train.c2s
+Validation path:			 data/really_final_constantless/really_final_constantless.val.c2s
+Taking max contexts from each example:	 10
+Random path sampling:			 False
+Embedding size:				 128
+Using BiLSTMs, each of size:		 128
+Decoder size:				 320
+Decoder layers:				 1
+Max path lengths:			 798
+Max subtokens in a token:		 1
+Max target length:			 6
+Embeddings dropout keep_prob:		 0.75
+LSTM dropout keep_prob:			 0.5
+============================================
+Number of trainable params: 2454272
+Initalized variables
+Started reader...
+Average loss at batch 100: 17.358744, 	throughput: 2 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m6s
+Accuracy after 1 epochs: 0.00000
+After 1 epochs: Precision: 0.00000, recall: 0.00000, F1: 0.00000
+Rouge:  0
+Average loss at batch 200: 15.852569, 	throughput: 2 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 2 epochs: 0.00000
+After 2 epochs: Precision: 0.04380, recall: 0.01662, F1: 0.02410
+Rouge:  0.024096385542168676
+Saved after 2 epochs in: models/really_final_constantless/model_iter2
+Average loss at batch 300: 15.186326, 	throughput: 2 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 3 epochs: 0.00000
+After 3 epochs: Precision: 0.10490, recall: 0.04121, F1: 0.05917
+Rouge:  0.059171597633136105
+Saved after 3 epochs in: models/really_final_constantless/model_iter3
+Average loss at batch 400: 14.684096, 	throughput: 2 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 4 epochs: 0.00000
+After 4 epochs: Precision: 0.09677, recall: 0.04121, F1: 0.05780
+Rouge:  0.05780346820809249
+Average loss at batch 500: 14.376420, 	throughput: 1 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 5 epochs: 0.00000
+After 5 epochs: Precision: 0.13672, recall: 0.09333, F1: 0.11094
+Rouge:  0.1109350237717908
+Saved after 5 epochs in: models/really_final_constantless/model_iter5
+Average loss at batch 600: 13.918081, 	throughput: 1 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 6 epochs: 0.00000
+After 6 epochs: Precision: 0.06918, recall: 0.06027, F1: 0.06442
+Rouge:  0.06442166910688141
+Average loss at batch 700: 13.600322, 	throughput: 1 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 7 epochs: 0.00000
+After 7 epochs: Precision: 0.10594, recall: 0.10705, F1: 0.10649
+Rouge:  0.10649350649350649
+Average loss at batch 800: 13.217048, 	throughput: 1 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 8 epochs: 0.00000
+After 8 epochs: Precision: 0.11954, recall: 0.13437, F1: 0.12652
+Rouge:  0.1265206812652068
+Saved after 8 epochs in: models/really_final_constantless/model_iter8
+Average loss at batch 900: 12.922775, 	throughput: 1 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 9 epochs: 0.00000
+After 9 epochs: Precision: 0.12794, recall: 0.12661, F1: 0.12727
+Rouge:  0.12727272727272726
+Saved after 9 epochs in: models/really_final_constantless/model_iter9
+Average loss at batch 1000: 13.059873, 	throughput: 1 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 10 epochs: 0.00730
+After 10 epochs: Precision: 0.11411, recall: 0.13924, F1: 0.12543
+Rouge:  0.12542759407069554
+Average loss at batch 1100: 12.875699, 	throughput: 1 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 11 epochs: 0.00000
+After 11 epochs: Precision: 0.11207, recall: 0.13506, F1: 0.12250
+Rouge:  0.12249705535924617
+Average loss at batch 1200: 12.417776, 	throughput: 2 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 12 epochs: 0.00000
+After 12 epochs: Precision: 0.07432, recall: 0.08847, F1: 0.08078
+Rouge:  0.08078335373317012
+Average loss at batch 1300: 12.209382, 	throughput: 2 samples/sec
