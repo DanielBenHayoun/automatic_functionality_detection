@@ -507,10 +507,10 @@ def trim_long_lines(file_path):
 
 
 if __name__ == '__main__':
-    main()
+    # main()
     # cut long lines
     # trim_long_lines("datasets/cfg_overfitting_test/collective_output.txt")
-    # generate_output("datasets/cfg_overfitting_test")
+    generate_output("datasets/cfg_overfitting_test")
     # remove_failed_pkls("datasets/cfg_overfitting_test")
     # exit()
     # main()
