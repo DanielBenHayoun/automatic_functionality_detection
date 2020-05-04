@@ -1,4 +1,0 @@
-  File "reda_project/code2seq/preprocess.sh", line 37
-    TRAIN_DATA_FILE=/home/redaigbaria/sec_proj/datasets/cfg_overfitting_test/reda_transformation_constantless_train_output.txt
-                    ^
-SyntaxError: invalid syntax
