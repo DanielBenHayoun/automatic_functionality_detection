@@ -1,0 +1,1 @@
+read|char DUM,push|r12|	|mov|r12|rdi|	|push|rbp|	|push|rbx|	|mov|dword|ptr|rdi|0xffffffff|	|mov|ebp|1|	|mov|rdi|qword|ptr|rip|+|0x20b8af|	|test|rdi|rdi|	|jne|0x404923|	|jmp|0x404931|	|mov|eax|ebp|	|pop|rbx|	|pop|rbp|	|pop|r12|	|ret|	,DUM

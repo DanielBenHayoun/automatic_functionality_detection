@@ -1,0 +1,2 @@
+chmod|or|fchmod DUM,mov|eax|esi|	|mov|esi|edx|	|cmp|eax|-1|	|je|0x4114e0|	|jmp|0x402c90|	|jmp|qword|ptr|rip|+|0x217272|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	,DUM
+chmod|or|fchmod DUM,mov|eax|esi|	|mov|esi|edx|	|cmp|eax|-1|	|je|0x4114e0|	|mov|edi|eax|	|jmp|0x402c70|	|jmp|qword|ptr|rip|+|0x217282|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	,DUM

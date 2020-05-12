@@ -1,0 +1,1 @@
+sortlines|thread DUM,sub|rsp|const_2|	|mov|rcx|qword|ptr|rdi|+|const_5|	|mov|rdx|qword|ptr|rdi|+|const_2|	|mov|rsi|qword|ptr|rdi|+|8|	|mov|r9|qword|ptr|rdi|+|const_4|	|push|qword|ptr|rdi|+|const_6|	|mov|r8|qword|ptr|rdi|+|const_1|	|mov|rdi|qword|ptr|rdi|	|call|const_3|	|xor|eax|eax|	|add|rsp|const_5|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_0|>	,DUM

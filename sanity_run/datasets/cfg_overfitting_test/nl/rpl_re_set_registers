@@ -1,0 +1,2 @@
+rpl|re|set|registers DUM,test|rdx|rdx|	|jne|0x4141b8|	|and|byte|ptr|rdi|+|0x38|0xf9|	|mov|qword|ptr|rsi|0|	|mov|qword|ptr|rsi|+|0x10|0|	|mov|qword|ptr|rsi|+|8|0|	|ret|	,DUM
+rpl|re|set|registers DUM,test|rdx|rdx|	|jne|0x4141b8|	|movzx|eax|byte|ptr|rdi|+|0x38|	|and|eax|0xfffffff9|	|or|eax|2|	|mov|byte|ptr|rdi|+|0x38|al|	|mov|qword|ptr|rsi|rdx|	|mov|qword|ptr|rsi|+|8|rcx|	|mov|qword|ptr|rsi|+|0x10|r8|	|ret|	,DUM

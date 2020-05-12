@@ -1,0 +1,1 @@
+announce|mkdir DUM,cmp|byte|ptr|rsi|+|const_28|0|	|jne|const_27|	|ret|	|CONS|<Bool|__le__|__add__|reg_rsi|const_28|const_48|>	|<Bool|__eq__|__add__|reg_rsi|const_28|const_49|>	|<Bool|__eq__|mem_0|0|>	,DUM

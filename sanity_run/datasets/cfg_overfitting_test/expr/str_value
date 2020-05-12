@@ -1,0 +1,1 @@
+str|value DUM,push|rbp|	|push|rbx|	|mov|rbp|rdi|	|mov|edi|0x10|	|sub|rsp|8|	|call|0x406c20|	|mov|rdi|rbp|	|mov|rbx|rax|	|mov|dword|ptr|rax|1|	|call|0x406e50|	|mov|qword|ptr|rbx|+|8|rax|	|add|rsp|8|	|mov|rax|rbx|	|pop|rbx|	|pop|rbp|	|ret|	,DUM

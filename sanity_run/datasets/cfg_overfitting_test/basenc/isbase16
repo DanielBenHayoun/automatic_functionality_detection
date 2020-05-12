@@ -1,0 +1,1 @@
+isbase16 DUM,lea|eax|rdi|-|const_1|	|cmp|al|9|	|setbe|al|	|sub|edi|const_0|	|cmp|dil|5|	|setbe|dl|	|or|eax|edx|	|ret|	|CONS|,DUM

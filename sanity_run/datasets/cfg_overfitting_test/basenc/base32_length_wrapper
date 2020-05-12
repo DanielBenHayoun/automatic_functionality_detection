@@ -1,0 +1,1 @@
+base32|length|wrapper DUM,add|edi|4|	|mov|edx|const_0|	|mov|eax|edi|	|sar|edi|const_1|	|imul|edx|	|sar|edx|1|	|sub|edx|edi|	|lea|eax|rdx*8|	|ret|	|CONS|,DUM

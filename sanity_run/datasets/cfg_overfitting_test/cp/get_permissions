@@ -1,0 +1,1 @@
+get|permissions DUM,mov|dword|ptr|rcx|edx|	|xor|eax|eax|	|ret|	,DUM

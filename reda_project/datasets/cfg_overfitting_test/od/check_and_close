@@ -1,0 +1,1 @@
+check|and|close DUM,push|rbp|	|push|rbx|	|mov|ebx|1|	|sub|rsp|8|	|mov|rax|qword|ptr|rip|+|const_1|	|test|rax|rax|	|je|const_0|	|mov|rax|qword|ptr|rip|+|const_2|	|test|byte|ptr|rax|const_3|	|je|const_4|	|add|rsp|8|	|mov|eax|ebx|	|pop|rbx|	|pop|rbp|	|ret|	|CONS|,DUM

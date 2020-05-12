@@ -1,0 +1,1 @@
+set|permissions DUM,sub|rsp|8|	|mov|rax|rsi|	|mov|esi|edx|	|mov|edx|dword|ptr|rdi|	|mov|rdi|rax|	|call|const_1|	|test|eax|eax|	|setne|al|	|add|rsp|8|	|movzx|eax|al|	|neg|eax|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_0|>	,DUM

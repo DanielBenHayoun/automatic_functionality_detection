@@ -1,0 +1,1 @@
+proctab|comparator DUM,mov|eax|dword|ptr|rsi|+|8|	|cmp|dword|ptr|rdi|+|8|eax|	|sete|al|	|ret|	|CONS|<Bool|__eq__|reg_rsi|const_3|>	|<Bool|__le__|__add__|reg_rdi|const_1|const_0|>	|<Bool|__eq__|__add__|reg_rdi|const_1|const_2|>	,DUM

@@ -1,0 +1,1 @@
+rpl|re|set|syntax DUM,mov|rax|qword|ptr|rip|+|const_1|	|mov|qword|ptr|rip|+|const_0|rdi|	|ret|	|CONS|,DUM

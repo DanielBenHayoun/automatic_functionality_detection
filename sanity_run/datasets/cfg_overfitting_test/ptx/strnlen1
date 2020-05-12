@@ -1,0 +1,1 @@
+strnlen1 DUM,push|rbp|	|push|rbx|	|mov|rdx|rsi|	|mov|rbx|rsi|	|xor|esi|esi|	|mov|rbp|rdi|	|sub|rsp|8|	|call|const_0|	|mov|rdx|rax|	|sub|rdx|rbp|	|add|rdx|1|	|test|rax|rax|	|mov|rax|rbx|	|cmovne|rax|rdx|	|add|rsp|8|	|pop|rbx|	|pop|rbp|	|ret|	|CONS|,DUM

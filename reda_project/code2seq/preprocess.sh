@@ -34,12 +34,12 @@ PYTHON=python3
 #VAL_DATA_FILE=${DATASET_NAME}.val.raw.txt
 #TEST_DATA_FILE=${DATASET_NAME}.test.raw.txt
 
-TRAIN_DATA_FILE=/home/redaigbaria/sec_proj/datasets/cfg_overfitting_test/reda_transformation_constantless_train_output.txt
-VAL_DATA_FILE=/home/redaigbaria/sec_proj/datasets/cfg_overfitting_test/reda_transformation_constantless_val_output.txt
-TEST_DATA_FILE=/home/redaigbaria/sec_proj/datasets/cfg_overfitting_test/reda_transformation_constantless_test_output.txt
-#TRAIN_DATA_FILE=/home/redaigbaria/sec_proj/datasets/cfg_overfitting_test/constantless_val_output.txt
-#VAL_DATA_FILE=/home/redaigbaria/sec_proj/datasets/cfg_overfitting_test/constantless_overfitting.txt
-#TEST_DATA_FILE=/home/redaigbaria/sec_proj/datasets/cfg_overfitting_test/constantless_overfitting.txt
+TRAIN_DATA_FILE=../datasets/cfg_overfitting_test/ady_constantless_train_output.txt
+VAL_DATA_FILE=../datasets/cfg_overfitting_test/ady_constantless_val_output.txt
+TEST_DATA_FILE=../datasets/cfg_overfitting_test/ady_constantless_test_output.txt
+#TRAIN_DATA_FILE=../datasets/cfg_overfitting_test/constantless_val_output.txt
+#VAL_DATA_FILE=../datasets/cfg_overfitting_test/constantless_overfitting.txt
+#TEST_DATA_FILE=../datasets/cfg_overfitting_test/constantless_overfitting.txt
 
 mkdir -p data
 mkdir -p data/${DATASET_NAME}

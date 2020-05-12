@@ -1,0 +1,1 @@
+tostring DUM,push|rbx|	|sub|rsp|0x20|	|mov|rax|qword|ptr|fs:0x28|	|mov|qword|ptr|rsp|+|0x18|rax|	|xor|eax|eax|	|mov|eax|dword|ptr|rdi|	|test|eax|eax|	|je|0x402190|	|cmp|eax|1|	|jne|0x4021b3|	|mov|rax|qword|ptr|rsp|+|0x18|	|xor|rax|qword|ptr|fs:0x28|	|jne|0x4021b8|	|add|rsp|0x20|	|pop|rbx|	|ret|	,DUM

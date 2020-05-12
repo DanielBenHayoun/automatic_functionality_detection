@@ -1,0 +1,1 @@
+count|items DUM,add|qword|ptr|rip|+|const_0|1|	|xor|eax|eax|	|ret|	|CONS|,DUM

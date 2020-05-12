@@ -1,0 +1,3 @@
+freadptr DUM,mov|rax|qword|ptr|rdi|+|0x20|	|cmp|qword|ptr|rdi|+|0x28|rax|	|ja|0x406010|	|xor|eax|eax|	|ret|	,DUM
+freadptr DUM,mov|rax|qword|ptr|rdi|+|0x20|	|cmp|qword|ptr|rdi|+|0x28|rax|	|ja|0x406010|	|mov|rax|qword|ptr|rdi|+|8|	|mov|rdx|qword|ptr|rdi|+|0x10|	|sub|rdx|rax|	|je|0x406010|	|xor|eax|eax|	|ret|	,DUM
+freadptr DUM,mov|rax|qword|ptr|rdi|+|0x20|	|cmp|qword|ptr|rdi|+|0x28|rax|	|ja|0x406010|	|mov|rax|qword|ptr|rdi|+|8|	|mov|rdx|qword|ptr|rdi|+|0x10|	|sub|rdx|rax|	|je|0x406010|	|mov|qword|ptr|rsi|rdx|	|ret|	,DUM

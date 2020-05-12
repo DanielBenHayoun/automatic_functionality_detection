@@ -1,0 +1,1 @@
+require|more|args DUM,mov|rax|qword|ptr|rip|+|const_2|	|cmp|qword|ptr|rax|0|	|je|const_0|	|ret|	|CONS|<Bool|__ne__|mem_0|const_1|>	,DUM

@@ -1,0 +1,87 @@
+Namespace(data_path='data/really_final_constantless/really_final_constantless', debug=False, load_path=None, predict=False, release=False, save_path_prefix='models/really_final_constantless/model', seed=239, test_path='data/really_final_constantless/really_final_constantless.val.c2s')
+2020-05-12 12:12:31.692865: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-05-12 12:12:31.712419: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Dictionaries loaded.
+Loaded subtoken vocab. size: 3
+Loaded target word vocab. size: 283
+Loaded nodes vocab. size: 2850
+Created model
+Starting training
+WARNING:tensorflow:From /home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/ops/sparse_ops.py:1165: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+Training batch size:			 8
+Dataset path:				 data/really_final_constantless/really_final_constantless
+Training file path:			 data/really_final_constantless/really_final_constantless.train.c2s
+Validation path:			 data/really_final_constantless/really_final_constantless.val.c2s
+Taking max contexts from each example:	 10
+Random path sampling:			 False
+Embedding size:				 128
+Using BiLSTMs, each of size:		 128
+Decoder size:				 320
+Decoder layers:				 1
+Max path lengths:			 817
+Max subtokens in a token:		 1
+Max target length:			 6
+Embeddings dropout keep_prob:		 0.75
+LSTM dropout keep_prob:			 0.5
+============================================
+Number of trainable params: 2210496
+Initalized variables
+Started reader...
+Average loss at batch 100: 11.701435, 	throughput: 2 samples/sec
+Average loss at batch 200: 9.354997, 	throughput: 1 samples/sec
+Average loss at batch 300: 7.702719, 	throughput: 1 samples/sec
+Average loss at batch 400: 6.829309, 	throughput: 1 samples/sec
+Average loss at batch 500: 6.263244, 	throughput: 1 samples/sec
+Average loss at batch 600: 5.071437, 	throughput: 1 samples/sec
+Average loss at batch 700: 4.137630, 	throughput: 1 samples/sec
+Average loss at batch 800: 4.695684, 	throughput: 1 samples/sec
+Average loss at batch 900: 4.235242, 	throughput: 2 samples/sec
+Average loss at batch 1000: 4.270975, 	throughput: 1 samples/sec
+Average loss at batch 1100: 4.037214, 	throughput: 1 samples/sec
+Average loss at batch 1200: 4.098393, 	throughput: 1 samples/sec
+Average loss at batch 1300: 3.439355, 	throughput: 1 samples/sec
+Average loss at batch 1400: 3.593630, 	throughput: 1 samples/sec
+Average loss at batch 1500: 3.155823, 	throughput: 2 samples/sec
+Average loss at batch 1600: 3.436953, 	throughput: 2 samples/sec
+Average loss at batch 1700: 3.023020, 	throughput: 2 samples/sec
+Average loss at batch 1800: 2.954750, 	throughput: 2 samples/sec
+Average loss at batch 1900: 2.778100, 	throughput: 2 samples/sec
+Average loss at batch 2000: 2.452325, 	throughput: 2 samples/sec
+Average loss at batch 2100: 2.667415, 	throughput: 2 samples/sec
+Average loss at batch 2200: 2.366627, 	throughput: 2 samples/sec
+Average loss at batch 2300: 2.231111, 	throughput: 2 samples/sec
+Average loss at batch 2400: 2.193833, 	throughput: 2 samples/sec
+Average loss at batch 2500: 1.933924, 	throughput: 2 samples/sec
+Average loss at batch 2600: 1.939823, 	throughput: 2 samples/sec
+Average loss at batch 2700: 1.665442, 	throughput: 1 samples/sec
+Average loss at batch 2800: 1.732245, 	throughput: 1 samples/sec
+Average loss at batch 2900: 2.480753, 	throughput: 2 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_IL:en",
+	LC_ALL = (unset),
+	LANG = "en_IL"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Can't open perl script "scripts/multi-bleu.perl": No such file or directory
+Evaluation time: 0h1m33s
+Accuracy after 1 epochs: 0.07147
+After 1 epochs: Precision: 0.12721, recall: 0.16273, F1: 0.14279
+Rouge:  {'rouge-1': {'f': 0.12995219451042675, 'p': 0.13119991336365627, 'r': 0.13737546025557604}, 'rouge-2': {'f': 0.06622265503745173, 'p': 0.07683560753736192, 'r': 0.060916179337231965}, 'rouge-l': {'f': 0.12395524661599176, 'p': 0.13119991336365627, 'r': 0.13737546025557604}}
+Saved after 1 epochs in: models/really_final_constantless/model_iter1
+Average loss at batch 3000: 2.356925, 	throughput: 1 samples/sec
+Average loss at batch 3100: 1.699747, 	throughput: 2 samples/sec
+Average loss at batch 3200: 1.319920, 	throughput: 2 samples/sec
+Average loss at batch 3300: 1.411998, 	throughput: 2 samples/sec
+Average loss at batch 3400: 1.467524, 	throughput: 1 samples/sec
+Average loss at batch 3500: 0.978444, 	throughput: 1 samples/sec
+Average loss at batch 3600: 1.182870, 	throughput: 2 samples/sec
+Average loss at batch 3700: 1.241277, 	throughput: 2 samples/sec
+Average loss at batch 3800: 1.230655, 	throughput: 1 samples/sec
+Average loss at batch 3900: 1.496104, 	throughput: 2 samples/sec
+Average loss at batch 4000: 1.261273, 	throughput: 1 samples/sec
+Average loss at batch 4100: 1.124651, 	throughput: 0 samples/sec

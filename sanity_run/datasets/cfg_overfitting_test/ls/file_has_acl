@@ -1,0 +1,1 @@
+file|has|acl DUM,xor|eax|eax|	|ret|	|CONS|,DUM

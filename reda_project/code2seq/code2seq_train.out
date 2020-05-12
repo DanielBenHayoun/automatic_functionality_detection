@@ -1,6 +1,6 @@
 Namespace(data_path='data/really_final_constantless/really_final_constantless', debug=False, load_path=None, predict=False, release=False, save_path_prefix='models/really_final_constantless/model', seed=239, test_path='data/really_final_constantless/really_final_constantless.val.c2s')
-2020-05-04 16:39:15.349501: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
-2020-05-04 16:39:15.382174: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-05-12 08:22:05.037330: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-05-12 08:22:05.057579: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
 Dictionaries loaded.
 Loaded subtoken vocab. size: 3
 Loaded target word vocab. size: 878
@@ -29,145 +29,68 @@ LSTM dropout keep_prob:			 0.5
 Number of trainable params: 2454272
 Initalized variables
 Started reader...
-Average loss at batch 100: 17.358744, 	throughput: 2 samples/sec
+Average loss at batch 100: 17.355155, 	throughput: 0 samples/sec
 Finished 1 epochs
 Done testing, epoch reached
-Evaluation time: 0h0m6s
-Accuracy after 1 epochs: 0.00000
-After 1 epochs: Precision: 0.00000, recall: 0.00000, F1: 0.00000
-Rouge:  0
-Average loss at batch 200: 15.852569, 	throughput: 2 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 2 epochs: 0.00000
-After 2 epochs: Precision: 0.04380, recall: 0.01662, F1: 0.02410
-Rouge:  0.024096385542168676
-Saved after 2 epochs in: models/really_final_constantless/model_iter2
-Average loss at batch 300: 15.186326, 	throughput: 2 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 3 epochs: 0.00000
-After 3 epochs: Precision: 0.10490, recall: 0.04121, F1: 0.05917
-Rouge:  0.059171597633136105
-Saved after 3 epochs in: models/really_final_constantless/model_iter3
-Average loss at batch 400: 14.684096, 	throughput: 2 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 4 epochs: 0.00000
-After 4 epochs: Precision: 0.09677, recall: 0.04121, F1: 0.05780
-Rouge:  0.05780346820809249
-Average loss at batch 500: 14.376420, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 5 epochs: 0.00000
-After 5 epochs: Precision: 0.13672, recall: 0.09333, F1: 0.11094
-Rouge:  0.1109350237717908
-Saved after 5 epochs in: models/really_final_constantless/model_iter5
-Average loss at batch 600: 13.918081, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 6 epochs: 0.00000
-After 6 epochs: Precision: 0.06918, recall: 0.06027, F1: 0.06442
-Rouge:  0.06442166910688141
-Average loss at batch 700: 13.600322, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 7 epochs: 0.00000
-After 7 epochs: Precision: 0.10594, recall: 0.10705, F1: 0.10649
-Rouge:  0.10649350649350649
-Average loss at batch 800: 13.217048, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 8 epochs: 0.00000
-After 8 epochs: Precision: 0.11954, recall: 0.13437, F1: 0.12652
-Rouge:  0.1265206812652068
-Saved after 8 epochs in: models/really_final_constantless/model_iter8
-Average loss at batch 900: 12.922775, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 9 epochs: 0.00000
-After 9 epochs: Precision: 0.12794, recall: 0.12661, F1: 0.12727
-Rouge:  0.12727272727272726
-Saved after 9 epochs in: models/really_final_constantless/model_iter9
-Average loss at batch 1000: 13.059873, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 10 epochs: 0.00730
-After 10 epochs: Precision: 0.11411, recall: 0.13924, F1: 0.12543
-Rouge:  0.12542759407069554
-Average loss at batch 1100: 12.875699, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 11 epochs: 0.00000
-After 11 epochs: Precision: 0.11207, recall: 0.13506, F1: 0.12250
-Rouge:  0.12249705535924617
-Average loss at batch 1200: 12.417776, 	throughput: 2 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 12 epochs: 0.00000
-After 12 epochs: Precision: 0.07432, recall: 0.08847, F1: 0.08078
-Rouge:  0.08078335373317012
-Average loss at batch 1300: 12.209382, 	throughput: 2 samples/sec
-Average loss at batch 1400: 12.095278, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 13 epochs: 0.00000
-After 13 epochs: Precision: 0.08726, recall: 0.09946, F1: 0.09296
-Rouge:  0.09296482412060302
-Average loss at batch 1500: 11.413869, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 14 epochs: 0.00000
-After 14 epochs: Precision: 0.10539, recall: 0.11497, F1: 0.10997
-Rouge:  0.10997442455242967
-Average loss at batch 1600: 11.234177, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 15 epochs: 0.00000
-After 15 epochs: Precision: 0.07390, recall: 0.08743, F1: 0.08010
-Rouge:  0.08010012515644556
-Average loss at batch 1700: 10.798202, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 16 epochs: 0.00000
-After 16 epochs: Precision: 0.10983, recall: 0.10411, F1: 0.10689
-Rouge:  0.10689170182841068
-Average loss at batch 1800: 10.539068, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 17 epochs: 0.00000
-After 17 epochs: Precision: 0.09739, recall: 0.11141, F1: 0.10393
-Rouge:  0.10392902408111533
-Average loss at batch 1900: 9.959870, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 18 epochs: 0.00000
-After 18 epochs: Precision: 0.10194, recall: 0.11602, F1: 0.10853
-Rouge:  0.10852713178294573
-Average loss at batch 2000: 9.525918, 	throughput: 1 samples/sec
-Finished 1 epochs
-Done testing, epoch reached
-Evaluation time: 0h0m3s
-Accuracy after 19 epochs: 0.00000
-After 19 epochs: Precision: 0.10287, recall: 0.11749, F1: 0.10969
-Rouge:  0.1096938775510204
-Not improved for 10 epochs, stopping training
-Best scores - epoch 9: 
-Precision: 0.12794, recall: 0.12661, F1: 0.12727
+Traceback (most recent call last):
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1334, in _do_call
+    return fn(*args)
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.OutOfRangeError: End of sequence
+	 [[{{node IteratorGetNext}} = IteratorGetNext[output_shapes=[[?,10,798], [?,10], [?,10,1], [?,10], [?,10,1], [?,10,1], [?,10,1], [?,10], [?,10,1], [?,?], [?], [?], [?,10]], output_types=[DT_INT32, DT_INT32, DT_INT32, DT_INT32, DT_STRING, DT_STRING, DT_INT32, DT_INT32, DT_STRING, DT_INT32, DT_INT64, DT_STRING, DT_FLOAT], _device="/job:localhost/replica:0/task:0/device:CPU:0"](IteratorV2)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/danielben/automatic_functionality_detection/reda_project/code2seq/model.py", line 96, in train
+    _, batch_loss = self.sess.run([optimizer, train_loss])
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1348, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.OutOfRangeError: End of sequence
+	 [[node IteratorGetNext (defined at /home/danielben/automatic_functionality_detection/reda_project/code2seq/reader.py:192)  = IteratorGetNext[output_shapes=[[?,10,798], [?,10], [?,10,1], [?,10], [?,10,1], [?,10,1], [?,10,1], [?,10], [?,10,1], [?,?], [?], [?], [?,10]], output_types=[DT_INT32, DT_INT32, DT_INT32, DT_INT32, DT_STRING, DT_STRING, DT_INT32, DT_INT32, DT_STRING, DT_INT32, DT_INT64, DT_STRING, DT_FLOAT], _device="/job:localhost/replica:0/task:0/device:CPU:0"](IteratorV2)]]
+
+Caused by op 'IteratorGetNext', defined at:
+  File "code2seq.py", line 39, in <module>
+    model.train()
+  File "/home/danielben/automatic_functionality_detection/reda_project/code2seq/model.py", line 77, in train
+    config=self.config)
+  File "/home/danielben/automatic_functionality_detection/reda_project/code2seq/reader.py", line 43, in __init__
+    self.output_tensors = self.compute_output()
+  File "/home/danielben/automatic_functionality_detection/reda_project/code2seq/reader.py", line 192, in compute_output
+    return self.iterator.get_next()
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/data/ops/iterator_ops.py", line 421, in get_next
+    name=name)), self._output_types,
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/ops/gen_dataset_ops.py", line 2069, in iterator_get_next
+    output_shapes=output_shapes, name=name)
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py", line 488, in new_func
+    return func(*args, **kwargs)
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3274, in create_op
+    op_def=op_def)
+  File "/home/danielben/anaconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1770, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+OutOfRangeError (see above for traceback): End of sequence
+	 [[node IteratorGetNext (defined at /home/danielben/automatic_functionality_detection/reda_project/code2seq/reader.py:192)  = IteratorGetNext[output_shapes=[[?,10,798], [?,10], [?,10,1], [?,10], [?,10,1], [?,10,1], [?,10,1], [?,10], [?,10,1], [?,?], [?], [?], [?,10]], output_types=[DT_INT32, DT_INT32, DT_INT32, DT_INT32, DT_STRING, DT_STRING, DT_INT32, DT_INT32, DT_STRING, DT_INT32, DT_INT64, DT_STRING, DT_FLOAT], _device="/job:localhost/replica:0/task:0/device:CPU:0"](IteratorV2)]]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "code2seq.py", line 39, in <module>
+    model.train()
+  File "/home/danielben/automatic_functionality_detection/reda_project/code2seq/model.py", line 108, in train
+    results, precision, recall, f1, rouge = self.evaluate()
+  File "/home/danielben/automatic_functionality_detection/reda_project/code2seq/model.py", line 228, in evaluate
+    files_rouge = FilesRouge()
+TypeError: __init__() missing 2 required positional arguments: 'hyp_path' and 'ref_path'

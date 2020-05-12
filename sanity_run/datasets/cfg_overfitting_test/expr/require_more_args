@@ -1,0 +1,1 @@
+require|more|args DUM,mov|rax|qword|ptr|rip|+|0x219169|	|cmp|qword|ptr|rax|0|	|je|0x401f6f|	|ret|	,DUM

@@ -1,0 +1,3 @@
+writeline DUM,test|rdx|rdx|	|jne|const_1|	|movzx|eax|byte|ptr|rip|+|const_3|	|xor|eax|1|	|test|al|al|	|jne|const_2|	|test|al|al|	|jne|const_2|	|ret|	|CONS|<Bool|__eq__|reg_rdx|const_0|>	,DUM
+writeline DUM,test|rdx|rdx|	|jne|const_1|	|test|sil|sil|	|jne|const_5|	|movzx|eax|byte|ptr|rip|+|const_4|	|xor|eax|1|	|test|al|al|	|je|const_6|	|ret|	|CONS|<Bool|__ne__|reg_rdx|const_0|>	|<Bool|__eq__|__and__|ZeroExt|56|reg_rsi|const_7|const_0|>	,DUM
+writeline DUM,test|rdx|rdx|	|jne|const_1|	|test|sil|sil|	|jne|const_5|	|movzx|eax|byte|ptr|rip|+|const_9|	|xor|eax|1|	|jmp|const_8|	|test|al|al|	|jne|const_2|	|ret|	|CONS|<Bool|__ne__|reg_rdx|const_0|>	|<Bool|__ne__|__and__|ZeroExt|56|reg_rsi|const_7|const_0|>	,DUM

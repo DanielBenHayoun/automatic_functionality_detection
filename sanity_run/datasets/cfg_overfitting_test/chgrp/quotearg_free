@@ -1,0 +1,1 @@
+quotearg|free DUM,mov|eax|dword|ptr|rip|+|const_0|	|push|r12|	|mov|r12|qword|ptr|rip|+|const_2|	|push|rbp|	|push|rbx|	|cmp|eax|1|	|jle|const_1|	|mov|rdi|qword|ptr|r12|+|8|	|lea|rbx|rip|+|const_6|	|cmp|rdi|rbx|	|je|const_4|	|lea|rbx|rip|+|const_7|	|cmp|r12|rbx|	|je|const_5|	|pop|rbx|	|mov|dword|ptr|rip|+|const_3|1|	|pop|rbp|	|pop|r12|	|ret|	|CONS|,DUM

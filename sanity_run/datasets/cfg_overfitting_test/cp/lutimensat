@@ -1,0 +1,1 @@
+lutimensat DUM,mov|ecx|0x100|	|jmp|0x402750|	|jmp|qword|ptr|rip|+|0x217512|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	,DUM

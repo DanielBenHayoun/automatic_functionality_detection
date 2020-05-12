@@ -1,0 +1,1 @@
+ino|compare DUM,mov|rax|qword|ptr|rsi|	|cmp|qword|ptr|rdi|rax|	|sete|al|	|ret|	,DUM

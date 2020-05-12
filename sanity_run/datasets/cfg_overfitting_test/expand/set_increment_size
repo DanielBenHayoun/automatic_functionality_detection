@@ -1,0 +1,1 @@
+set|increment|size DUM,cmp|qword|ptr|rip|+|const_0|0|	|push|rbx|	|mov|eax|1|	|mov|rbx|rdi|	|je|const_2|	|mov|qword|ptr|rip|+|const_1|rbx|	|pop|rbx|	|ret|	|CONS|,DUM

@@ -1,0 +1,1 @@
+move|fd.part.11 DUM,push|rbx|	|mov|ebx|edi|	|call|const_1|	|mov|edi|ebx|	|pop|rbx|	|jmp|const_0|	|jmp|qword|ptr|rip|+|const_2|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|,DUM

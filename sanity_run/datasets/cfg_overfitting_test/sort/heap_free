@@ -1,0 +1,1 @@
+heap|free DUM,push|rbx|	|mov|rbx|rdi|	|mov|rdi|qword|ptr|rdi|	|call|0x4031c0|	|mov|rdi|rbx|	|pop|rbx|	|jmp|0x4031c0|	|jmp|qword|ptr|rip|+|0x216df2|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	,DUM

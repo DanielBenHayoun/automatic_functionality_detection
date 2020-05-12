@@ -222,14 +222,15 @@ class Model:
             print('Done testing, epoch reached')
             output_file.write(str(num_correct_predictions / total_predictions) + '\n')
             # Common.compute_bleu(ref_file_name, predicted_file_name)
-		#changed by Daniel
+
         elapsed = int(time.time() - eval_start_time)
         precision, recall, f1 = self.calculate_results(true_positive, false_positive, false_negative)
-        # files_rouge = FilesRouge(predicted_file_name, ref_file_name)
-        # rouge = files_rouge.get_scores(avg=True, ignore_empty=True)
+        files_rouge = FilesRouge()
+        rouge = files_rouge.get_scores(
+            hyp_path=predicted_file_name, ref_path=ref_file_name, avg=True, ignore_empty=True)
         print("Evaluation time: %sh%sm%ss" % ((elapsed // 60 // 60), (elapsed // 60) % 60, elapsed % 60))
         return num_correct_predictions / total_predictions, \
-               precision, recall, f1, f1
+               precision, recall, f1, rouge
 
     def update_correct_predictions(self, num_correct_predictions, output_file, results):
         for original_name, predicted in results:

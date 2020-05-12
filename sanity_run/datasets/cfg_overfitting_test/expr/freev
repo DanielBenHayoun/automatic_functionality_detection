@@ -1,0 +1,2 @@
+freev DUM,push|rbx|	|cmp|dword|ptr|rdi|1|	|mov|rbx|rdi|	|je|0x401fc8|	|mov|rdi|rbx|	|pop|rbx|	|jmp|0x4016c0|	|jmp|qword|ptr|rip|+|0x219722|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	,DUM
+freev DUM,push|rbx|	|cmp|dword|ptr|rdi|1|	|mov|rbx|rdi|	|je|0x401fc8|	|mov|rdi|qword|ptr|rdi|+|8|	|call|0x4016c0|	|mov|rdi|rbx|	|pop|rbx|	|jmp|0x4016c0|	|jmp|qword|ptr|rip|+|0x219722|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	,DUM

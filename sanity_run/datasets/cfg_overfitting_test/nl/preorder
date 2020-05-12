@@ -1,0 +1,1 @@
+preorder DUM,push|r12|	|mov|r12|rsi|	|push|rbp|	|mov|rbp|rdx|	|push|rbx|	|mov|rbx|rdi|	|jmp|const_0|	|mov|rsi|rbx|	|mov|rdi|rbp|	|call|r12|	|CONS|,DUM

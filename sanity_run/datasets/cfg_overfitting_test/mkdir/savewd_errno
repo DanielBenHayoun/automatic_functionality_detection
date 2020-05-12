@@ -1,0 +1,2 @@
+savewd|errno DUM,xor|eax|eax|	|cmp|dword|ptr|rdi|4|	|je|const_1|	|mov|eax|dword|ptr|rdi|+|4|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_2|>	|<Bool|__eq__|mem_0|const_0|>	|<Bool|__eq__|__add__|reg_rdi|const_0|const_3|>	,DUM
+savewd|errno DUM,xor|eax|eax|	|cmp|dword|ptr|rdi|4|	|je|const_1|	|ret|	|CONS|<Bool|__le__|reg_rdi|const_4|>	|<Bool|__eq__|reg_rdi|const_2|>	|<Bool|__ne__|mem_0|const_0|>	,DUM

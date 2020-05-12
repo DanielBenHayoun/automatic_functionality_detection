@@ -1,0 +1,2 @@
+mb|width|aux DUM,push|rbx|	|mov|ebx|edi|	|call|const_3|	|test|eax|eax|	|js|const_0|	|mov|edi|ebx|	|call|const_2|	|test|eax|eax|	|sete|al|	|movzx|eax|al|	|pop|rbx|	|ret|	|test|eax|eax|	|js|const_0|	|pop|rbx|	|ret|	|CONS|<Bool|__ne__|Extract|0|0|LShR|ZeroExt|32|Extract|31|0|ret_0|const_1|0|>	|<Bool|__eq__|Extract|0|0|LShR|ZeroExt|32|Extract|31|0|Concat|const_4|If|__eq__|<...>|<...>|1|0|const_1|0|>	,DUM
+mb|width|aux DUM,push|rbx|	|mov|ebx|edi|	|call|const_3|	|test|eax|eax|	|js|const_0|	|pop|rbx|	|ret|	|CONS|<Bool|__eq__|Extract|31|31|ret_0|0|>	,DUM

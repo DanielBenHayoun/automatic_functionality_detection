@@ -1,0 +1,1 @@
+AD|hash DUM,mov|rax|qword|ptr|rdi|+|8|	|xor|edx|edx|	|div|rsi|	|mov|rax|rdx|	|ret|	|CONS|<Bool|__le__|__add__|reg_rdi|const_2|const_1|>	|<Bool|__eq__|__add__|reg_rdi|const_2|const_3|>	|<Bool|__ne__|reg_rsi|const_0|>	,DUM

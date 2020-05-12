@@ -1,0 +1,1 @@
+check|and|close DUM,push|rbp|	|push|rbx|	|mov|ebx|1|	|sub|rsp|8|	|mov|rax|qword|ptr|rip|+|0x20bd06|	|test|rax|rax|	|je|0x4044e5|	|mov|rax|qword|ptr|rip|+|0x20bbbc|	|test|byte|ptr|rax|0x20|	|je|0x404514|	|add|rsp|8|	|mov|eax|ebx|	|pop|rbx|	|pop|rbp|	|ret|	,DUM

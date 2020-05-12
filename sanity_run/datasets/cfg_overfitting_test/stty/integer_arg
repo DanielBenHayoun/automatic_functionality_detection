@@ -1,0 +1,1 @@
+integer|arg DUM,push|rbp|	|push|rbx|	|mov|rbp|rsi|	|lea|rsi|rip|+|const_2|	|mov|rbx|rdi|	|mov|edx|5|	|sub|rsp|8|	|xor|edi|edi|	|call|const_0|	|sub|rsp|8|	|lea|r8|rip|+|const_3|	|mov|rcx|rbp|	|push|0|	|mov|rdi|rbx|	|mov|r9|rax|	|xor|edx|edx|	|xor|esi|esi|	|call|const_1|	|add|rsp|const_4|	|pop|rbx|	|pop|rbp|	|ret|	|CONS|,DUM

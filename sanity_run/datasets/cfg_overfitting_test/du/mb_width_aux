@@ -1,0 +1,2 @@
+mb|width|aux DUM,push|rbx|	|mov|ebx|edi|	|call|0x402760|	|test|eax|eax|	|js|0x409ea0|	|mov|edi|ebx|	|call|0x402480|	|test|eax|eax|	|sete|al|	|movzx|eax|al|	|pop|rbx|	|ret|	|test|eax|eax|	|js|0x409ea0|	|pop|rbx|	|ret|	,DUM
+mb|width|aux DUM,push|rbx|	|mov|ebx|edi|	|call|0x402760|	|test|eax|eax|	|js|0x409ea0|	|pop|rbx|	|ret|	,DUM

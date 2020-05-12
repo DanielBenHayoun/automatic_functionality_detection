@@ -1,0 +1,1 @@
+xstrcoll DUM,push|rbp|	|push|rbx|	|mov|rbp|rsi|	|mov|rbx|rdi|	|sub|rsp|8|	|call|const_2|	|mov|dword|ptr|rax|0|	|add|rsp|8|	|mov|rsi|rbp|	|mov|rdi|rbx|	|pop|rbx|	|pop|rbp|	|jmp|const_0|	|jmp|qword|ptr|rip|+|const_3|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|<Bool|__eq__|ret_0|const_1|>	,DUM

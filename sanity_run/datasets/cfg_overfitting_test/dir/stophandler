@@ -1,0 +1,1 @@
+stophandler DUM,mov|eax|dword|ptr|rip|+|const_1|	|test|eax|eax|	|jne|const_3|	|mov|eax|dword|ptr|rip|+|const_0|	|add|eax|1|	|mov|dword|ptr|rip|+|const_2|eax|	|ret|	|ret|	|CONS|,DUM

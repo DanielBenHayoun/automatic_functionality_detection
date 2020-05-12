@@ -1,0 +1,2 @@
+build|collating|symbol.isra.28 DUM,push|rbp|	|push|rbx|	|mov|rbp|rdi|	|mov|rdi|rsi|	|mov|rbx|rsi|	|sub|rsp|8|	|call|0x401c10|	|cmp|rax|1|	|jne|0x40cec0|	|movzx|ecx|byte|ptr|rbx|	|mov|rdx|rcx|	|and|ecx|0x3f|	|shr|rdx|3|	|shl|rax|cl|	|and|edx|0x18|	|or|qword|ptr|rbp|+|rdx|rax|	|add|rsp|8|	|xor|eax|eax|	|pop|rbx|	|pop|rbp|	|ret|	,DUM
+build|collating|symbol.isra.28 DUM,push|rbp|	|push|rbx|	|mov|rbp|rdi|	|mov|rdi|rsi|	|mov|rbx|rsi|	|sub|rsp|8|	|call|0x401c10|	|cmp|rax|1|	|jne|0x40cec0|	|add|rsp|8|	|mov|eax|3|	|pop|rbx|	|pop|rbp|	|ret|	,DUM

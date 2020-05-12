@@ -1,0 +1,1 @@
+hex|digits DUM,push|rbp|	|push|rbx|	|sub|rsp|8|	|mov|rbp|qword|ptr|rip|+|const_1|	|test|rbp|rbp|	|je|const_0|	|mov|rax|rdi|	|cmp|byte|ptr|rax|0|	|sete|al|	|add|rsp|8|	|pop|rbx|	|pop|rbp|	|ret|	|cmp|byte|ptr|rax|0|	|sete|al|	|add|rsp|8|	|pop|rbx|	|pop|rbp|	|ret|	|CONS|<Bool|__le__|reg_rdi|const_2|>	|<Bool|__eq__|reg_rdi|const_3|>	,DUM

@@ -1,0 +1,1 @@
+raw|comparator DUM,cmp|rdi|rsi|	|sete|al|	|ret|	|CONS|,DUM

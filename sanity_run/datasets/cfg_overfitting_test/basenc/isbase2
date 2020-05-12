@@ -1,0 +1,1 @@
+isbase2 DUM,sub|edi|const_0|	|cmp|dil|1|	|setbe|al|	|ret|	|CONS|,DUM

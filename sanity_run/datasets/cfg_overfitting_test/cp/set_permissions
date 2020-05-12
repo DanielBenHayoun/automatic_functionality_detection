@@ -1,0 +1,1 @@
+set|permissions DUM,sub|rsp|8|	|mov|rax|rsi|	|mov|esi|edx|	|mov|edx|dword|ptr|rdi|	|mov|rdi|rax|	|call|0x4114d0|	|test|eax|eax|	|setne|al|	|add|rsp|8|	|movzx|eax|al|	|neg|eax|	|ret|	,DUM

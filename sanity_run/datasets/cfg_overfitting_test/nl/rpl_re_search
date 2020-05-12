@@ -1,0 +1,1 @@
+rpl|re|search DUM,sub|rsp|8|	|push|0|	|push|r9|	|mov|r9|rdx|	|call|0x4138e0|	|add|rsp|0x18|	|ret|	,DUM

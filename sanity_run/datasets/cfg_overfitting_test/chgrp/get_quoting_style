@@ -1,0 +1,1 @@
+get|quoting|style DUM,lea|rax|rip|+|const_3|	|test|rdi|rdi|	|cmove|rdi|rax|	|mov|eax|dword|ptr|rdi|	|ret|	|CONS|<Bool|ULE|const_0|If|__eq__|reg_rdi|const_4|const_1|reg_rdi|>	|<Bool|__le__|If|__eq__|reg_rdi|const_4|const_1|reg_rdi|const_2|>	|<Bool|__eq__|If|__eq__|reg_rdi|const_4|const_1|reg_rdi|const_0|>	,DUM
