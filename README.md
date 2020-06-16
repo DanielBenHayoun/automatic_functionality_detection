@@ -1,4 +1,4 @@
-# automatic_functionality_detection
+# Automatic Functionality Detection Of Stripped Binaries
 
 availdbale for  Ubuntu 18.04.3 LTS.
 ## prerequisites:
