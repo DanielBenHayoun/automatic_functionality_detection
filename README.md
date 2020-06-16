@@ -1,7 +1,13 @@
 # automatic_functionality_detection
 
 availdbale for  Ubuntu 18.04.3 LTS.
-for start clone into this repo.
+## prerequisites:
+ 
+ - [ java SDK 11 ](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+ - [Ghidra](https://github.com/NationalSecurityAgency/ghidra) ( follow donloads guide or simply clone reposetory)
+ - [python 3](https://www.python.org/downloads/release/python-381/)
+
+clone into this repo.
 ```sh
 git clone https://github.com/DanielBenHayoun/automatic_functionality_detection.git --recursive
 ```
