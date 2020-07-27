@@ -29,7 +29,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 
-// TODO: figure out how the printind is done.
 
 public class GhidraDecompiler extends HeadlessScript {
   
@@ -71,6 +70,7 @@ public class GhidraDecompiler extends HeadlessScript {
             DecompiledFunction df = dr.getDecompiledFunction();
             println(df.getC());
 
+	    writeToFileHandler.WriteLine(df.getC());
             // Print lines prepend with addresses
             PrettyPrinter pp = new PrettyPrinter(f, dr.getCCodeMarkup());
             ArrayList<ClangLine> lines = pp.getLines();
@@ -88,9 +88,12 @@ public class GhidraDecompiler extends HeadlessScript {
                 }
                 if (maxAddress == 0) {
                     //TODO: write to file
+		
+
                     println(String.format("                      - %sDaniel", line.toString()));
                 } else {
                     println(String.format("0x%-8x 0x%-8x - %s", minAddress, maxAddress, line.toString()));
+
               }
             }
             writeToFileHandler.closeFile();    
