@@ -25,7 +25,7 @@ where `path_to_downloaded_script` is the path for Anaconda3-2020.02-Linux-x86_64
 
 ###### create enviroment:
 ```sh
-$ conda env update -f slurm_helper/environment.yml
+$ conda env update -f environment.yml
 $ conda activate RE_project_1
 ```
 To check what conda environments you have and which is active, run
