@@ -26,6 +26,7 @@ import ghidra.program.model.pcode.HighFunction;
 import java.util.ArrayList;
 import java.util.List;
 import java.io.FileWriter;
+import java.io.File;
 import java.io.IOException;
 
 
@@ -42,12 +43,17 @@ public class GhidraDecompiler extends HeadlessScript {
         DecompInterface di = new DecompInterface();
         println("Simplification style: " + di.getSimplificationStyle()); // DEBUG
         println("Debug enables: " + di.debugEnabled());
-    	// create String array : "functions_name
+
+    	String[] args = getScriptArgs();
+    	String output_path=args[0];
+    	println("output_path is" + output_path);
+    	// create String array : functions_name
     	//call get_functions and fill functions_name
         List<Function> results=new ArrayList<Function>();
         this.getFunction(results);	
+        
         for (Function function : results) {
-    	println("function name: " + function.getName());
+    		println("function name: " + function.getName());
         }
     	//for each function in functions_name do the entire code below
         for (Function f : results){
@@ -56,7 +62,7 @@ public class GhidraDecompiler extends HeadlessScript {
               // System.err.println(String.format("Function not found at 0x%x", functionAddress));
               return;
             }
-            WriteToFile writeToFileHandler= new WriteToFile(f.getName());
+            WriteToFile writeToFileHandler= new WriteToFile(output_path +f.getName()+"/", f.getName());
             // FileWriter file_obj= null;
             // file_obj=new FileWriter("/home/daniel/Desktop/project_deco/func_source"+f.getName());
             // println(String.format("Decompiling %s() at 0x%x", f.getName(), functionAddress));
@@ -70,32 +76,8 @@ public class GhidraDecompiler extends HeadlessScript {
             DecompiledFunction df = dr.getDecompiledFunction();
             println(df.getC());
 
-	    writeToFileHandler.WriteLine(df.getC());
-            // Print lines prepend with addresses
-            PrettyPrinter pp = new PrettyPrinter(f, dr.getCCodeMarkup());
-            ArrayList<ClangLine> lines = pp.getLines();
-
-            for (ClangLine line : lines) {
-                long minAddress = Long.MAX_VALUE; 
-                long maxAddress = 0; 
-                for (int i = 0; i < line.getNumTokens(); i++) {
-                    if (line.getToken(i).getMinAddress() == null) {
-                        continue; 
-                    }
-                    long addr = line.getToken(i).getMinAddress().getOffset();
-                    minAddress = addr < minAddress ? addr : minAddress;
-                    maxAddress = addr > maxAddress ? addr : maxAddress;
-                }
-                if (maxAddress == 0) {
-                    //TODO: write to file
-		
-
-                    println(String.format("                      - %sDaniel", line.toString()));
-                } else {
-                    println(String.format("0x%-8x 0x%-8x - %s", minAddress, maxAddress, line.toString()));
-
-              }
-            }
+	   		writeToFileHandler.WriteLine(df.getC());
+            
             writeToFileHandler.closeFile();    
         }
     }
@@ -123,11 +105,15 @@ public class GhidraDecompiler extends HeadlessScript {
       class WriteToFile {
         FileWriter file;
         //TODO: save also file name
-        public WriteToFile (String function_name) {
+        public WriteToFile (String output_path ,String function_name) {
             try {
-                String path="/home/daniel/Desktop/project_deco/func_source/";
+                // String path="/home/daniel/Desktop/project_deco/func_source/";
+                String path=output_path;
                 String fullName=path.concat(function_name);
-                FileWriter functioWriter = new FileWriter(fullName);
+                System.out.println(fullName);
+                File new_file=new File(fullName);
+                new_file.getParentFile().mkdirs();
+                FileWriter functioWriter = new FileWriter(new_file);
                 file = functioWriter;
                 // myWriter.close();
                 System.out.println("Successfully wrote to the file.");
