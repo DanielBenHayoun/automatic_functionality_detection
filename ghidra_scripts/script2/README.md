@@ -4,6 +4,7 @@ this script create a ghidra project (Test) but delete it after , leaving only th
 
 
 test
+success
 
 run:
 ```sh
