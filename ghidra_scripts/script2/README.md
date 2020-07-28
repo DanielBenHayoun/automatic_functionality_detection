@@ -3,6 +3,8 @@ this script create a ghidra project (Test) but delete it after , leaving only th
 #### NOTE: each file represent one function of the binary.
 
 
+test
+
 run:
 ```sh
 $ cd /automatic_functionality_detection/ghidra_scripts/script2
