@@ -4,6 +4,6 @@
 *.iml
 *.xml
 *.pyc
-models/
+code2seq/models/
 .nfs*
 
