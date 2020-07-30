@@ -1,0 +1,8 @@
+*.class
+*.lst
+.idea/*
+*.iml
+*.xml
+*.pyc
+code2seq/models/
+
