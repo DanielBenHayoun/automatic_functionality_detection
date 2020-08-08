@@ -13,7 +13,7 @@ def maximum(a,b,c):
 	return largest
 
 def main():
-	with open("datasets/cfg_overfitting_test/ady_constantless_test_output.txt",'r') as fp1:
+	with open("/home/danielben/final_project/automatic_functionality_detection/dataset_code2seq/data/dataset/dataset.test.c2s",'r') as fp1:
 		max1 = 0
 		for line in fp1:
 			count = 0
@@ -23,7 +23,7 @@ def main():
 			if count>max1:
 				max1=count
 		
-	with open("datasets/cfg_overfitting_test/ady_constantless_train_output.txt",'r') as fp2:
+	with open("/home/danielben/final_project/automatic_functionality_detection/dataset_code2seq/data/dataset/dataset.train.c2s",'r') as fp2:
 		max2 = 0
 		for line in fp2:
 			count = 0
@@ -33,7 +33,7 @@ def main():
 			if count>max2:
 				max2=count
 		
-	with open("datasets/cfg_overfitting_test/ady_constantless_val_output.txt",'r') as fp3:
+	with open("/home/danielben/final_project/automatic_functionality_detection/dataset_code2seq/data/dataset/dataset.val.c2s",'r') as fp3:
 		max3 = 0
 		for line in fp3:
 			count = 0
