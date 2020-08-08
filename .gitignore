@@ -6,4 +6,4 @@
 *.pyc
 code2seq/models/
 .nfs*
-
+*.mdb
