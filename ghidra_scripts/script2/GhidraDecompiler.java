@@ -46,6 +46,7 @@ public class GhidraDecompiler extends HeadlessScript {
 
     	String[] args = getScriptArgs();
     	String output_path=args[0];
+        String file_name=args[1];
     	println("output_path is" + output_path);
     	// create String array : functions_name
     	//call get_functions and fill functions_name
@@ -62,7 +63,16 @@ public class GhidraDecompiler extends HeadlessScript {
               // System.err.println(String.format("Function not found at 0x%x", functionAddress));
               return;
             }
-            WriteToFile writeToFileHandler= new WriteToFile(output_path +f.getName()+"/", f.getName());
+            // Assuming each function is unique for all files.
+            String func_name;
+            if ((f.getName().equals("main"))){
+                func_name="main_"+file_name +".c";
+            } else{
+                func_name=f.getName()+".c";
+            }
+
+            WriteToFile writeToFileHandler= new WriteToFile(output_path +"/",func_name);
+            // WriteToFile writeToFileHandler= new WriteToFile(output_path, f.getName());
             // FileWriter file_obj= null;
             // file_obj=new FileWriter("/home/daniel/Desktop/project_deco/func_source"+f.getName());
             // println(String.format("Decompiling %s() at 0x%x", f.getName(), functionAddress));
@@ -110,9 +120,10 @@ public class GhidraDecompiler extends HeadlessScript {
                 // String path="/home/daniel/Desktop/project_deco/func_source/";
                 String path=output_path;
                 String fullName=path.concat(function_name);
+                // String fullName=path;
                 System.out.println(fullName);
                 File new_file=new File(fullName);
-                new_file.getParentFile().mkdirs();
+                // new_file.getParentFile().mkdirs();
                 FileWriter functioWriter = new FileWriter(new_file);
                 file = functioWriter;
                 // myWriter.close();
