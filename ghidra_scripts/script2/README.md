@@ -5,5 +5,5 @@ this script create a ghidra project (Test) but delete it after , leaving only th
 run:
 ```sh
 $ cd /automatic_functionality_detection/ghidra_scripts/script2
-$ ./gd_decomp_1.sh
+$ ./gd_decomp_1.sh <binary_name>
 ```
