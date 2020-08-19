@@ -10,9 +10,9 @@
 
 
 
-type=cpp-miner-exp1-model
+type=cpp-miner-exp2-model
 dataset_name=dataset
-data_dir=../dataset_code2seq/data/dataset/
+data_dir=/home/eialper/final_final_project/automatic_functionality_detection/data/dataset
 data=${data_dir}/${dataset_name}
 test_data=${data_dir}/${dataset_name}.val.c2s
 model_dir=models/${type}
