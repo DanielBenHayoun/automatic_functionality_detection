@@ -9,11 +9,12 @@ FINAL_DATA_DIR=%{PROJECT_FOLDER}/final_data
 
 CPPMINER_PREPROCESS=${PROJECT_FOLDER}/cppminer/code2seq
 #clean
-rm -f %{FINAL_DATA_DIR}/data/dataset/*.c2s
+rm -f ${FINAL_DATA_DIR}/data/dataset/*.c2s
+rm -rf ${PROJECT_FOLDER}/data/*.c2s ${PROJECT_FOLDER}/data/samples.db 
 
 #paths limitations 
 
-LIMIT=100
+LIMIT=$1
 python3 ${PROJECT_FOLDER}/functions_filter.py ${LIMIT}
 
 #merge paths 
