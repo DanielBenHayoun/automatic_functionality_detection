@@ -29,6 +29,13 @@ dependencies:
   - graphviz
   - swig
   - tensorflow=1.12
+  - bitarray
+  - lmdb
+  - clang
+  - decorator
+  - networkx
+  - pygraphviz
+  - tqdm
   - pip
   - pip:
       # spaCy models
