@@ -42,8 +42,9 @@ def main(files):
 
 if __name__ == '__main__':
 	data_folder = sys.argv[1]
-	file_names = ["dataset.test.c2s","dataset.train.c2s","dataset.val.c2s"]
-	files = [data_folder +"/" + file for file in file_names]
+	# file_names = ["dataset.test.c2s","dataset.train.c2s","dataset.val.c2s"]
+	files = [data_folder +"/filterd_and_popular_functions.c2s"]
+	# files = [data_folder +"/" + file for file in file_names]
 	# for idx,file in enumerate(files):
 	# 	with open(file,'r') as fp:
 	# 		print(fp.name)
