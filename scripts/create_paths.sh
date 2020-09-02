@@ -16,4 +16,4 @@ LIBCLANG_PATH=$HOME/anaconda3/envs/daniel/lib/libclang-cpp.so
 MAX_PATH_LEN=$1
 
 # python3  ${PROJECT_FOLDER}/cppminer/src/miner.py -e $LIBCLANG_PATH -l $MAX_PATH_LEN $SOURCE_PATH $OUTPUT_PATH
-python3  ${PROJECT_FOLDER}/cppminer/src/miner.py -c 0 -l $MAX_PATH_LEN $SOURCE_PATH $OUTPUT_PATH
+python3  ${PROJECT_FOLDER}/cppminer/src/miner.py  -l $MAX_PATH_LEN $SOURCE_PATH $OUTPUT_PATH

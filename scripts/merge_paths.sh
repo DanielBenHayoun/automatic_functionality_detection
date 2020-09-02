@@ -11,6 +11,6 @@
 SOURCE_PATH=~/automatic_functionality_detection/cppminer_res
 # SOURCE_PATH=~/automatic_functionality_detection/data
 PROJECT_FOLDER=~/automatic_functionality_detection/
-CLEAR_RESOURCES=true
+CLEAR_RESOURCES=false
 # python3  ${PROJECT_FOLDER}/cppminer/src/merge.py -c $CLEAR_RESOURCES $SOURCE_PATH
 python3  ${PROJECT_FOLDER}/cppminer/src/merge.py $SOURCE_PATH
