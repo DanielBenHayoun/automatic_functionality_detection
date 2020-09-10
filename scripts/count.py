@@ -21,7 +21,7 @@ def main(files):
     	# files = ["../data/dataset.test.c2s","../data/dataset.train.c2s","../data/dataset.val.c2s"]
 	
 	# files = ["../data/filterd_functions.c2s"]
-	limit = 3000 #the limit for path length, change it to check how many functions are under this limit
+	limit = 10 #the limit for path length, change it to check how many functions are under this limit
 
 	underlimit = 0
 	global_max = 0 #max length of all files
@@ -42,9 +42,11 @@ def main(files):
 
 if __name__ == '__main__':
 	data_folder = sys.argv[1]
+	# data_folder = dir_path = os.path.realpath(data_folder)
+	# print (data_folder)
 	# file_names = ["dataset.test.c2s","dataset.train.c2s","dataset.val.c2s"]
-	files = [data_folder +"/filterd_and_popular_functions.c2s"]
-	# files = [data_folder +"/" + file for file in file_names]
+	files = os.listdir(data_folder)
+	files = [data_folder +"/" + file for file in files]
 	# for idx,file in enumerate(files):
 	# 	with open(file,'r') as fp:
 	# 		print(fp.name)
