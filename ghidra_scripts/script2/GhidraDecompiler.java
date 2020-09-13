@@ -1,5 +1,3 @@
-// Copyright (C) 2019 Guillaume Valadon <guillaume@valadon.net>
-// This program is published under a GPLv2 license
 
 /*
  * Decompile a function with Ghidra
