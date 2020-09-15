@@ -3,13 +3,14 @@ import os
 import glob
 import math
 
-#finding the name of the fucntion	
-def func_name_extractor(function):
+#finding the name of the fucntion and the functions itself without path
+def func_extractor(function):
 	val = -1
 	for i in range(0, 2): 
 		val = function.find(' ', val + 1)
 	function_name = function[function.find(')')+1:val]
-	return function_name
+	real_function = function[function.find(')')+1:]
+	return function_name,real_function
 	
 
 #input:  -dict of the popular functions with subtokens as key
@@ -73,7 +74,7 @@ def popular_functions(files):
 		# with open("../data/filterd_functions.c2s",'r') as fp:
 		with open(file,'r') as fp:
 			for function in fp:
-				function_name = func_name_extractor(function)
+				function_name,real_function = func_extractor(function)
 				subtokens=function_name.split("|")
 				if len(subtokens) > max_subtoken:
 					max_subtoken=len(subtokens)
@@ -81,7 +82,7 @@ def popular_functions(files):
 				for label in subtokens:
 					if label not in mapper:
 						mapper[label] = []
-					mapper[label].append(function)
+					mapper[label].append(real_function)
 					
 				#end of the making of the dictionary
 				
