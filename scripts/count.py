@@ -42,7 +42,7 @@ def main(files):
 	print("number of samples under the limit is:",underlimit)
 
 if __name__ == '__main__':
-  data_folder = sys.argv[1]
+	data_folder = sys.argv[1]
 	# data_folder = dir_path = os.path.realpath(data_folder)
 	# print (data_folder)
 	# file_names = ["dataset.test.c2s","dataset.train.c2s","dataset.val.c2s"]
