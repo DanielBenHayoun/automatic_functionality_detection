@@ -55,21 +55,16 @@ public class GhidraDecompiler extends HeadlessScript {
     		println("function name: " + function.getName());
         }
     	//for each function in functions_name do the entire code below
+	     // statistics
+        Statistics stat = new Statistics();
         for (Function f : results){
             //Function f = this.getFunction(functionAddress);
             if (f == null) {
               // System.err.println(String.format("Function not found at 0x%x", functionAddress));
               return;
             }
-            // Assuming each function is unique for all files.
-            String func_name;
-            if ((f.getName().equals("main"))){
-                func_name="main_"+file_name +".c";
-            } else{
-                func_name=f.getName()+".c";
-            }
+            
 
-            WriteToFile writeToFileHandler= new WriteToFile(output_path +"/",func_name);
             // WriteToFile writeToFileHandler= new WriteToFile(output_path, f.getName());
             // FileWriter file_obj= null;
             // file_obj=new FileWriter("/home/daniel/Desktop/project_deco/func_source"+f.getName());
@@ -82,12 +77,31 @@ public class GhidraDecompiler extends HeadlessScript {
             println("Decompilation completed: " + dr.decompileCompleted()); // DEBUG
 
             DecompiledFunction df = dr.getDecompiledFunction();
-            println(df.getC());
+            String buffer = df.getC();
+            println(buffer);
+            // Assuming each function is unique for all files.
+            String func_name;
+            if ((f.getName().equals("main"))){
+                func_name="main_"+file_name +".c";
+                String[] string_array = buffer.split("\\r?\\n");
+                println("buffer first line " + string_array[1]); // DEBUD
+                string_array[1]= string_array[1].replace("main",file_name);
+                buffer = String.join("\n",string_array);
+                println("new buffer " + buffer);
+            } else{
+                func_name=f.getName()+".c";
+            }
+            stat.UpdateStat(df);
+            if (!df.getC().contains("baddata")){
 
-	   		writeToFileHandler.WriteLine(df.getC());
-            
-            writeToFileHandler.closeFile();    
+            	WriteToFile writeToFileHandler= new WriteToFile(output_path +"/",func_name);
+
+		   		writeToFileHandler.WriteLine(buffer);
+	            
+	            writeToFileHandler.closeFile();	
+            }    
         }
+        stat.DisplayStat();
     }
 
 
@@ -121,7 +135,7 @@ public class GhidraDecompiler extends HeadlessScript {
                 // String fullName=path;
                 System.out.println(fullName);
                 File new_file=new File(fullName);
-                // new_file.getParentFile().mkdirs();
+                new_file.getParentFile().mkdirs();
                 FileWriter functioWriter = new FileWriter(new_file);
                 file = functioWriter;
                 // myWriter.close();
@@ -145,6 +159,36 @@ public class GhidraDecompiler extends HeadlessScript {
                 System.out.println("ERROR");
             }
         }
+    }
+
+    class Statistics {
+		int baddata_funcs;
+		int lib_funcs;
+		void AddBddata_Func(){
+			baddata_funcs++;
+		}
+		void AddLib_func(){
+			lib_funcs++;
+		}
+		void UpdateStat(DecompiledFunction df){
+			// statistics
+			
+            if (df.getC().contains("baddata")){
+            	AddBddata_Func();
+            }
+           	
+           	String func_name = df.getSignature().split(" ")[1];
+           	println(func_name);
+            if (func_name.startsWith("_")){
+            	AddLib_func();
+            }
+
+
+		}
+		void DisplayStat(){
+			println("baddata_funcs = " + baddata_funcs);
+			println("lib_funcs = " + lib_funcs);
+		}
     }
 
    

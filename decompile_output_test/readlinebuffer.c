@@ -1,0 +1,62 @@
+
+long * readlinebuffer(long *param_1,byte *param_2)
+
+{
+  byte *pbVar1;
+  long lVar2;
+  uint uVar3;
+  byte bVar4;
+  byte *pbVar5;
+  byte *pbVar6;
+  byte *pbVar7;
+  
+  pbVar7 = (byte *)param_1[2];
+  pbVar6 = pbVar7 + *param_1;
+  if ((*param_2 & 0x10) != 0) {
+    return (long *)0;
+  }
+  pbVar5 = pbVar7;
+  do {
+    while( true ) {
+      pbVar1 = *(byte **)(param_2 + 8);
+      if (pbVar1 < *(byte **)(param_2 + 0x10)) {
+        *(byte **)(param_2 + 8) = pbVar1 + 1;
+        uVar3 = (uint)*pbVar1;
+        bVar4 = *pbVar1;
+      }
+      else {
+        uVar3 = func_0x00101480(param_2);
+        if (uVar3 == 0xffffffff) {
+          if (pbVar7 == pbVar5) {
+            return (long *)0;
+          }
+          if ((*param_2 & 0x20) != 0) {
+            return (long *)0;
+          }
+          uVar3 = 10;
+          bVar4 = 10;
+          if (pbVar5[-1] == 10) goto code_r0x00102ae6;
+        }
+        else {
+          bVar4 = (byte)uVar3;
+        }
+      }
+      if (pbVar5 != pbVar6) break;
+      lVar2 = *param_1;
+      pbVar7 = (byte *)x2realloc(pbVar7,param_1);
+      pbVar1 = pbVar7 + lVar2;
+      *(byte **)(param_1 + 2) = pbVar7;
+      pbVar6 = pbVar7 + *param_1;
+      *pbVar1 = bVar4;
+      pbVar5 = pbVar1 + 1;
+      if (uVar3 == 10) goto code_r0x00102ae6;
+    }
+    pbVar1 = pbVar5 + 1;
+    *pbVar5 = bVar4;
+    pbVar5 = pbVar1;
+  } while (uVar3 != 10);
+code_r0x00102ae6:
+  *(byte **)(param_1 + 1) = pbVar5 + -(long)pbVar7;
+  return param_1;
+}
+
