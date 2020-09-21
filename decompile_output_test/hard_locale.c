@@ -13,14 +13,14 @@ ulong hard_locale(undefined8 param_1)
   byte bVar9;
   
   bVar9 = 0;
-  pbVar4 = (byte *)func_0x00102a50(param_1,0);
+  pbVar4 = (byte *)func_0x001013b0(param_1,0);
   uVar1 = 1;
   bVar6 = false;
   bVar8 = pbVar4 == (byte *)0x0;
   if (!bVar8) {
     lVar2 = 2;
     pbVar3 = pbVar4;
-    pbVar5 = &UNK_0011357a;
+    pbVar5 = &UNK_001053e0;
     do {
       if (lVar2 == 0) break;
       lVar2 = lVar2 + -1;
@@ -34,7 +34,7 @@ ulong hard_locale(undefined8 param_1)
     bVar6 = (!bVar6 && !bVar8) == bVar6;
     if (!bVar6) {
       lVar2 = 6;
-      pbVar3 = &UNK_00114cc0;
+      pbVar3 = &UNK_001053e2;
       do {
         if (lVar2 == 0) break;
         lVar2 = lVar2 + -1;

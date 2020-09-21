@@ -1,6 +1,6 @@
 
-/* WARNING: Removing unreachable block (ram,0x00103c38) */
-/* WARNING: Removing unreachable block (ram,0x00103c44) */
+/* WARNING: Removing unreachable block (ram,0x00101748) */
+/* WARNING: Removing unreachable block (ram,0x00101754) */
 
 void frame_dummy(void)
 

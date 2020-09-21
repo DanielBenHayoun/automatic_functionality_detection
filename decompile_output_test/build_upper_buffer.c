@@ -13,7 +13,7 @@ void build_upper_buffer(long *param_1)
   }
   lVar3 = param_1[6];
   if (lVar3 < lVar4) {
-    plVar1 = (long *)func_0x00101ac0();
+    plVar1 = (long *)func_0x00101860();
     do {
       uVar2 = (ulong)*(byte *)(*param_1 + lVar3 + param_1[5]);
       if (param_1[0xf] != 0) {

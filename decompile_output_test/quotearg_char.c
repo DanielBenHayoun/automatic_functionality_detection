@@ -37,12 +37,12 @@ void quotearg_char(undefined8 param_1,ulong param_2)
     *(uint *)((undefined *)register0x00000020 + (ulong)(byte)((byte)param_2 >> 5) * 4 + -0x40) =
          (~(uVar1 >> bVar2) & 1) << bVar2 ^ uVar1;
     uVar3 = 0;
-    *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x10a2de;
+    *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x1039be;
     quotearg_n_options(SUB168(default_quoting_options._32_16_,0),0,param_1,0xffffffffffffffff);
     param_2 = *(ulong *)((undefined *)register0x00000020 + -0x10) ^ *(ulong *)(in_FS_OFFSET + 0x28);
     if (param_2 == 0) break;
-    *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x10a2f8;
-    func_0x001021f0();
+    *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x1039d8;
+    func_0x001012b0();
     register0x00000020 = (BADSPACEBASE *)((undefined *)register0x00000020 + -0x48);
     param_1 = uVar3;
   }

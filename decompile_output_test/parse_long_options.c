@@ -84,11 +84,11 @@ parse_long_options(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
     puVar7 = long_options;
     puVar12 = (undefined4 *)0x0;
     pcStack256 = param_14;
-    iVar3 = func_0x001013c0(param_9,param_10,&UNK_0010562c,long_options,0);
+    iVar3 = func_0x001012c0(param_9,param_10,&UNK_00104b43,long_options,0);
     if (iVar3 != -1) {
       pcVar13 = pcStack256;
       if (iVar3 != 0x68) {
-        if (iVar3 != 0x76) goto code_r0x00102029;
+        if (iVar3 != 0x76) goto code_r0x00101cd9;
         puStack240 = &stack0x00000008;
         puVar12 = &uStack248;
         puStack232 = auStack216;
@@ -96,13 +96,13 @@ parse_long_options(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
         uStack244 = 0x30;
         puVar7 = (undefined1 *)param_13;
         version_etc_va(stdout,param_11,param_12,param_13,puVar12);
-        func_0x00101530();
+        func_0x00101400();
       }
       param_9 = (byte *)0x0;
       (*pcVar13)();
     }
   }
-code_r0x00102029:
+code_r0x00101cd9:
   optind = 0;
   if (lStack224 == *(long *)(in_FS_OFFSET + 0x28)) {
     optind = 0;
@@ -110,7 +110,7 @@ code_r0x00102029:
     return (undefined *)0x0;
   }
   opterr = uVar1;
-  cVar2 = func_0x001013b0();
+  cVar2 = func_0x001012b0();
   pcVar13 = pcStack256;
   uVar1 = opterr;
   if (cVar2 != '\0') {
@@ -129,7 +129,7 @@ code_r0x00102029:
   uStack296 = param_11;
   puStack288 = param_12;
   puStack280 = param_13;
-  iVar3 = func_0x001013c0();
+  iVar3 = func_0x001012c0();
   if (iVar3 != -1) {
     if (iVar3 == 0x68) {
       param_9 = (byte *)0x0;
@@ -142,7 +142,7 @@ code_r0x00102029:
         uStack512 = 0x30;
         uStack508 = 0x30;
         version_etc_va(stdout,extraout_RDX,puVar7,puVar12,&uStack512);
-        func_0x00101530();
+        func_0x00101400();
       }
       param_9 = (byte *)(ulong)exit_failure;
       (*pcVar13)();
@@ -153,19 +153,19 @@ code_r0x00102029:
     return (undefined *)0x0;
   }
   opterr = uVar1;
-  func_0x001013b0();
+  func_0x001012b0();
   if (param_9 == (byte *)0x0) {
     pcVar11 = "A NULL argv[0] was passed through an exec system call.\n";
     iVar3 = 1;
-    func_0x00101540(&UNK_00105640,1,0x37,stderr);
-    func_0x001012f0();
+    func_0x00101410(&UNK_00104b58,1,0x37,stderr);
+    func_0x001011f0();
     pbVar5 = (byte *)locale_charset();
     if ((*pbVar5 & 0xdf) == 0x55) {
       if (((((pbVar5[1] & 0xdf) == 0x54) && ((pbVar5[2] & 0xdf) == 0x46)) && (pbVar5[3] == 0x2d)) &&
          ((pbVar5[4] == 0x38 && (pbVar5[5] == 0)))) {
-        puVar6 = &UNK_00105684;
+        puVar6 = &UNK_00104b9c;
         if (*pcVar11 != '`') {
-          puVar6 = &UNK_00105688;
+          puVar6 = &UNK_00104ba0;
         }
         return puVar6;
       }
@@ -175,20 +175,20 @@ code_r0x00102029:
          ((pbVar5[2] == 0x31 &&
           ((((pbVar5[3] == 0x38 && (pbVar5[4] == 0x30)) && (pbVar5[5] == 0x33)) &&
            ((pbVar5[6] == 0x30 && (pbVar5[7] == 0)))))))) {
-        puVar6 = &UNK_0010568c;
+        puVar6 = &UNK_00104ba4;
         if (*pcVar11 != '`') {
-          puVar6 = &UNK_00105690;
+          puVar6 = &UNK_00104ba8;
         }
         return puVar6;
       }
     }
-    puVar6 = &UNK_00105693;
+    puVar6 = &UNK_00104bab;
     if (iVar3 != 9) {
-      puVar6 = &UNK_00105695;
+      puVar6 = &UNK_00104bad;
     }
     return puVar6;
   }
-  lVar4 = func_0x001013e0();
+  lVar4 = func_0x001012e0();
   if (lVar4 != 0) {
     pbVar5 = (byte *)(lVar4 + 1);
     pbVar9 = pbVar5 + -(long)param_9;
@@ -197,7 +197,7 @@ code_r0x00102029:
     if (6 < (long)pbVar9) {
       lVar8 = 7;
       pbVar9 = (byte *)(lVar4 + -6);
-      pbVar10 = &UNK_00105678;
+      pbVar10 = &UNK_00104b90;
       do {
         if (lVar8 == 0) break;
         lVar8 = lVar8 + -1;
@@ -211,7 +211,7 @@ code_r0x00102029:
       if (bVar14) {
         lVar8 = 3;
         pbVar9 = pbVar5;
-        pbVar10 = &UNK_00105680;
+        pbVar10 = &UNK_00104b98;
         do {
           if (lVar8 == 0) break;
           lVar8 = lVar8 + -1;

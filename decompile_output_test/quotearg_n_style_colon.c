@@ -21,7 +21,7 @@ void quotearg_n_style_colon
   
   uStack16 = *(ulong *)(in_FS_OFFSET + 0x28);
   if ((int)param_2 == 10) {
-    func_0x001020a0(param_1,param_2,0);
+    func_0x001011f0(param_1,param_2,0);
   }
   else {
     uStack68 = 0;
@@ -39,7 +39,7 @@ void quotearg_n_style_colon
       return;
     }
   }
-  func_0x001021f0();
+  func_0x001012b0();
   lVar2 = extraout_RDX;
   piVar3 = &iStack72;
   do {
@@ -60,22 +60,22 @@ void quotearg_n_style_colon
     *(int *)((undefined *)piVar3 + -0x20) = SUB164(default_quoting_options._32_16_ >> 0x40,0);
     *(int *)((undefined *)piVar3 + -0x1c) = SUB164(default_quoting_options._32_16_ >> 0x60,0);
     if ((param_2 == (undefined *)0x0) || (lVar2 == 0)) {
-      *(undefined8 *)((undefined *)piVar3 + -0x50) = 0x10a45c;
+      *(undefined8 *)((undefined *)piVar3 + -0x50) = 0x103b3c;
       puVar1 = default_quoting_options._48_8_;
-      func_0x001020a0(SUB168(default_quoting_options._32_16_,0));
+      func_0x001011f0(SUB168(default_quoting_options._32_16_,0));
     }
     else {
       *(undefined **)((undefined *)piVar3 + -0x20) = param_2;
       *(long *)((undefined *)piVar3 + -0x18) = lVar2;
-      *(undefined8 *)((undefined *)piVar3 + -0x50) = 0x10a442;
+      *(undefined8 *)((undefined *)piVar3 + -0x50) = 0x103b22;
       quotearg_n_options(SUB168(default_quoting_options._32_16_,0));
       param_2 = param_4;
       if (*(long *)((undefined *)piVar3 + -0x10) == *(long *)(in_FS_OFFSET + 0x28)) {
         return;
       }
     }
-    *(undefined8 *)((undefined *)piVar3 + -0x50) = 0x10a461;
-    func_0x001021f0();
+    *(undefined8 *)((undefined *)piVar3 + -0x50) = 0x103b41;
+    func_0x001012b0();
     param_4 = puVar1;
     lVar2 = extraout_RDX_00;
     piVar3 = (int *)((undefined *)piVar3 + -0x48);

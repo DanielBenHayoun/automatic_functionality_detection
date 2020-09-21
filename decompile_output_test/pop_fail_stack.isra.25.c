@@ -17,9 +17,9 @@ pop_fail_stack_isra_25
     lVar2 = *param_2;
     lVar3 = lVar3 * 0x30;
     *param_3 = *(undefined8 *)(lVar2 + lVar3);
-    func_0x00101d70(param_5,((undefined8 *)(lVar2 + lVar3))[2],param_4 << 4,param_4 << 4);
-    func_0x00101b00(*(undefined8 *)(param_6 + 4));
-    func_0x00101b00(*(undefined8 *)(*param_2 + 0x10 + lVar3));
+    func_0x00101a90(param_5,((undefined8 *)(lVar2 + lVar3))[2],param_4 << 4,param_4 << 4);
+    func_0x00101880(*(undefined8 *)(param_6 + 4));
+    func_0x00101880(*(undefined8 *)(*param_2 + 0x10 + lVar3));
     lVar3 = lVar3 + *param_2;
                     /* WARNING: Load size is inaccurate */
     auVar1 = *(undefined *)(lVar3 + 0x18);
@@ -30,10 +30,10 @@ pop_fail_stack_isra_25
     *(undefined8 *)(param_6 + 4) = *(undefined8 *)(lVar3 + 0x28);
     return *(undefined8 *)(lVar3 + 8);
   }
-  pbVar4 = &UNK_001175d3;
-  puVar5 = &UNK_001175e1;
-  func_0x00101c90(&UNK_001175e1,&UNK_001175d3,0x555);
-  lVar3 = func_0x00101c10(pbVar4);
+  pbVar4 = &UNK_00114f20;
+  puVar5 = &UNK_00114f2e;
+  func_0x00101a00(&UNK_00114f2e,&UNK_00114f20,0x555);
+  lVar3 = func_0x00101980(pbVar4);
   if (lVar3 == 1) {
     *(ulong *)(puVar5 + ((uint)(*pbVar4 >> 3) & 0x18)) =
          *(ulong *)(puVar5 + ((uint)(*pbVar4 >> 3) & 0x18)) | 1 << (*pbVar4 & 0x3f);

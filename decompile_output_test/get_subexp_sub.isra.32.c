@@ -24,13 +24,13 @@ get_subexp_sub_isra_32
   lVar8 = *(long *)(param_1 + 0xd8);
   lVar6 = lVar7;
   if (*(long *)(param_1 + 0xd0) <= lVar5) {
-    lVar5 = func_0x00101e00(lVar8,*(long *)(param_1 + 0xd0) * 0x50);
+    lVar5 = func_0x00101b30(lVar8,*(long *)(param_1 + 0xd0) * 0x50);
     if (lVar5 == 0) {
-      func_0x00101b00(*(undefined8 *)(param_1 + 0xd8));
+      func_0x00101880(*(undefined8 *)(param_1 + 0xd8));
       return 0xc;
     }
     *(long *)(param_1 + 0xd8) = lVar5;
-    func_0x00101cb0(lVar5 + *(long *)(param_1 + 200) * 0x28,0,*(long *)(param_1 + 0xd0) * 0x28);
+    func_0x00101a10(lVar5 + *(long *)(param_1 + 200) * 0x28,0,*(long *)(param_1 + 0xd0) * 0x28);
     *(long *)(param_1 + 0xd0) = *(long *)(param_1 + 0xd0) << 1;
     lVar5 = *(long *)(param_1 + 200);
     lVar8 = *(long *)(param_1 + 0xd8);
@@ -55,7 +55,7 @@ get_subexp_sub_isra_32
   if ((lVar7 < *(long *)(param_1 + 0x40)) ||
      (*(long *)(param_1 + 0x58) <= *(long *)(param_1 + 0x40))) {
     if ((lVar7 < *(long *)(param_1 + 0x30)) ||
-       (*(long *)(param_1 + 0x58) <= *(long *)(param_1 + 0x30))) goto code_r0x00108d8f;
+       (*(long *)(param_1 + 0x58) <= *(long *)(param_1 + 0x30))) goto code_r0x00106adf;
     uVar4 = extend_buffers(param_1,(ulong)((int)lVar7 + 1));
     iVar3 = (int)uVar4;
   }
@@ -66,9 +66,9 @@ get_subexp_sub_isra_32
   if (iVar3 != 0) {
     return uVar4;
   }
-code_r0x00108d8f:
+code_r0x00106adf:
   if (lVar5 < lVar7) {
-    func_0x00101cb0(*(long *)(param_1 + 0xb8) + 8 + lVar5 * 8,0,(lVar7 - lVar5) * 8);
+    func_0x00101a10(*(long *)(param_1 + 0xb8) + 8 + lVar5 * 8,0,(lVar7 - lVar5) * 8);
     *(long *)(param_1 + 0xc0) = lVar7;
   }
   return 0;

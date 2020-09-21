@@ -37,13 +37,13 @@ ulong lower_subexps(long *param_1,long *param_2)
   if (lStack32 == *(long *)(in_FS_OFFSET + 0x28)) {
     return (ulong)uStack36;
   }
-  func_0x00101c20();
+  func_0x00101990();
   lVar3 = plVar5[1];
   plVar6[1] = lVar3;
   lVar1 = plVar5[1];
   if (0 < lVar1) {
     *plVar6 = lVar3;
-    lVar3 = func_0x00101da0(lVar3 * 8);
+    lVar3 = func_0x00101ac0(lVar3 * 8);
     plVar6[2] = lVar3;
     if (lVar3 == 0) {
       plVar6[1] = 0;
@@ -51,7 +51,7 @@ ulong lower_subexps(long *param_1,long *param_2)
       uVar4 = 0xc;
     }
     else {
-      func_0x00101d70(lVar3,plVar5[2],lVar1 * 8);
+      func_0x00101a90(lVar3,plVar5[2],lVar1 * 8);
       uVar4 = 0;
     }
     return uVar4;

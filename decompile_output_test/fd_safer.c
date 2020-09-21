@@ -11,9 +11,9 @@ ulong fd_safer(uint param_1)
   if (param_1 < 3) {
     uVar2 = dup_safer();
     uVar4 = (ulong)uVar2;
-    puVar3 = (undefined4 *)func_0x001019c0();
+    puVar3 = (undefined4 *)func_0x001018a0();
     uVar1 = *puVar3;
-    func_0x00101b70((ulong)param_1);
+    func_0x00101a20((ulong)param_1);
     *puVar3 = uVar1;
   }
   return uVar4;

@@ -17,7 +17,7 @@ long full_write(uint param_1,long param_2,long param_3)
         return lVar3;
       }
       if (lVar1 == 0) {
-        puVar2 = (undefined4 *)func_0x001014a0();
+        puVar2 = (undefined4 *)func_0x00101200();
         *puVar2 = 0x1c;
         return lVar3;
       }

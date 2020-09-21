@@ -24,7 +24,7 @@ undefined2 * mode_create_from_ref(undefined8 param_1)
   bVar7 = (byte)param_1;
   uVar12 = 1;
   uStack16 = *(ulong *)(in_FS_OFFSET + 0x28);
-  iVar2 = func_0x00101900(1,param_1,auStack168);
+  iVar2 = func_0x00101590(1,param_1,auStack168);
   if (iVar2 == 0) {
     uVar12 = 0x20;
     puVar4 = (undefined2 *)xmalloc();
@@ -41,7 +41,7 @@ undefined2 * mode_create_from_ref(undefined8 param_1)
   if (pcVar6 == (char *)0x0) {
     return puVar4;
   }
-  func_0x001017e0();
+  func_0x00101480();
   cVar10 = pcVar6[1];
   uVar5 = (ulong)(uVar12 & 0xfff);
   if (cVar10 == '\0') {
@@ -78,9 +78,9 @@ undefined2 * mode_create_from_ref(undefined8 param_1)
     uVar11 = ~uVar9;
     if (uVar1 == 0) {
       uVar8 = uVar8 & ~(uVar9 | extraout_EDX);
-      if (cVar10 == '-') goto code_r0x00103500;
-      if (cVar10 != '=') goto code_r0x001033fd;
-code_r0x001034ab:
+      if (cVar10 == '-') goto code_r0x001028e0;
+      if (cVar10 != '=') goto code_r0x001027dd;
+code_r0x0010288b:
       uVar12 = uVar12 | uVar11 & 0xfff;
       cVar10 = pcVar6[0x11];
       uVar5 = (ulong)(uVar3 & uVar9 | uVar8);
@@ -88,7 +88,7 @@ code_r0x001034ab:
     else {
       uVar8 = uVar8 & uVar11 & uVar1;
       if (cVar10 == '-') {
-code_r0x00103500:
+code_r0x001028e0:
         uVar12 = uVar12 | uVar8;
         uVar5 = (ulong)(uVar3 & ~uVar8);
       }
@@ -96,9 +96,9 @@ code_r0x00103500:
         if (cVar10 == '=') {
           uVar9 = uVar9 | ~uVar1;
           uVar11 = ~uVar9;
-          goto code_r0x001034ab;
+          goto code_r0x0010288b;
         }
-code_r0x001033fd:
+code_r0x001027dd:
         if (cVar10 == '+') {
           uVar12 = uVar12 | uVar8;
           uVar5 = (ulong)(uVar3 | uVar8);

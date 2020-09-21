@@ -10,7 +10,7 @@ long rpl_fts_children(long *param_1,uint param_2)
   ulong uVar6;
   undefined8 uVar7;
   
-  puVar4 = (undefined4 *)func_0x001019c0();
+  puVar4 = (undefined4 *)func_0x001019a0();
   if ((param_2 & 0xffffefff) != 0) {
     *puVar4 = 0x16;
     return 0;
@@ -33,7 +33,7 @@ long rpl_fts_children(long *param_1,uint param_2)
       if (((*(long *)(lVar5 + 0x58) == 0) && (**(char **)(lVar5 + 0x30) != '/')) &&
          ((*(uint *)(param_1 + 9) & 4) == 0)) {
         uVar2 = diropen_isra_6((ulong)*(uint *)((long)param_1 + 0x2c),(ulong)*(uint *)(param_1 + 9),
-                               &UNK_0010c4a2);
+                               &UNK_0010b4af);
         uVar6 = (ulong)uVar2;
         if ((int)uVar2 < 0) {
           param_1[1] = 0;
@@ -43,14 +43,14 @@ long rpl_fts_children(long *param_1,uint param_2)
           lVar5 = fts_build(param_1,uVar7);
           param_1[1] = lVar5;
           if ((*(byte *)((long)param_1 + 0x49) & 2) == 0) {
-            iVar3 = func_0x00101ca0(uVar6);
+            iVar3 = func_0x00101c70(uVar6);
             if (iVar3 != 0) {
               uVar1 = *puVar4;
-              func_0x00101b70(uVar6);
+              func_0x00101b50(uVar6);
               *puVar4 = uVar1;
               return 0;
             }
-            func_0x00101b70(uVar6);
+            func_0x00101b50(uVar6);
           }
           else {
             cwd_advance_fd(param_1,uVar6,1);

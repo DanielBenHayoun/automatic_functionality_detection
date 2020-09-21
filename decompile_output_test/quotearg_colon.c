@@ -29,12 +29,12 @@ void quotearg_colon(undefined8 param_1)
     *(uint *)(puVar3 + (ulong)(bVar2 >> 5) * 4 + -0x40) =
          (~(uVar1 >> (bVar2 & 0x1f)) & 1) << (bVar2 & 0x1f) ^ uVar1;
     uVar4 = 0;
-    *(undefined8 *)(puVar3 + -0x50) = 0x10a2de;
+    *(undefined8 *)(puVar3 + -0x50) = 0x1039be;
     quotearg_n_options(SUB168(default_quoting_options._32_16_,0),0,param_1,0xffffffffffffffff);
     bVar2 = (byte)(*(ulong *)(puVar3 + -0x10) ^ *(ulong *)(in_FS_OFFSET + 0x28));
     if ((*(ulong *)(puVar3 + -0x10) ^ *(ulong *)(in_FS_OFFSET + 0x28)) == 0) break;
-    *(undefined8 *)(puVar3 + -0x50) = 0x10a2f8;
-    func_0x001021f0();
+    *(undefined8 *)(puVar3 + -0x50) = 0x1039d8;
+    func_0x001012b0();
     puVar3 = puVar3 + -0x48;
     param_1 = uVar4;
   }

@@ -10,7 +10,7 @@ ulong restore_initial_cwd(long param_1)
   uVar3 = (ulong)uVar2;
   if (uVar2 == 0) {
     if ((*(uint *)(param_1 + 0x48) & 0x200) == 0) {
-      iVar1 = func_0x00101ca0((ulong)*(uint *)(param_1 + 0x28));
+      iVar1 = func_0x00101c70((ulong)*(uint *)(param_1 + 0x28));
       uVar3 = (ulong)(iVar1 != 0);
     }
     else {

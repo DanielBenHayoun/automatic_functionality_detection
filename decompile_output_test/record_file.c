@@ -1,6 +1,6 @@
 
-/* WARNING: Possible PIC construction at 0x00107467: Changing call to branch */
-/* WARNING: Removing unreachable block (ram,0x0010746c) */
+/* WARNING: Possible PIC construction at 0x001040f7: Changing call to branch */
+/* WARNING: Removing unreachable block (ram,0x001040fc) */
 
 undefined8 * record_file(ulong param_1,undefined8 param_2,undefined8 *param_3)
 
@@ -27,7 +27,7 @@ undefined8 * record_file(ulong param_1,undefined8 param_2,undefined8 *param_3)
   if (puVar3 != (undefined8 *)0x0) {
     if (puVar1 != puVar3) {
                     /* WARNING: Treating indirect jump as call */
-      uVar2 = (*(code *)PTR_free_00313d30)(*puVar1);
+      uVar2 = (*(code *)PTR_free_00309e40)(*puVar1);
       return (undefined8 *)uVar2;
     }
     return puVar3;
@@ -42,7 +42,7 @@ undefined8 * record_file(ulong param_1,undefined8 param_2,undefined8 *param_3)
   if (lVar7 == *(long *)(in_FS_OFFSET + 0x28)) {
     return (undefined8 *)uVar4;
   }
-  func_0x001021f0();
+  func_0x00101590();
   if (param_1 < 10) {
     param_1 = 10;
   }
@@ -53,7 +53,7 @@ undefined8 * record_file(ulong param_1,undefined8 param_2,undefined8 *param_3)
     }
     uVar4 = param_1 % 3;
     if (param_1 < 10) {
-code_r0x00106150:
+code_r0x00102de0:
       if (uVar4 != 0) {
         return (undefined8 *)param_1;
       }
@@ -67,7 +67,7 @@ code_r0x00106150:
           uVar5 = uVar5 + 2;
           uVar4 = param_1 % uVar5;
           uVar6 = uVar6 + lVar7;
-          if (param_1 <= uVar6) goto code_r0x00106150;
+          if (param_1 <= uVar6) goto code_r0x00102de0;
           lVar7 = lVar7 + 8;
         } while (uVar4 != 0);
       }

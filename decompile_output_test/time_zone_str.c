@@ -10,7 +10,7 @@ long time_zone_str(int param_1,long param_2)
   uint uVar6;
   
   uVar3 = param_1 / 0xe10 >> 0x1f;
-  iVar4 = func_0x00102b50(param_2,1,0xffffffffffffffff,&UNK_00112ffc,
+  iVar4 = func_0x00102b40(param_2,1,0xffffffffffffffff,&UNK_001100a6,
                           (ulong)((param_1 >> 0x1f & 2U) + 0x2b),
                           (ulong)((uVar3 ^ param_1 / 0xe10) - uVar3));
   uVar3 = param_1 % 0xe10;

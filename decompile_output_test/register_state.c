@@ -14,7 +14,7 @@ undefined8 register_state(long *param_1,ulong *param_2,ulong param_3)
   *param_2 = param_3;
   param_2[5] = 0;
   param_2[4] = uVar6;
-  uVar3 = func_0x00101da0(uVar6 * 8);
+  uVar3 = func_0x00101ac0(uVar6 * 8);
   param_2[6] = uVar3;
   if (uVar3 == 0) {
     return 0xc;
@@ -34,7 +34,7 @@ undefined8 register_state(long *param_1,ulong *param_2,ulong param_3)
   lVar4 = plVar1[2];
   lVar7 = lVar5 + 1;
   if (plVar1[1] == lVar5 || plVar1[1] < lVar5) {
-    lVar4 = func_0x00101e00(lVar4,lVar7 * 0x10);
+    lVar4 = func_0x00101b30(lVar4,lVar7 * 0x10);
     if (lVar4 == 0) {
       return 0xc;
     }

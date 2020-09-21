@@ -45,17 +45,17 @@ ulong check_dst_limits_calc_pos
         if (((uVar10 & 1) != 0) && (*plVar11 == param_3)) {
           return 0xffffffff;
         }
-code_r0x00107da6:
+code_r0x00105af6:
         lVar9 = lVar9 + 1;
-        if (*(long *)(lVar2 + 8) == lVar9 || *(long *)(lVar2 + 8) < lVar9) goto code_r0x00107ed5;
+        if (*(long *)(lVar2 + 8) == lVar9 || *(long *)(lVar2 + 8) < lVar9) goto code_r0x00105c25;
       }
       if (cVar3 == '\t') {
         if (((uVar10 & 2) != 0) && (*plVar11 == param_3)) {
           return 0;
         }
-        goto code_r0x00107da6;
+        goto code_r0x00105af6;
       }
-      if ((cVar3 != '\x04') || (param_6 == -1)) goto code_r0x00107da6;
+      if ((cVar3 != '\x04') || (param_6 == -1)) goto code_r0x00105af6;
       plVar11 = (long *)(param_6 * 0x28 + *(long *)(param_1 + 0xd8));
       do {
         if ((*plVar11 == lVar5) &&
@@ -81,7 +81,7 @@ code_r0x00107da6:
       lVar9 = lVar9 + 1;
     } while (*(long *)(lVar2 + 8) != lVar9 && lVar9 <= *(long *)(lVar2 + 8));
   }
-code_r0x00107ed5:
+code_r0x00105c25:
   return (ulong)(uint)((int)uVar10 >> 1);
 }
 

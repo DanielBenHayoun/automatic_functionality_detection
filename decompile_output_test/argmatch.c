@@ -11,7 +11,7 @@ long argmatch(undefined8 param_1,long *param_2,long param_3,long param_4)
   long lVar7;
   long lStack88;
   
-  lVar4 = func_0x00102840();
+  lVar4 = func_0x00101820();
   lVar5 = *param_2;
   lStack88 = -1;
   lVar2 = lStack88;
@@ -19,12 +19,12 @@ long argmatch(undefined8 param_1,long *param_2,long param_3,long param_4)
     bVar1 = false;
     lVar2 = 0;
     lVar7 = param_3;
-code_r0x00103d87:
+code_r0x00102e87:
     do {
       lVar6 = lVar2;
-      iVar3 = func_0x00102790(lVar5,param_1,lVar4);
+      iVar3 = func_0x001017a0(lVar5,param_1,lVar4);
       if (iVar3 == 0) {
-        lVar5 = func_0x00102840(lVar5);
+        lVar5 = func_0x00101820(lVar5);
         if (lVar5 == lVar4) {
           return lVar6;
         }
@@ -34,13 +34,13 @@ code_r0x00103d87:
           lVar2 = lVar6 + 1;
           lStack88 = lVar6;
           if (lVar5 == 0) break;
-          goto code_r0x00103d87;
+          goto code_r0x00102e87;
         }
         if (param_3 == 0) {
           bVar1 = true;
         }
         else {
-          iVar3 = func_0x00102910(lStack88 * param_4 + param_3,lVar7,param_4);
+          iVar3 = func_0x00101900(lStack88 * param_4 + param_3,lVar7,param_4);
           if (iVar3 != 0) {
             bVar1 = true;
           }

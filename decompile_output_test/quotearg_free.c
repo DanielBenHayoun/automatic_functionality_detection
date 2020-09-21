@@ -14,16 +14,16 @@ void quotearg_free(void)
     do {
       uVar2 = *puVar4;
       puVar4 = puVar4 + 2;
-      func_0x00102070(uVar2);
+      func_0x001011e0(uVar2);
     } while (puVar4 != puVar1);
   }
   if (*(undefined1 **)(puVar3 + 8) != slot0) {
-    func_0x00102070();
+    func_0x001011e0();
     slotvec0._0_8_ = 0x100;
     slotvec0._8_8_ = slot0;
   }
   if (puVar3 != slotvec0) {
-    func_0x00102070(puVar3);
+    func_0x001011e0(puVar3);
     slotvec = slotvec0;
   }
   nslots = 1;

@@ -11,7 +11,7 @@ long * re_node_set_insert(long *param_1,long param_2)
   if (*param_1 == 0) {
     *param_1 = 1;
     param_1[1] = 1;
-    plVar1 = (long *)func_0x00101da0(8);
+    plVar1 = (long *)func_0x00101ac0(8);
     *(long **)(param_1 + 2) = plVar1;
     if (plVar1 != (long *)0x0) {
       *plVar1 = param_2;
@@ -31,7 +31,7 @@ long * re_node_set_insert(long *param_1,long param_2)
     else {
       if (*param_1 == lVar5) {
         *param_1 = lVar5 * 2;
-        plVar1 = (long *)func_0x00101e00(plVar1,lVar5 << 4);
+        plVar1 = (long *)func_0x00101b30(plVar1,lVar5 << 4);
         if (plVar1 == (long *)0x0) {
           return (long *)0;
         }

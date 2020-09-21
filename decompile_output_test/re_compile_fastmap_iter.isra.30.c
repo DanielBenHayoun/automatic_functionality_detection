@@ -63,7 +63,7 @@ ulong re_compile_fastmap_iter_isra_30
         bVar2 = *(byte *)pplVar17;
         *(undefined *)((long)param_4 + (ulong)bVar2) = 1;
         if (uVar15 != 0) {
-          plVar22 = (long *)func_0x00101f40();
+          plVar22 = (long *)func_0x00101c60();
           *(undefined *)((long)param_4 + (long)*(int *)(*plVar22 + (ulong)bVar2 * 4)) = 1;
         }
         if (((*(byte *)((long)param_1 + 0x1a) & 0x40) != 0) &&
@@ -92,9 +92,9 @@ ulong re_compile_fastmap_iter_isra_30
           pplVar17 = (long **)&bStack328;
           puVar8 = (undefined *)rpl_mbrtowc(&uStack340,&bStack328,puVar9 + -(long)&bStack328);
           if (puVar9 + -(long)&bStack328 == puVar8) {
-            uVar6 = func_0x00101ea0((ulong)uStack340);
+            uVar6 = func_0x00101bd0((ulong)uStack340);
             pplVar17 = (long **)(ulong)uVar6;
-            lVar10 = func_0x00101db0(&bStack328,pplVar17,&lStack336);
+            lVar10 = func_0x00101ad0(&bStack328,pplVar17,&lStack336);
             if (lVar10 != -1) {
               *(undefined *)((long)param_4 + (ulong)bStack328) = 1;
             }
@@ -113,7 +113,7 @@ ulong re_compile_fastmap_iter_isra_30
             do {
               if ((((ulong)pplVar20 >> (uVar23 & 0x1f) & 1) != 0) &&
                  (*(undefined *)((long)plVar22 + uVar23) = 1, uVar15 != 0)) {
-                plVar11 = (long *)func_0x00101f40();
+                plVar11 = (long *)func_0x00101c60();
                 *(undefined *)((long)param_4 + (long)*(int *)(*plVar11 + (lVar10 + uVar23) * 4)) = 1
                 ;
               }
@@ -128,10 +128,10 @@ ulong re_compile_fastmap_iter_isra_30
         }
         else {
           if (bVar2 != 6) {
-            uVar24 = SUB164(_UNK_00117e30,0);
-            uVar25 = SUB164(_UNK_00117e30 >> 0x20,0);
-            uVar26 = SUB164(_UNK_00117e30 >> 0x40,0);
-            uVar27 = SUB164(_UNK_00117e30 >> 0x60,0);
+            uVar24 = SUB164(_UNK_00115770,0);
+            uVar25 = SUB164(_UNK_00115770 >> 0x20,0);
+            uVar26 = SUB164(_UNK_00115770 >> 0x40,0);
+            uVar27 = SUB164(_UNK_00115770 >> 0x60,0);
             pplVar20 = pplStack424;
             if ((bVar2 & 0xfd) == 5) {
               *(undefined4 *)param_4 = uVar24;
@@ -201,7 +201,7 @@ ulong re_compile_fastmap_iter_isra_30
               if (bVar2 != 2) break;
             }
             else {
-              if (bVar2 != 2) goto code_r0x0010da17;
+              if (bVar2 != 2) goto code_r0x0010b767;
               *(undefined4 *)param_4 = uVar24;
               *(undefined4 *)((long)param_4 + 4) = uVar25;
               *(undefined4 *)(param_4 + 1) = uVar26;
@@ -279,25 +279,25 @@ ulong re_compile_fastmap_iter_isra_30
                 while( true ) {
                   lStack336 = 0;
                   pplVar17 = (long **)(ulong)*(uint *)(*plVar22 + lVar10 * 4);
-                  lVar19 = func_0x00101db0(&bStack328,pplVar17,&lStack336);
+                  lVar19 = func_0x00101ad0(&bStack328,pplVar17,&lStack336);
                   if (lVar19 != -1) {
                     uVar23 = (ulong)bStack328;
                     *(undefined *)((long)param_4 + uVar23) = 1;
                     if (uVar15 != 0) {
-                      plVar11 = (long *)func_0x00101f40();
+                      plVar11 = (long *)func_0x00101c60();
                       *(undefined *)((long)param_4 + (long)*(int *)(*plVar11 + uVar23 * 4)) = 1;
                     }
                   }
                   if (((*(byte *)((long)param_1 + 0x1a) & 0x40) != 0) &&
                      (1 < *(int *)((long)pplVar4 + 0xb4))) break;
-code_r0x0010dbdf:
+code_r0x0010b92f:
                   lVar10 = lVar10 + 1;
-                  if (plVar22[5] <= lVar10) goto code_r0x0010da17;
+                  if (plVar22[5] <= lVar10) goto code_r0x0010b767;
                 }
-                uVar6 = func_0x00101ea0((ulong)*(uint *)(*plVar22 + lVar10 * 4));
+                uVar6 = func_0x00101bd0((ulong)*(uint *)(*plVar22 + lVar10 * 4));
                 pplVar17 = (long **)(ulong)uVar6;
-                lVar19 = func_0x00101db0(&bStack328,pplVar17,&lStack336);
-                if (lVar19 == -1) goto code_r0x0010dbdf;
+                lVar19 = func_0x00101ad0(&bStack328,pplVar17,&lStack336);
+                if (lVar19 == -1) goto code_r0x0010b92f;
                 lVar10 = lVar10 + 1;
                 *(undefined *)((long)param_4 + (ulong)bStack328) = 1;
               } while (lVar10 < plVar22[5]);
@@ -318,7 +318,7 @@ code_r0x0010dbdf:
           }
         }
       }
-code_r0x0010da17:
+code_r0x0010b767:
       pplStack424 = (long **)((long)pplStack424 + 1);
       pplVar20 = param_2;
     } while ((long)pplStack424 < (long)*param_2);
@@ -326,7 +326,7 @@ code_r0x0010da17:
   if (lStack64 == *(long *)(in_FS_OFFSET + 0x28)) {
     return 0;
   }
-  func_0x00101c20();
+  func_0x00101990();
   pplVar20 = pplVar20 + extraout_RDX * 2;
   cVar21 = *(char *)(pplVar20 + 1);
   if (cVar21 == '\a') {
@@ -416,21 +416,21 @@ code_r0x0010da17:
               puVar12 = (uint *)0x0;
               do {
                 puVar12 = (uint *)((long)puVar12 + 1);
-                if (puVar12 == puVar13) goto code_r0x0010df27;
+                if (puVar12 == puVar13) goto code_r0x0010bc77;
               } while (uVar15 != (*ppuVar5)[(long)puVar12]);
             }
-code_r0x0010df62:
+code_r0x0010bcb2:
             if ((*(byte *)(ppuVar5 + 4) & 1) != 0) {
               return 0;
             }
             return uVar23;
           }
-code_r0x0010df27:
+code_r0x0010bc77:
           if (0 < (long)ppuVar5[9]) {
             lVar10 = 0;
             do {
-              iVar7 = func_0x00101bc0((ulong)uVar15,*(undefined8 *)(ppuVar5[3] + lVar10 * 2));
-              if (iVar7 != 0) goto code_r0x0010df62;
+              iVar7 = func_0x00101930((ulong)uVar15,*(undefined8 *)(ppuVar5[3] + lVar10 * 2));
+              if (iVar7 != 0) goto code_r0x0010bcb2;
               lVar10 = lVar10 + 1;
             } while (lVar10 < (long)ppuVar5[9]);
             puVar18 = ppuVar5[8];
@@ -439,7 +439,7 @@ code_r0x0010df27:
             puVar13 = (uint *)0x0;
             do {
               if (((int)ppuVar5[1][(long)puVar13] <= (int)uVar15) &&
-                 ((int)uVar15 <= (int)ppuVar5[2][(long)puVar13])) goto code_r0x0010df62;
+                 ((int)uVar15 <= (int)ppuVar5[2][(long)puVar13])) goto code_r0x0010bcb2;
               puVar13 = (uint *)((long)puVar13 + 1);
             } while (puVar13 != puVar18);
           }

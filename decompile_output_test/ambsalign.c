@@ -13,9 +13,9 @@ long ambsalign(undefined8 param_1,ulong *param_2,uint param_3,uint param_4)
   lVar5 = 0;
   while( true ) {
     uVar1 = uVar4 + 1;
-    lVar3 = func_0x00102450(lVar5,uVar1);
+    lVar3 = func_0x001036e0(lVar5,uVar1);
     if (lVar3 == 0) {
-      func_0x00102070(lVar5);
+      func_0x00103880(lVar5);
       return 0;
     }
     *param_2 = uVar2;
@@ -26,7 +26,7 @@ long ambsalign(undefined8 param_1,ulong *param_2,uint param_3,uint param_4)
       return lVar3;
     }
   }
-  func_0x00102070(lVar3);
+  func_0x00103880(lVar3);
   return 0;
 }
 

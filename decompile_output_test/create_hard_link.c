@@ -16,8 +16,8 @@ create_hard_link(undefined8 param_1,undefined8 param_2,byte param_3,byte param_4
   if (0 < (int)uVar1) {
     uVar2 = quotearg_n_style(1,4,param_1,uStack48);
     uVar3 = quotearg_n_style(0,4,param_2);
-    uVar4 = func_0x001028e0(0,&UNK_00114780,5);
-    func_0x00102cb0(0,(ulong)uVar1,uVar4,uVar3,uVar2);
+    uVar4 = func_0x00102730(0,&UNK_00115e78,5);
+    func_0x00102b10(0,(ulong)uVar1,uVar4,uVar3,uVar2);
     return ZEXT816(extraout_RDX_00) << 0x40;
   }
   param_4 = (byte)((ulong)uVar1 >> 0x18) >> 7 & param_4;
@@ -25,8 +25,8 @@ create_hard_link(undefined8 param_1,undefined8 param_2,byte param_3,byte param_4
     return CONCAT88(0xffffffffffffffff,1);
   }
   uVar2 = quotearg_style(4,param_2);
-  uVar3 = func_0x001028e0(0,&UNK_00114d80,5);
-  func_0x00102c60(1,uVar3,uVar2);
+  uVar3 = func_0x00102730(0,&UNK_00115a9b,5);
+  func_0x00102ab0(1,uVar3,uVar2);
   return CONCAT88(extraout_RDX,(ulong)param_4);
 }
 

@@ -37,7 +37,7 @@ void version_etc(void)
     alStack168[lVar5] = lVar1;
   } while ((lVar1 != 0) && (lVar5 = lVar5 + 1, plVar3 = plVar4, lVar5 != 10));
   while (version_etc_arn(), lStack80 != *(long *)(in_FS_OFFSET + 0x28)) {
-    func_0x00102850();
+    func_0x001012b0();
   }
   return;
 }

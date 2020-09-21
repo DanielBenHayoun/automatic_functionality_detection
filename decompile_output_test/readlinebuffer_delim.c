@@ -27,7 +27,7 @@ long * readlinebuffer_delim(long *param_1,byte *param_2,byte param_3)
         bVar4 = *pbVar1;
       }
       else {
-        uVar3 = func_0x00101480(param_2);
+        uVar3 = func_0x00101750(param_2);
         if (uVar3 == 0xffffffff) {
           if (pbVar7 == pbVar5) {
             return (long *)0;
@@ -37,7 +37,7 @@ long * readlinebuffer_delim(long *param_1,byte *param_2,byte param_3)
           }
           uVar3 = uVar8;
           bVar4 = param_3;
-          if (pbVar5[-1] == param_3) goto code_r0x00102ae6;
+          if (pbVar5[-1] == param_3) goto code_r0x00103586;
         }
         else {
           bVar4 = (byte)uVar3;
@@ -51,13 +51,13 @@ long * readlinebuffer_delim(long *param_1,byte *param_2,byte param_3)
       pbVar6 = pbVar7 + *param_1;
       *pbVar1 = bVar4;
       pbVar5 = pbVar1 + 1;
-      if (uVar3 == uVar8) goto code_r0x00102ae6;
+      if (uVar3 == uVar8) goto code_r0x00103586;
     }
     pbVar1 = pbVar5 + 1;
     *pbVar5 = bVar4;
     pbVar5 = pbVar1;
   } while (uVar3 != uVar8);
-code_r0x00102ae6:
+code_r0x00103586:
   *(byte **)(param_1 + 1) = pbVar5 + -(long)pbVar7;
   return param_1;
 }

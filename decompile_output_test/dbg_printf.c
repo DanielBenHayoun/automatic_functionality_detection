@@ -46,7 +46,7 @@ dbg_printf(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 p
   uStack160 = param_12;
   uStack152 = param_13;
   uStack144 = param_14;
-  func_0x00102af0(&UNK_0011300d,1,6,stderr);
+  func_0x00102ae0(&UNK_001100b7,1,6,stderr);
   puStack208 = &stack0x00000008;
   bVar1 = (byte)stderr;
   uStack216 = 8;
@@ -56,8 +56,8 @@ dbg_printf(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 p
   if (lStack192 == *(long *)(in_FS_OFFSET + 0x28)) {
     return 0;
   }
-  func_0x00102850();
-  func_0x00102b00(stderr,1,&UNK_00113014 + (bVar1 ^ 1),param_9,extraout_RDX);
+  func_0x00102830();
+  func_0x00102af0(stderr,1,&UNK_001100be + (bVar1 ^ 1),param_9,extraout_RDX);
   return 1;
 }
 

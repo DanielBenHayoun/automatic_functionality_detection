@@ -7,7 +7,7 @@ ulong revert_tz_part_1(long param_1)
   long lVar3;
   undefined4 uVar4;
   
-  puVar2 = (undefined4 *)func_0x00102780();
+  puVar2 = (undefined4 *)func_0x00101880();
   uVar4 = *puVar2;
   lVar3 = param_1 + 9;
   if (*(char *)(param_1 + 8) == '\0') {
@@ -15,7 +15,7 @@ ulong revert_tz_part_1(long param_1)
   }
   iVar1 = setenv_TZ(lVar3);
   if (iVar1 == 0) {
-    func_0x00102980();
+    func_0x00101a80();
   }
   else {
     uVar4 = *puVar2;

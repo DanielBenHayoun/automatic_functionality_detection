@@ -19,7 +19,7 @@ undefined8 re_node_set_merge(long *param_1,long param_2)
     if (*param_1 < lVar5 + lVar11 * 2) {
       lVar11 = lVar11 + *param_1;
       lVar5 = lVar11 * 0x10;
-      lVar5 = func_0x00101e00(param_1[2],lVar5,lVar5);
+      lVar5 = func_0x00101b30(param_1[2],lVar5,lVar5);
       if (lVar5 == 0) {
         return 0xc;
       }
@@ -30,7 +30,7 @@ undefined8 re_node_set_merge(long *param_1,long param_2)
     }
     if (lVar5 == 0) {
       param_1[1] = lVar11;
-      func_0x00101d70(param_1[2],*(undefined8 *)(param_2 + 0x10),*(long *)(param_2 + 8) * 8);
+      func_0x00101a90(param_1[2],*(undefined8 *)(param_2 + 0x10),*(long *)(param_2 + 8) * 8);
     }
     else {
       lVar9 = lVar5 + lVar11 * 2;
@@ -63,7 +63,7 @@ undefined8 re_node_set_merge(long *param_1,long param_2)
       }
       if (-1 < (long)uVar7) {
         lVar9 = lVar9 - (uVar7 + 1);
-        func_0x00101d70(param_1[2] + lVar9 * 8,*(undefined8 *)(param_2 + 0x10),(uVar7 + 1) * 8);
+        func_0x00101a90(param_1[2] + lVar9 * 8,*(undefined8 *)(param_2 + 0x10),(uVar7 + 1) * 8);
       }
       lVar5 = param_1[1];
       lVar11 = lVar5 + -1 + *(long *)(param_2 + 8) * 2;
@@ -81,7 +81,7 @@ undefined8 re_node_set_merge(long *param_1,long param_2)
             lVar6 = lVar6 + -1;
             *plVar1 = lVar3;
             if (lVar6 < 0) {
-              func_0x00101d70(lVar2,lVar2 + lVar9 * 8,lVar8 << 3);
+              func_0x00101a90(lVar2,lVar2 + lVar9 * 8,lVar8 << 3);
               return 0;
             }
           }

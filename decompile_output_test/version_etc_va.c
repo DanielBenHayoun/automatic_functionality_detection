@@ -17,7 +17,7 @@ void version_etc_va(void)
   lStack16 = *(long *)(in_FS_OFFSET + 0x28);
   do {
     uVar1 = *in_R8;
-    if (0x2f < uVar1) goto code_r0x0010cc8a;
+    if (0x2f < uVar1) goto code_r0x0010411a;
     plVar5 = (long *)((ulong)uVar1 + *(long *)(in_R8 + 4));
     *in_R8 = uVar1 + 8;
     while ((lVar2 = *plVar5, *(long *)(puVar3 + lVar4 * 8) = lVar2, lVar2 == 0 ||
@@ -26,8 +26,8 @@ void version_etc_va(void)
       if (lStack16 == *(long *)(in_FS_OFFSET + 0x28)) {
         return;
       }
-      func_0x00102850();
-code_r0x0010cc8a:
+      func_0x001012b0();
+code_r0x0010411a:
       plVar5 = *(long **)(in_R8 + 2);
       *(long **)(in_R8 + 2) = plVar5 + 1;
     }

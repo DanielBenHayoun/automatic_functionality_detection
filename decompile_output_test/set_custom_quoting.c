@@ -17,12 +17,12 @@ void set_custom_quoting(undefined1 *param_1,long param_2,long param_3,undefined8
     *(long *)((undefined4 *)param_1 + 0xc) = param_3;
     return;
   }
-  func_0x001020a0();
+  func_0x001011f0();
   if ((uint *)param_5 == (uint *)0x0) {
     param_5 = default_quoting_options;
   }
-  puVar3 = &UNK_00109ec2;
-  puVar2 = (undefined4 *)func_0x001020b0();
+  puVar3 = &UNK_001035a2;
+  puVar2 = (undefined4 *)func_0x00101200();
   uVar1 = *puVar2;
   quotearg_buffer_restyled
             (param_1,param_2,extraout_RDX,param_4,(ulong)*(uint *)param_5,

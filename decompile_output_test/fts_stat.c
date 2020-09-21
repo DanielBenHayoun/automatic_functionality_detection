@@ -14,12 +14,12 @@ ulong fts_stat(long param_1,long param_2,char param_3)
   lVar1 = param_2 + 0x78;
   if ((((*(long *)(param_2 + 0x58) == 0) && ((*(uint *)(param_1 + 0x48) & 1) != 0)) ||
       ((*(uint *)(param_1 + 0x48) & 2) != 0)) || (param_3 != '\0')) {
-    iVar2 = func_0x00101c20(1,*(undefined8 *)(param_2 + 0x30),lVar1);
-    if (iVar2 == 0) goto code_r0x00106b8b;
-    piVar4 = (int *)func_0x001019c0();
+    iVar2 = func_0x00101c00(1,*(undefined8 *)(param_2 + 0x30),lVar1);
+    if (iVar2 == 0) goto code_r0x00106aeb;
+    piVar4 = (int *)func_0x001019a0();
     iVar2 = *piVar4;
     if (iVar2 == 2) {
-      iVar2 = func_0x00101ab0(1,*(undefined8 *)(param_2 + 0x30),lVar1);
+      iVar2 = func_0x00101a90(1,*(undefined8 *)(param_2 + 0x30),lVar1);
       if (iVar2 == 0) {
         *piVar4 = 0;
         return 0xd;
@@ -28,10 +28,10 @@ ulong fts_stat(long param_1,long param_2,char param_3)
     }
   }
   else {
-    iVar2 = func_0x00101b20(1,(ulong)*(uint *)(param_1 + 0x2c),*(undefined8 *)(param_2 + 0x30),lVar1
+    iVar2 = func_0x00101ae0(1,(ulong)*(uint *)(param_1 + 0x2c),*(undefined8 *)(param_2 + 0x30),lVar1
                             ,0x100);
     if (iVar2 == 0) {
-code_r0x00106b8b:
+code_r0x00106aeb:
       uVar3 = *(uint *)(param_2 + 0x90) & 0xf000;
       if (uVar3 != 0x4000) {
         if (uVar3 == 0xa000) {
@@ -58,7 +58,7 @@ code_r0x00106b8b:
       }
       return (ulong)((-(uint)(*(long *)(param_2 + 0x58) == 0) & 0xfffffffc) + 5);
     }
-    piVar4 = (int *)func_0x001019c0();
+    piVar4 = (int *)func_0x001019a0();
     iVar2 = *piVar4;
   }
   *(int *)(param_2 + 0x40) = iVar2;

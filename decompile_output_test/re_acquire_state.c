@@ -40,7 +40,7 @@ ulong * re_acquire_state(undefined4 *param_1,long *param_2,long param_3)
         lVar10 = lVar10 + 1;
       } while (lVar6 != lVar10);
     }
-    lVar6 = func_0x00101d30(0x70,1);
+    lVar6 = func_0x00101a70(0x70,1);
     if (lVar6 != 0) {
       iVar4 = re_node_set_init_copy(lVar6 + 8,param_3);
       if (iVar4 == 0) {
@@ -67,23 +67,23 @@ ulong * re_acquire_state(undefined4 *param_1,long *param_2,long param_3)
                 }
                 else {
                   if ((cVar3 == '\f') || ((*(uint *)(lVar7 + 8) & 0x3ff00) != 0))
-                  goto code_r0x0010ae50;
+                  goto code_r0x00108ba0;
                 }
               }
-code_r0x0010ae0b:
+code_r0x00108b5b:
               plVar5 = plVar5 + 1;
-              if (plVar1 == plVar5) goto code_r0x0010ae5d;
+              if (plVar1 == plVar5) goto code_r0x00108bad;
             }
-            if ((*(uint *)(lVar7 + 8) & 0x3ff00) == 0) goto code_r0x0010ae0b;
+            if ((*(uint *)(lVar7 + 8) & 0x3ff00) == 0) goto code_r0x00108b5b;
             *(byte *)(lVar6 + 0x68) =
                  (byte)(((uint)(byte)(*(byte *)(lVar7 + 10) >> 4 | *(byte *)(lVar6 + 0x68) >> 5) & 1
                         ) << 5) | *(byte *)(lVar6 + 0x68) & 0xdf;
-code_r0x0010ae50:
+code_r0x00108ba0:
             plVar5 = plVar5 + 1;
             *(byte *)(lVar6 + 0x68) = *(byte *)(lVar6 + 0x68) | 0x80;
           } while (plVar1 != plVar5);
         }
-code_r0x0010ae5d:
+code_r0x00108bad:
         iVar4 = register_state(param_2,lVar6,uVar9);
         if (iVar4 == 0) {
           return (ulong *)lVar6;
@@ -91,7 +91,7 @@ code_r0x0010ae5d:
         free_state(lVar6);
       }
       else {
-        func_0x00101b00(lVar6);
+        func_0x00101880(lVar6);
       }
     }
     *param_1 = 0xc;
