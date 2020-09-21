@@ -19,15 +19,15 @@ undefined * set_program_name(byte *param_1)
   if (param_1 == (byte *)0x0) {
     pcVar8 = "A NULL argv[0] was passed through an exec system call.\n";
     iVar6 = 1;
-    func_0x00102520(&UNK_00110080,1,0x37,stderr);
-    func_0x001020a0();
+    func_0x00101410(&UNK_00104b58,1,0x37,stderr);
+    func_0x001011f0();
     pbVar2 = (byte *)locale_charset();
     if ((*pbVar2 & 0xdf) == 0x55) {
       if (((((pbVar2[1] & 0xdf) == 0x54) && ((pbVar2[2] & 0xdf) == 0x46)) && (pbVar2[3] == 0x2d)) &&
          ((pbVar2[4] == 0x38 && (pbVar2[5] == 0)))) {
-        puVar3 = &UNK_001100c4;
+        puVar3 = &UNK_00104b9c;
         if (*pcVar8 != '`') {
-          puVar3 = &UNK_001100c8;
+          puVar3 = &UNK_00104ba0;
         }
         return puVar3;
       }
@@ -37,20 +37,20 @@ undefined * set_program_name(byte *param_1)
          ((pbVar2[2] == 0x31 &&
           ((((pbVar2[3] == 0x38 && (pbVar2[4] == 0x30)) && (pbVar2[5] == 0x33)) &&
            ((pbVar2[6] == 0x30 && (pbVar2[7] == 0)))))))) {
-        puVar3 = &UNK_001100cc;
+        puVar3 = &UNK_00104ba4;
         if (*pcVar8 != '`') {
-          puVar3 = &UNK_001100d0;
+          puVar3 = &UNK_00104ba8;
         }
         return puVar3;
       }
     }
-    puVar3 = &UNK_0010f006;
+    puVar3 = &UNK_00104bab;
     if (iVar6 != 9) {
-      puVar3 = &UNK_00110adf;
+      puVar3 = &UNK_00104bad;
     }
     return puVar3;
   }
-  lVar1 = func_0x00102250(param_1,0x2f);
+  lVar1 = func_0x001012e0(param_1,0x2f);
   if (lVar1 != 0) {
     pbVar2 = (byte *)(lVar1 + 1);
     pbVar5 = pbVar2 + -(long)param_1;
@@ -59,7 +59,7 @@ undefined * set_program_name(byte *param_1)
     if (6 < (long)pbVar5) {
       lVar4 = 7;
       pbVar5 = (byte *)(lVar1 + -6);
-      pbVar7 = &UNK_001100b8;
+      pbVar7 = &UNK_00104b90;
       do {
         if (lVar4 == 0) break;
         lVar4 = lVar4 + -1;
@@ -73,7 +73,7 @@ undefined * set_program_name(byte *param_1)
       if (bVar9) {
         lVar4 = 3;
         pbVar5 = pbVar2;
-        pbVar7 = &UNK_001100c0;
+        pbVar7 = &UNK_00104b98;
         do {
           if (lVar4 == 0) break;
           lVar4 = lVar4 + -1;

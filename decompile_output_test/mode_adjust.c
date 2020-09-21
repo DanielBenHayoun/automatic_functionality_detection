@@ -45,9 +45,9 @@ void mode_adjust(undefined8 param_1,byte param_2,uint param_3,char *param_4,uint
     uVar6 = ~uVar4;
     if (uVar1 == 0) {
       uVar3 = uVar3 & ~(uVar4 | param_3);
-      if (cVar5 == '-') goto code_r0x00103500;
-      if (cVar5 != '=') goto code_r0x001033fd;
-code_r0x001034ab:
+      if (cVar5 == '-') goto code_r0x001028e0;
+      if (cVar5 != '=') goto code_r0x001027dd;
+code_r0x0010288b:
       uVar7 = uVar7 | uVar6 & 0xfff;
       cVar5 = param_4[0x11];
       uVar2 = uVar2 & uVar4 | uVar3;
@@ -55,7 +55,7 @@ code_r0x001034ab:
     else {
       uVar3 = uVar3 & uVar6 & uVar1;
       if (cVar5 == '-') {
-code_r0x00103500:
+code_r0x001028e0:
         uVar7 = uVar7 | uVar3;
         uVar2 = uVar2 & ~uVar3;
       }
@@ -63,9 +63,9 @@ code_r0x00103500:
         if (cVar5 == '=') {
           uVar4 = uVar4 | ~uVar1;
           uVar6 = ~uVar4;
-          goto code_r0x001034ab;
+          goto code_r0x0010288b;
         }
-code_r0x001033fd:
+code_r0x001027dd:
         if (cVar5 == '+') {
           uVar7 = uVar7 | uVar3;
           uVar2 = uVar2 | uVar3;

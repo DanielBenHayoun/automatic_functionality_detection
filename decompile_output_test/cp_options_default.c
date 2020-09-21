@@ -24,7 +24,7 @@ void cp_options_default(undefined4 *param_1)
   param_1[0x11] = 0;
   param_1[0x12] = 0;
   param_1[0x13] = 0;
-  iVar1 = func_0x00102a00(0);
+  iVar1 = func_0x00102840(0);
   param_1[0xd] = 0xffffffff;
   *(bool *)((long)param_1 + 0x1b) = iVar1 == 0;
   *(bool *)((long)param_1 + 0x1a) = iVar1 == 0;

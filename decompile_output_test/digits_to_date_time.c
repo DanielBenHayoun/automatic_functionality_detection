@@ -23,7 +23,7 @@ long digits_to_date_time(long param_1)
       *(long *)(param_1 + 0x48) = in_stack_00000010 / 100;
       lVar1 = (in_stack_00000010 / 100) * 100;
       *(long *)(param_1 + 0x50) = in_stack_00000010 % 100;
-      goto code_r0x00106018;
+      goto code_r0x001040e8;
     }
   }
   else {
@@ -40,7 +40,7 @@ long digits_to_date_time(long param_1)
   }
   *(long *)(param_1 + 0x48) = in_stack_00000010;
   *(undefined8 *)(param_1 + 0x50) = 0;
-code_r0x00106018:
+code_r0x001040e8:
   *(undefined8 *)(param_1 + 0x58) = 0;
   *(undefined8 *)(param_1 + 0x60) = 0;
   *(undefined4 *)(param_1 + 0x1c) = 2;

@@ -110,7 +110,7 @@ undefined8 printf_fetchargs(uint *param_1,ulong *param_2)
         }
         puVar6 = (undefined *)*puVar7;
         if (puVar6 == (undefined *)0x0) {
-          puVar6 = &UNK_00114f14;
+          puVar6 = &UNK_001095c4;
         }
         *(undefined **)(puVar2 + 4) = puVar6;
         break;

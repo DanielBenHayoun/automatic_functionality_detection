@@ -1,13 +1,13 @@
 
-/* WARNING: Possible PIC construction at 0x001065f6: Changing call to branch */
-/* WARNING: Possible PIC construction at 0x00106653: Changing call to branch */
-/* WARNING: Removing unreachable block (ram,0x001065fb) */
-/* WARNING: Removing unreachable block (ram,0x00106680) */
-/* WARNING: Removing unreachable block (ram,0x00106619) */
-/* WARNING: Removing unreachable block (ram,0x001066a9) */
-/* WARNING: Removing unreachable block (ram,0x0010662f) */
-/* WARNING: Removing unreachable block (ram,0x00106638) */
-/* WARNING: Removing unreachable block (ram,0x00106658) */
+/* WARNING: Possible PIC construction at 0x00107fd6: Changing call to branch */
+/* WARNING: Possible PIC construction at 0x00108033: Changing call to branch */
+/* WARNING: Removing unreachable block (ram,0x00107fdb) */
+/* WARNING: Removing unreachable block (ram,0x00108060) */
+/* WARNING: Removing unreachable block (ram,0x00107ff9) */
+/* WARNING: Removing unreachable block (ram,0x00108089) */
+/* WARNING: Removing unreachable block (ram,0x0010800f) */
+/* WARNING: Removing unreachable block (ram,0x00108018) */
+/* WARNING: Removing unreachable block (ram,0x00108038) */
 
 void hash_print_statistics(long **param_1,undefined8 param_2)
 
@@ -34,7 +34,7 @@ void hash_print_statistics(long **param_1,undefined8 param_2)
     plVar4 = plVar4 + 2;
   }
                     /* WARNING: Treating indirect jump as call */
-  (*(code *)PTR___fprintf_chk_00313f90)(param_2,1,&UNK_0010ff7e,param_1[4]);
+  (*(code *)PTR___fprintf_chk_0030cfa0)(param_2,1,&UNK_0010a22b,param_1[4]);
   return;
 }
 

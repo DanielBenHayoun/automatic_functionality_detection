@@ -21,20 +21,20 @@ ulong open_safer(undefined8 param_1,ulong param_2,ulong param_3)
   if ((param_2 & 0x40) != 0) {
     uVar4 = param_3 & 0xffffffff;
   }
-  uVar1 = func_0x00101d00(param_1,param_2,uVar4);
+  uVar1 = func_0x00102140(param_1,param_2,uVar4);
   uVar2 = fd_safer((ulong)uVar1);
   if (lVar3 == *(long *)(in_FS_OFFSET + 0x28)) {
     return uVar2;
   }
-  func_0x00101ad0();
-  pbVar6 = (byte *)func_0x00101cc0();
+  func_0x00101e80();
+  pbVar6 = (byte *)func_0x001020e0();
   uVar2 = 1;
   bVar8 = false;
   bVar10 = pbVar6 == (byte *)0x0;
   if (!bVar10) {
     lVar3 = 2;
     pbVar5 = pbVar6;
-    pbVar7 = &UNK_0010c52c;
+    pbVar7 = &UNK_0010ffa0;
     do {
       if (lVar3 == 0) break;
       lVar3 = lVar3 + -1;
@@ -48,7 +48,7 @@ ulong open_safer(undefined8 param_1,ulong param_2,ulong param_3)
     bVar8 = (!bVar8 && !bVar10) == bVar8;
     if (!bVar8) {
       lVar3 = 6;
-      pbVar5 = &UNK_0010c52e;
+      pbVar5 = &UNK_0010ffa2;
       do {
         if (lVar3 == 0) break;
         lVar3 = lVar3 + -1;

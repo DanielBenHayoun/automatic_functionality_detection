@@ -9,7 +9,7 @@ ulong hex_digits(byte *param_1)
   uVar1 = digest_hex_bytes;
   pbVar3 = param_1;
   if (digest_hex_bytes != 0) {
-    plVar2 = (long *)func_0x00101b90();
+    plVar2 = (long *)func_0x001018e0();
     do {
       if ((*(byte *)(*plVar2 + 1 + (ulong)*pbVar3 * 2) & 0x10) == 0) {
         return 0;

@@ -13,15 +13,15 @@ quotearg_alloc_mem(undefined8 param_1,undefined8 param_2,long *param_3,undefined
   if ((uint *)param_4 == (uint *)0x0) {
     param_4 = default_quoting_options;
   }
-  puVar6 = &UNK_00109f3f;
-  puVar2 = (undefined4 *)func_0x001020b0();
+  puVar6 = &UNK_0010361f;
+  puVar2 = (undefined4 *)func_0x00101200();
   uVar1 = *puVar2;
   uVar5 = (uint)(param_3 == (long *)0x0) | ((uint *)param_4)[1];
   lVar3 = quotearg_buffer_restyled
                     (0,0,param_1,param_2,(ulong)*(uint *)param_4,(ulong)uVar5,(uint *)param_4 + 2,
                      *(undefined8 *)((uint *)param_4 + 10),*(undefined8 *)((uint *)param_4 + 0xc),
                      puVar6);
-  puVar6 = &UNK_00109f96;
+  puVar6 = &UNK_00103676;
   uVar4 = xmalloc(lVar3 + 1);
   quotearg_buffer_restyled
             (uVar4,lVar3 + 1,param_1,param_2,(ulong)*(uint *)param_4,(ulong)uVar5,

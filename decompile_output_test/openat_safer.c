@@ -15,24 +15,24 @@ long openat_safer(undefined8 param_1,undefined8 param_2,ulong param_3,ulong para
   if ((param_3 & 0x40) != 0) {
     puVar6 = (uint *)(param_4 & 0xffffffff);
   }
-  uVar2 = func_0x00101ac0();
+  uVar2 = func_0x00101aa0();
   uVar3 = fd_safer((ulong)uVar2);
   if (lVar4 == *(long *)(in_FS_OFFSET + 0x28)) {
     return uVar3;
   }
-  func_0x00101ad0();
+  func_0x00101ab0();
   uVar2 = openat_safer();
   if ((int)uVar2 < 0) {
     return 0;
   }
-  lVar4 = func_0x00101d30((ulong)uVar2);
+  lVar4 = func_0x00101d10((ulong)uVar2);
   if (lVar4 != 0) {
     *puVar6 = uVar2;
     return lVar4;
   }
-  puVar5 = (undefined4 *)func_0x001019c0();
+  puVar5 = (undefined4 *)func_0x001019a0();
   uVar1 = *puVar5;
-  func_0x00101b70((ulong)uVar2);
+  func_0x00101b50((ulong)uVar2);
   *puVar5 = uVar1;
   return 0;
 }

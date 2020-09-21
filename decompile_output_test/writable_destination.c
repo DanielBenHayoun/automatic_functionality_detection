@@ -12,7 +12,7 @@ ulong writable_destination(undefined8 param_1,undefined8 param_2)
   if (cVar1 != '\0') {
     return 1;
   }
-  uVar2 = func_0x00102d40(param_1,2);
+  uVar2 = func_0x00102ba0(param_1,2);
   return uVar2 & 0xffffffffffffff00 | (ulong)((int)uVar2 == 0);
 }
 

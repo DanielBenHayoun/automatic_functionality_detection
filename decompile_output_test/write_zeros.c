@@ -6,7 +6,7 @@ undefined8 write_zeros(uint param_1,ulong param_2)
   ulong uVar2;
   
   if ((zeros_7570 == (undefined1 *)0x0) &&
-     (zeros_7570 = (undefined1 *)func_0x00102ad0(nz_7571,1), zeros_7570 == (undefined1 *)0x0)) {
+     (zeros_7570 = (undefined1 *)func_0x00102910(nz_7571,1), zeros_7570 == (undefined1 *)0x0)) {
     nz_7571 = 0x400;
     zeros_7570 = fallback_7572;
   }

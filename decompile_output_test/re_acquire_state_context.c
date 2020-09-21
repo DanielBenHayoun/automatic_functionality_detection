@@ -49,7 +49,7 @@ ulong * re_acquire_state_context(undefined4 *param_1,long *param_2,long param_3,
         lVar13 = lVar13 + 1;
       } while (lVar13 != lVar9);
     }
-    lVar9 = func_0x00101d30(0x70,1);
+    lVar9 = func_0x00101a70(0x70,1);
     if (lVar9 != 0) {
       iVar7 = re_node_set_init_copy();
       if (iVar7 == 0) {
@@ -80,28 +80,28 @@ ulong * re_acquire_state_context(undefined4 *param_1,long *param_2,long param_3,
               }
               if ((uVar2 & 0x3ff00) != 0) {
                 if (lVar9 + 8 == *(long *)(lVar9 + 0x50)) {
-                  lVar14 = func_0x00101da0(0x18);
+                  lVar14 = func_0x00101ac0(0x18);
                   *(long *)(lVar9 + 0x50) = lVar14;
-                  if (lVar14 == 0) goto code_r0x0010ac2e;
+                  if (lVar14 == 0) goto code_r0x0010897e;
                   iVar7 = re_node_set_init_copy();
-                  if (iVar7 != 0) goto code_r0x0010ac36;
+                  if (iVar7 != 0) goto code_r0x00108986;
                   *(byte *)(lVar9 + 0x68) = *(byte *)(lVar9 + 0x68) | 0x80;
                   lVar14 = 0;
                 }
                 if ((uVar2 & 0x100) == 0) {
                   if ((uVar11 & 2) != 0) {
                     uVar4 = param_4 & 1;
-                    goto joined_r0x0010ac5a;
+                    goto joined_r0x001089aa;
                   }
-code_r0x0010ac5c:
+code_r0x001089ac:
                   if ((((uVar11 & 0x10) == 0) || ((param_4 & 2) != 0)) &&
-                     (((uVar2 & 0x4000) == 0 || ((param_4 & 4) != 0)))) goto code_r0x0010ac02;
+                     (((uVar2 & 0x4000) == 0 || ((param_4 & 4) != 0)))) goto code_r0x00108952;
                 }
                 else {
                   if ((param_4 & 1) != 0) {
                     uVar4 = uVar11 & 2;
-joined_r0x0010ac5a:
-                    if (uVar4 == 0) goto code_r0x0010ac5c;
+joined_r0x001089aa:
+                    if (uVar4 == 0) goto code_r0x001089ac;
                   }
                 }
                 if (-1 < lVar13 - lVar14) {
@@ -110,7 +110,7 @@ joined_r0x0010ac5a:
                 lVar14 = lVar14 + 1;
               }
             }
-code_r0x0010ac02:
+code_r0x00108952:
             lVar13 = lVar13 + 1;
           } while (lVar13 < *(long *)(param_3 + 8));
         }
@@ -118,14 +118,14 @@ code_r0x0010ac02:
         if (iVar7 == 0) {
           return (ulong *)lVar9;
         }
-code_r0x0010ac2e:
+code_r0x0010897e:
         free_state(lVar9);
       }
       else {
-        func_0x00101b00(lVar9);
+        func_0x00101880(lVar9);
       }
     }
-code_r0x0010ac36:
+code_r0x00108986:
     *param_1 = 0xc;
   }
   return (ulong *)0;

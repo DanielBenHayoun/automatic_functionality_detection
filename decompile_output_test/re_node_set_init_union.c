@@ -20,7 +20,7 @@ undefined8 re_node_set_init_union(long *param_1,long param_2,long param_3)
       lVar1 = *(long *)(param_3 + 8);
       if (0 < lVar1) {
         *param_1 = lVar6 + lVar1;
-        lVar8 = func_0x00101da0((lVar6 + lVar1) * 8);
+        lVar8 = func_0x00101ac0((lVar6 + lVar1) * 8);
         param_1[2] = lVar8;
         if (lVar8 == 0) {
           return 0xc;
@@ -47,8 +47,8 @@ undefined8 re_node_set_init_union(long *param_1,long param_2,long param_3)
           if (lVar1 <= lVar9) {
             lVar1 = lVar10 * 8;
             lVar10 = lVar10 + (lVar6 - lVar11);
-            func_0x00101d70(lVar8 + lVar1,lVar3 + lVar11 * 8,(lVar6 - lVar11) * 8);
-code_r0x0010a9b5:
+            func_0x00101a90(lVar8 + lVar1,lVar3 + lVar11 * 8,(lVar6 - lVar11) * 8);
+code_r0x00108705:
             param_1[1] = lVar10;
             return 0;
           }
@@ -56,13 +56,13 @@ code_r0x0010a9b5:
         if (lVar9 < lVar1) {
           lVar6 = lVar10 * 8;
           lVar10 = lVar10 + (lVar1 - lVar9);
-          func_0x00101d70(lVar8 + lVar6,lVar2 + lVar9 * 8,(lVar1 - lVar9) * 8);
+          func_0x00101a90(lVar8 + lVar6,lVar2 + lVar9 * 8,(lVar1 - lVar9) * 8);
         }
-        goto code_r0x0010a9b5;
+        goto code_r0x00108705;
       }
-      goto code_r0x0010a9a3;
+      goto code_r0x001086f3;
     }
-    if (0 < lVar6) goto code_r0x0010a9a3;
+    if (0 < lVar6) goto code_r0x001086f3;
   }
   if ((param_3 == 0) || (param_2 = param_3, *(long *)(param_3 + 8) < 1)) {
     param_1[2] = 0;
@@ -72,13 +72,13 @@ code_r0x0010a9b5:
     *(undefined4 *)((long)param_1 + 0xc) = 0;
     return 0;
   }
-code_r0x0010a9a3:
+code_r0x001086f3:
   lVar6 = *(long *)(param_2 + 8);
   param_1[1] = lVar6;
   lVar1 = *(long *)(param_2 + 8);
   if (0 < lVar1) {
     *param_1 = lVar6;
-    lVar6 = func_0x00101da0(lVar6 * 8);
+    lVar6 = func_0x00101ac0(lVar6 * 8);
     param_1[2] = lVar6;
     if (lVar6 == 0) {
       param_1[1] = 0;
@@ -86,7 +86,7 @@ code_r0x0010a9a3:
       uVar7 = 0xc;
     }
     else {
-      func_0x00101d70(lVar6,*(undefined8 *)(param_2 + 0x10),lVar1 * 8);
+      func_0x00101a90(lVar6,*(undefined8 *)(param_2 + 0x10),lVar1 * 8);
       uVar7 = 0;
     }
     return uVar7;

@@ -68,26 +68,26 @@ ulong build_charclass_op(long param_1,ulong ***param_2,undefined8 param_3,ulong 
   ppuVar21 = (ulong **)0x1;
   uStack64 = *(ulong *)(in_FS_OFFSET + 0x28);
   ppuStack112 = (ulong **)0x0;
-  ppuStack144 = (ulong **)&UNK_0010d72b;
+  ppuStack144 = (ulong **)&UNK_0010b47b;
   ppuVar9 = param_4;
   pppuStack136 = param_2;
   puStack128 = param_6;
-  ppuStack184 = (ulong **)func_0x00101d30(0x20);
+  ppuStack184 = (ulong **)func_0x00101a70(0x20);
   if (ppuStack184 != (ulong **)0x0) {
     ppuVar21 = (ulong **)0x1;
-    ppuStack144 = (ulong **)&UNK_0010d746;
-    unaff_R15 = (ulong **)func_0x00101d30(0x50);
+    ppuStack144 = (ulong **)&UNK_0010b496;
+    unaff_R15 = (ulong **)func_0x00101a70(0x50);
     if (unaff_R15 == (ulong **)0x0) {
       lVar10 = 0;
-      ppuStack144 = (ulong **)&UNK_0010d90b;
-      func_0x00101b00(ppuStack184);
+      ppuStack144 = (ulong **)&UNK_0010b65b;
+      func_0x00101880(ppuStack184);
       *puStack128 = 0xc;
-      goto code_r0x0010d8a2;
+      goto code_r0x0010b5f2;
     }
     lStack152 = 0;
     param_5 = &ppuStack112;
     *(byte *)(unaff_R15 + 4) = *(byte *)(unaff_R15 + 4) & 0xfe | (byte)uStack168 & 1;
-    ppuStack160 = (ulong **)&UNK_0010d788;
+    ppuStack160 = (ulong **)&UNK_0010b4d8;
     ppuVar21 = ppuStack184;
     uVar6 = build_charclass_isra_29
                       (pppuStack136,ppuStack184,unaff_R15 + 3,unaff_R15 + 9,param_5,param_3);
@@ -95,12 +95,12 @@ ulong build_charclass_op(long param_1,ulong ***param_2,undefined8 param_3,ulong 
     if (uVar6 != 0) {
       pppuStack136 = (ulong ***)((ulong)pppuStack136 & 0xffffffff00000000 | (ulong)uVar6);
       lVar10 = 0;
-      ppuStack144 = (ulong **)&UNK_0010d92e;
-      func_0x00101b00(ppuStack184);
-      ppuStack144 = (ulong **)&UNK_0010d936;
+      ppuStack144 = (ulong **)&UNK_0010b67e;
+      func_0x00101880(ppuStack184);
+      ppuStack144 = (ulong **)&UNK_0010b686;
       free_charset(unaff_R15);
       *puStack128 = pppuStack136._0_4_;
-      goto code_r0x0010d8a2;
+      goto code_r0x0010b5f2;
     }
     cVar25 = *(char *)param_4;
     while (cVar25 != '\0') {
@@ -137,7 +137,7 @@ ulong build_charclass_op(long param_1,ulong ***param_2,undefined8 param_3,ulong 
     param_4 = (ulong **)(param_1 + 0x80);
     ppuVar9 = (ulong **)0x0;
     uStack96 = 3;
-    ppuStack144 = (ulong **)&UNK_0010d843;
+    ppuStack144 = (ulong **)&UNK_0010b593;
     ppuVar21 = param_4;
     pppuStack136 = param_5;
     ppuStack104 = ppuStack184;
@@ -145,14 +145,14 @@ ulong build_charclass_op(long param_1,ulong ***param_2,undefined8 param_3,ulong 
     ppuVar17 = ppuVar9;
     if (lVar10 != 0) {
       if (*(int *)(param_1 + 0xb4) < 2) {
-        ppuStack144 = (ulong **)&UNK_0010d8d8;
+        ppuStack144 = (ulong **)&UNK_0010b628;
         free_charset(unaff_R15);
-        goto code_r0x0010d8a2;
+        goto code_r0x0010b5f2;
       }
       *(byte *)(param_1 + 0xb0) = *(byte *)(param_1 + 0xb0) | 2;
       ppuVar17 = (ulong **)0x0;
       uStack96 = 6;
-      ppuStack144 = (ulong **)&UNK_0010d87f;
+      ppuStack144 = (ulong **)&UNK_0010b5cf;
       ppuVar21 = param_4;
       param_5 = pppuStack136;
       ppuStack104 = unaff_R15;
@@ -160,15 +160,15 @@ ulong build_charclass_op(long param_1,ulong ***param_2,undefined8 param_3,ulong 
       if (ppuVar9 != (ulong **)0x0) {
         param_5 = &ppuStack88;
         uStack80 = 10;
-        ppuStack144 = (ulong **)&UNK_0010d89f;
+        ppuStack144 = (ulong **)&UNK_0010b5ef;
         ppuVar21 = param_4;
         lVar10 = create_token_tree_isra_16(uStack168,param_4,lVar10);
-        goto code_r0x0010d8a2;
+        goto code_r0x0010b5f2;
       }
     }
-    ppuStack144 = (ulong **)&UNK_0010d8e8;
-    func_0x00101b00(ppuStack184);
-    ppuStack144 = (ulong **)&UNK_0010d8f0;
+    ppuStack144 = (ulong **)&UNK_0010b638;
+    func_0x00101880(ppuStack184);
+    ppuStack144 = (ulong **)&UNK_0010b640;
     free_charset(unaff_R15);
     ppuVar9 = ppuVar17;
     unaff_RBX = ppuStack184;
@@ -176,13 +176,13 @@ ulong build_charclass_op(long param_1,ulong ***param_2,undefined8 param_3,ulong 
   ppuStack184 = unaff_RBX;
   lVar10 = 0;
   *puStack128 = 0xc;
-code_r0x0010d8a2:
+code_r0x0010b5f2:
   ppuVar17 = (ulong **)(uStack64 ^ *(ulong *)(in_FS_OFFSET + 0x28));
   if (ppuVar17 == (ulong **)0x0) {
     return lVar10;
   }
-  ppuStack144 = (ulong **)&UNK_0010d94a;
-  func_0x00101c20();
+  ppuStack144 = (ulong **)&UNK_0010b69a;
+  func_0x00101990();
   uVar6 = 0;
   ppuVar3 = (ulong **)*ppuVar17;
   lStack200 = *(long *)(in_FS_OFFSET + 0x28);
@@ -209,7 +209,7 @@ code_r0x0010d8a2:
         bVar5 = *(byte *)ppuVar22;
         *(undefined *)((long)ppuVar9 + (ulong)bVar5) = 1;
         if (uVar6 != 0) {
-          plVar13 = (long *)func_0x00101f40();
+          plVar13 = (long *)func_0x00101c60();
           *(undefined *)((long)ppuVar9 + (long)*(int *)(*plVar13 + (ulong)bVar5 * 4)) = 1;
         }
         if (((*(byte *)((long)ppuVar17 + 0x1a) & 0x40) != 0) &&
@@ -238,9 +238,9 @@ code_r0x0010d8a2:
           ppuVar22 = (ulong **)&bStack464;
           puVar11 = (undefined *)rpl_mbrtowc(&uStack476,&bStack464,puVar12 + -(long)&bStack464);
           if (puVar12 + -(long)&bStack464 == puVar11) {
-            uVar7 = func_0x00101ea0((ulong)uStack476);
+            uVar7 = func_0x00101bd0((ulong)uStack476);
             ppuVar22 = (ulong **)(ulong)uVar7;
-            lVar10 = func_0x00101db0(&bStack464,ppuVar22,&puStack472);
+            lVar10 = func_0x00101ad0(&bStack464,ppuVar22,&puStack472);
             if (lVar10 != -1) {
               *(undefined *)((long)ppuVar9 + (ulong)bStack464) = 1;
             }
@@ -259,7 +259,7 @@ code_r0x0010d8a2:
             do {
               if ((((ulong)ppuVar24 >> (uVar27 & 0x1f) & 1) != 0) &&
                  (*(undefined *)((long)ppuVar26 + uVar27) = 1, uVar6 != 0)) {
-                plVar13 = (long *)func_0x00101f40();
+                plVar13 = (long *)func_0x00101c60();
                 *(undefined *)((long)ppuVar9 + (long)*(int *)(*plVar13 + (lVar10 + uVar27) * 4)) = 1
                 ;
               }
@@ -274,10 +274,10 @@ code_r0x0010d8a2:
         }
         else {
           if (bVar5 != 6) {
-            uVar28 = SUB164(_UNK_00117e30,0);
-            uVar29 = SUB164(_UNK_00117e30 >> 0x20,0);
-            uVar30 = SUB164(_UNK_00117e30 >> 0x40,0);
-            uVar31 = SUB164(_UNK_00117e30 >> 0x60,0);
+            uVar28 = SUB164(_UNK_00115770,0);
+            uVar29 = SUB164(_UNK_00115770 >> 0x20,0);
+            uVar30 = SUB164(_UNK_00115770 >> 0x40,0);
+            uVar31 = SUB164(_UNK_00115770 >> 0x60,0);
             if ((bVar5 & 0xfd) == 5) {
               *(undefined4 *)ppuVar9 = uVar28;
               *(undefined4 *)((long)ppuVar9 + 4) = uVar29;
@@ -346,7 +346,7 @@ code_r0x0010d8a2:
               if (bVar5 != 2) break;
             }
             else {
-              if (bVar5 != 2) goto code_r0x0010da17;
+              if (bVar5 != 2) goto code_r0x0010b767;
               *(undefined4 *)ppuVar9 = uVar28;
               *(undefined4 *)((long)ppuVar9 + 4) = uVar29;
               *(undefined4 *)(ppuVar9 + 1) = uVar30;
@@ -424,25 +424,25 @@ code_r0x0010d8a2:
                 while( true ) {
                   puStack472 = (ulong *)0x0;
                   ppuVar22 = (ulong **)(ulong)*(uint *)(*puVar18 + lVar10 * 4);
-                  lVar16 = func_0x00101db0(&bStack464,ppuVar22,&puStack472);
+                  lVar16 = func_0x00101ad0(&bStack464,ppuVar22,&puStack472);
                   if (lVar16 != -1) {
                     uVar27 = (ulong)bStack464;
                     *(undefined *)((long)ppuVar9 + uVar27) = 1;
                     if (uVar6 != 0) {
-                      plVar13 = (long *)func_0x00101f40();
+                      plVar13 = (long *)func_0x00101c60();
                       *(undefined *)((long)ppuVar9 + (long)*(int *)(*plVar13 + uVar27 * 4)) = 1;
                     }
                   }
                   if (((*(byte *)((long)ppuVar17 + 0x1a) & 0x40) != 0) &&
                      (1 < *(int *)((long)ppuVar3 + 0xb4))) break;
-code_r0x0010dbdf:
+code_r0x0010b92f:
                   lVar10 = lVar10 + 1;
-                  if ((long)puVar18[5] <= lVar10) goto code_r0x0010da17;
+                  if ((long)puVar18[5] <= lVar10) goto code_r0x0010b767;
                 }
-                uVar7 = func_0x00101ea0((ulong)*(uint *)(*puVar18 + lVar10 * 4));
+                uVar7 = func_0x00101bd0((ulong)*(uint *)(*puVar18 + lVar10 * 4));
                 ppuVar22 = (ulong **)(ulong)uVar7;
-                lVar16 = func_0x00101db0(&bStack464,ppuVar22,&puStack472);
-                if (lVar16 == -1) goto code_r0x0010dbdf;
+                lVar16 = func_0x00101ad0(&bStack464,ppuVar22,&puStack472);
+                if (lVar16 == -1) goto code_r0x0010b92f;
                 lVar10 = lVar10 + 1;
                 *(undefined *)((long)ppuVar9 + (ulong)bStack464) = 1;
               } while (lVar10 < (long)puVar18[5]);
@@ -463,7 +463,7 @@ code_r0x0010dbdf:
           }
         }
       }
-code_r0x0010da17:
+code_r0x0010b767:
       ppuVar24 = (ulong **)((long)ppuStack560 + 1);
       ppuStack560 = ppuVar21;
     } while ((long)ppuVar24 < (long)*ppuVar21);
@@ -471,7 +471,7 @@ code_r0x0010da17:
   if (lStack200 == *(long *)(in_FS_OFFSET + 0x28)) {
     return 0;
   }
-  func_0x00101c20();
+  func_0x00101990();
   ppuStack560 = ppuStack560 + extraout_RDX_00 * 2;
   cVar25 = *(char *)(ppuStack560 + 1);
   if (cVar25 == '\a') {
@@ -562,21 +562,21 @@ code_r0x0010da17:
               puVar14 = (uint *)0x0;
               do {
                 puVar14 = (uint *)((long)puVar14 + 1);
-                if (puVar14 == puVar15) goto code_r0x0010df27;
+                if (puVar14 == puVar15) goto code_r0x0010bc77;
               } while (uVar6 != (*ppuVar4)[(long)puVar14]);
             }
-code_r0x0010df62:
+code_r0x0010bcb2:
             if ((*(byte *)(ppuVar4 + 4) & 1) != 0) {
               return 0;
             }
             return uVar27;
           }
-code_r0x0010df27:
+code_r0x0010bc77:
           if (0 < (long)ppuVar4[9]) {
             lVar10 = 0;
             do {
-              iVar8 = func_0x00101bc0((ulong)uVar6,*(undefined8 *)(ppuVar4[3] + lVar10 * 2));
-              if (iVar8 != 0) goto code_r0x0010df62;
+              iVar8 = func_0x00101930((ulong)uVar6,*(undefined8 *)(ppuVar4[3] + lVar10 * 2));
+              if (iVar8 != 0) goto code_r0x0010bcb2;
               lVar10 = lVar10 + 1;
             } while (lVar10 < (long)ppuVar4[9]);
             puVar23 = ppuVar4[8];
@@ -585,7 +585,7 @@ code_r0x0010df27:
             puVar15 = (uint *)0x0;
             do {
               if (((int)ppuVar4[1][(long)puVar15] <= (int)uVar6) &&
-                 ((int)uVar6 <= (int)ppuVar4[2][(long)puVar15])) goto code_r0x0010df62;
+                 ((int)uVar6 <= (int)ppuVar4[2][(long)puVar15])) goto code_r0x0010bcb2;
               puVar15 = (uint *)((long)puVar15 + 1);
             } while (puVar15 != puVar23);
           }

@@ -14,8 +14,8 @@ void quotearg_style_mem(ulong param_1,ulong param_2)
   do {
     *(undefined8 *)(puVar1 + -0x10) = *(undefined8 *)(in_FS_OFFSET + 0x28);
     if ((int)param_1 == 10) {
-      *(undefined8 *)(puVar1 + -0x50) = 0x10a235;
-      func_0x001020a0();
+      *(undefined8 *)(puVar1 + -0x50) = 0x103915;
+      func_0x001011f0();
       param_2 = param_1;
     }
     else {
@@ -27,21 +27,21 @@ void quotearg_style_mem(ulong param_1,ulong param_2)
       *(undefined8 *)(puVar1 + -0x24) = 0;
       *(undefined8 *)(puVar1 + -0x1c) = 0;
       *(undefined4 *)(puVar1 + -0x14) = 0;
-      *(undefined8 *)(puVar1 + -0x50) = 0x10a21b;
+      *(undefined8 *)(puVar1 + -0x50) = 0x1038fb;
       quotearg_n_options();
       if (*(long *)(puVar1 + -0x10) == *(long *)(in_FS_OFFSET + 0x28)) {
         return;
       }
     }
-    *(undefined8 *)(puVar1 + -0x50) = 0x10a23a;
-    func_0x001021f0();
+    *(undefined8 *)(puVar1 + -0x50) = 0x10391a;
+    func_0x001012b0();
     iVar2 = (int)uVar3;
     param_1 = uVar3 & 0xffffffff;
     uVar3 = 0;
     *(undefined8 *)(puVar1 + -0x58) = *(undefined8 *)(in_FS_OFFSET + 0x28);
     if (iVar2 == 10) {
-      *(undefined8 *)(puVar1 + -0x98) = 0x10a1a9;
-      func_0x001020a0(0,param_1,0);
+      *(undefined8 *)(puVar1 + -0x98) = 0x103889;
+      func_0x001011f0(0,param_1,0);
     }
     else {
       *(int *)(puVar1 + -0x90) = iVar2;
@@ -52,15 +52,15 @@ void quotearg_style_mem(ulong param_1,ulong param_2)
       *(undefined8 *)(puVar1 + -0x6c) = 0;
       *(undefined8 *)(puVar1 + -100) = 0;
       *(undefined4 *)(puVar1 + -0x5c) = 0;
-      *(undefined8 *)(puVar1 + -0x98) = 0x10a18f;
+      *(undefined8 *)(puVar1 + -0x98) = 0x10386f;
       quotearg_n_options(0,param_2,0xffffffffffffffff,puVar1 + -0x90);
       param_1 = param_2;
       if (*(long *)(puVar1 + -0x58) == *(long *)(in_FS_OFFSET + 0x28)) {
         return;
       }
     }
-    *(undefined8 *)(puVar1 + -0x98) = 0x10a1ae;
-    func_0x001021f0();
+    *(undefined8 *)(puVar1 + -0x98) = 0x10388e;
+    func_0x001012b0();
     param_2 = extraout_RDX;
     puVar1 = puVar1 + -0x90;
   } while( true );

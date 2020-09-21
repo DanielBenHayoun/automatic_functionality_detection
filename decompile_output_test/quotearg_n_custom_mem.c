@@ -33,22 +33,22 @@ void quotearg_n_custom_mem(undefined8 param_1,undefined *param_2,long param_3,un
     *(int *)((undefined *)register0x00000020 + -0x1c) =
          SUB164(default_quoting_options._32_16_ >> 0x60,0);
     if ((param_2 == (undefined *)0x0) || (param_3 == 0)) {
-      *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x10a45c;
+      *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x103b3c;
       puVar1 = default_quoting_options._48_8_;
-      func_0x001020a0(SUB168(default_quoting_options._32_16_,0));
+      func_0x001011f0(SUB168(default_quoting_options._32_16_,0));
     }
     else {
       *(undefined **)((undefined *)register0x00000020 + -0x20) = param_2;
       *(long *)((undefined *)register0x00000020 + -0x18) = param_3;
-      *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x10a442;
+      *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x103b22;
       quotearg_n_options(SUB168(default_quoting_options._32_16_,0));
       param_2 = param_4;
       if (*(long *)((undefined *)register0x00000020 + -0x10) == *(long *)(in_FS_OFFSET + 0x28)) {
         return;
       }
     }
-    *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x10a461;
-    func_0x001021f0();
+    *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x103b41;
+    func_0x001012b0();
     param_4 = puVar1;
     param_3 = extraout_RDX;
     register0x00000020 = (BADSPACEBASE *)((undefined *)register0x00000020 + -0x48);

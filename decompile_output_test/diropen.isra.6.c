@@ -1,6 +1,6 @@
 
-/* WARNING: Removing unreachable block (ram,0x00109078) */
-/* WARNING: Removing unreachable block (ram,0x0010a518) */
+/* WARNING: Removing unreachable block (ram,0x00108fd8) */
+/* WARNING: Removing unreachable block (ram,0x0010a478) */
 
 ulong diropen_isra_6(undefined8 param_1,uint param_2,undefined8 param_3)
 
@@ -24,19 +24,19 @@ ulong diropen_isra_6(undefined8 param_1,uint param_2,undefined8 param_3)
   if ((param_2 & 0x200) != 0) {
     lVar5 = *(long *)(in_FS_OFFSET + 0x28);
     puVar6 = (uint *)0x0;
-    uVar2 = func_0x00101ac0(param_1,param_3);
+    uVar2 = func_0x00101aa0(param_1,param_3);
     uVar3 = fd_safer((ulong)uVar2);
     if (lVar5 == *(long *)(in_FS_OFFSET + 0x28)) {
       return uVar3;
     }
-    func_0x00101ad0();
+    func_0x00101ab0();
     uVar2 = openat_safer();
     if (-1 < (int)uVar2) {
-      lVar5 = func_0x00101d30((ulong)uVar2);
+      lVar5 = func_0x00101d10((ulong)uVar2);
       if (lVar5 == 0) {
-        puVar4 = (undefined4 *)func_0x001019c0();
+        puVar4 = (undefined4 *)func_0x001019a0();
         uVar1 = *puVar4;
-        func_0x00101b70((ulong)uVar2);
+        func_0x00101b50((ulong)uVar2);
         *puVar4 = uVar1;
         return 0;
       }
@@ -46,20 +46,20 @@ ulong diropen_isra_6(undefined8 param_1,uint param_2,undefined8 param_3)
     return 0;
   }
   lVar5 = *(long *)(in_FS_OFFSET + 0x28);
-  uVar2 = func_0x00101d00(param_3,(ulong)((param_2 & 0x10) << 0xd | 0x90900),0);
+  uVar2 = func_0x00101ce0(param_3,(ulong)((param_2 & 0x10) << 0xd | 0x90900),0);
   uVar3 = fd_safer((ulong)uVar2);
   if (lVar5 == *(long *)(in_FS_OFFSET + 0x28)) {
     return uVar3;
   }
-  func_0x00101ad0();
-  pbVar8 = (byte *)func_0x00101cc0();
+  func_0x00101ab0();
+  pbVar8 = (byte *)func_0x00101c90();
   uVar3 = 1;
   bVar10 = false;
   bVar12 = pbVar8 == (byte *)0x0;
   if (!bVar12) {
     lVar5 = 2;
     pbVar7 = pbVar8;
-    pbVar9 = &UNK_0010c52c;
+    pbVar9 = &UNK_0010c22c;
     do {
       if (lVar5 == 0) break;
       lVar5 = lVar5 + -1;
@@ -73,7 +73,7 @@ ulong diropen_isra_6(undefined8 param_1,uint param_2,undefined8 param_3)
     bVar10 = (!bVar10 && !bVar12) == bVar10;
     if (!bVar10) {
       lVar5 = 6;
-      pbVar7 = &UNK_0010c52e;
+      pbVar7 = &UNK_0010c22e;
       do {
         if (lVar5 == 0) break;
         lVar5 = lVar5 + -1;

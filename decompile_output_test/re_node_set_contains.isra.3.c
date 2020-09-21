@@ -17,14 +17,14 @@ long re_node_set_contains_isra_3(long param_1,long *param_2,long param_3)
       uVar4 = uVar5 + uVar6 >> 1;
       lVar2 = *(long *)(lVar1 + uVar4 * 8);
       while (uVar3 = uVar4, param_3 <= lVar2) {
-        if (uVar3 <= uVar5) goto code_r0x0010970d;
+        if (uVar3 <= uVar5) goto code_r0x0010745d;
         uVar4 = uVar5 + uVar3 >> 1;
         lVar2 = *(long *)(lVar1 + uVar4 * 8);
         uVar6 = uVar3;
       }
       uVar5 = uVar3 + 1;
     }
-code_r0x0010970d:
+code_r0x0010745d:
     if (param_3 == *(long *)(lVar1 + uVar5 * 8)) {
       return uVar5 + 1;
     }

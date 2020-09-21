@@ -11,12 +11,12 @@ ulong set_process_security_ctx
   byte bVar5;
   
   if (*(char *)(param_5 + 0x25) != '\0') {
-    puVar1 = (uint *)func_0x00102770();
+    puVar1 = (uint *)func_0x001025a0();
     if ((*(char *)(param_5 + 0x23) == '\0') || (bVar5 = *(byte *)(param_5 + 0x26), bVar5 != 0)) {
       *puVar1 = 0x5f;
       uVar2 = quotearg_style(4,param_1);
-      uVar3 = func_0x001028e0(0,&UNK_00114810,5);
-      func_0x00102cb0(0,(ulong)*puVar1,uVar3,uVar2);
+      uVar3 = func_0x00102730(0,&UNK_00115f08,5);
+      func_0x00102b10(0,(ulong)*puVar1,uVar3,uVar2);
       bVar5 = *(byte *)(param_5 + 0x26);
     }
     else {
@@ -28,7 +28,7 @@ ulong set_process_security_ctx
   if (bVar5 == 0) {
     return 1;
   }
-  puVar4 = (undefined4 *)func_0x00102770();
+  puVar4 = (undefined4 *)func_0x001025a0();
   *puVar4 = 0x5f;
   return param_4 & 0xffffff00 | (ulong)bVar5;
 }

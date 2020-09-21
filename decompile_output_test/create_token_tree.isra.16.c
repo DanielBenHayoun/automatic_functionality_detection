@@ -12,7 +12,7 @@ long create_token_tree_isra_16
   
   iVar6 = *param_2;
   if (iVar6 == 0xf) {
-    puVar4 = (undefined8 *)func_0x00101da0(0x3c8);
+    puVar4 = (undefined8 *)func_0x00101ac0(0x3c8);
     if (puVar4 == (undefined8 *)0x0) {
       return 0;
     }

@@ -25,7 +25,7 @@ build_charclass_isra_29
   if (!bVar12) {
     lVar5 = 6;
     pbVar8 = param_6;
-    pbVar9 = &UNK_001175f0;
+    pbVar9 = &UNK_00114f3d;
     do {
       if (lVar5 == 0) break;
       lVar5 = lVar5 + -1;
@@ -39,7 +39,7 @@ build_charclass_isra_29
     if (!bVar10) {
       lVar5 = 6;
       pbVar8 = param_6;
-      pbVar9 = &UNK_001175f6;
+      pbVar9 = &UNK_00114f43;
       do {
         if (lVar5 == 0) break;
         lVar5 = lVar5 + -1;
@@ -50,23 +50,23 @@ build_charclass_isra_29
       } while (bVar10);
       uVar6 = *param_4;
       if ((!bVar11 && !bVar10) == bVar11) {
-        param_6 = &UNK_001175ea;
+        param_6 = &UNK_00114f37;
       }
       bVar10 = *param_5 < uVar6;
       bVar12 = *param_5 == uVar6;
       lVar5 = *param_3;
-      goto joined_r0x0010cf22;
+      goto joined_r0x0010ac72;
     }
-    param_6 = &UNK_001175ea;
+    param_6 = &UNK_00114f37;
   }
   uVar6 = *param_4;
   bVar10 = *param_5 < uVar6;
   bVar12 = *param_5 == uVar6;
   lVar5 = *param_3;
-joined_r0x0010cf22:
+joined_r0x0010ac72:
   if (bVar12) {
     uVar6 = uVar6 * 2 + 1;
-    lVar5 = func_0x00101e00(lVar5,uVar6 * 8);
+    lVar5 = func_0x00101b30(lVar5,uVar6 * 8);
     bVar10 = false;
     bVar12 = lVar5 == 0;
     if (bVar12) {
@@ -77,11 +77,11 @@ joined_r0x0010cf22:
     uVar6 = *param_4;
   }
   *param_4 = uVar6 + 1;
-  uVar3 = func_0x00101d10(param_6);
+  uVar3 = func_0x00101a50(param_6);
   *(undefined8 *)(lVar5 + uVar6 * 8) = uVar3;
   lVar5 = 6;
   pbVar8 = param_6;
-  pbVar9 = &UNK_001175fc;
+  pbVar9 = &UNK_00114f49;
   do {
     if (lVar5 == 0) break;
     lVar5 = lVar5 + -1;
@@ -93,7 +93,7 @@ joined_r0x0010cf22:
   bVar11 = false;
   bVar10 = (!bVar10 && !bVar12) == bVar10;
   if (bVar10) {
-    plVar4 = (long *)func_0x00101f50();
+    plVar4 = (long *)func_0x00101c70();
     lVar7 = 0;
     lVar5 = *plVar4;
     if (param_1 == 0) {
@@ -119,7 +119,7 @@ joined_r0x0010cf22:
   else {
     lVar5 = 6;
     pbVar8 = param_6;
-    pbVar9 = &UNK_00117602;
+    pbVar9 = &UNK_00114f4f;
     do {
       if (lVar5 == 0) break;
       lVar5 = lVar5 + -1;
@@ -131,7 +131,7 @@ joined_r0x0010cf22:
     bVar12 = false;
     bVar10 = (!bVar11 && !bVar10) == bVar11;
     if (bVar10) {
-      plVar4 = (long *)func_0x00101f50();
+      plVar4 = (long *)func_0x00101c70();
       lVar7 = 0;
       lVar5 = *plVar4;
       if (param_1 == 0) {
@@ -157,7 +157,7 @@ joined_r0x0010cf22:
     else {
       lVar5 = 6;
       pbVar8 = param_6;
-      pbVar9 = &UNK_001175f6;
+      pbVar9 = &UNK_00114f43;
       do {
         if (lVar5 == 0) break;
         lVar5 = lVar5 + -1;
@@ -169,7 +169,7 @@ joined_r0x0010cf22:
       bVar11 = false;
       bVar10 = (!bVar12 && !bVar10) == bVar12;
       if (bVar10) {
-        plVar4 = (long *)func_0x00101f50();
+        plVar4 = (long *)func_0x00101c70();
         lVar7 = 0;
         lVar5 = *plVar4;
         if (param_1 == 0) {
@@ -195,7 +195,7 @@ joined_r0x0010cf22:
       else {
         lVar5 = 6;
         pbVar8 = param_6;
-        pbVar9 = &UNK_00117608;
+        pbVar9 = &UNK_00114f55;
         do {
           if (lVar5 == 0) break;
           lVar5 = lVar5 + -1;
@@ -207,7 +207,7 @@ joined_r0x0010cf22:
         bVar12 = false;
         bVar10 = (!bVar11 && !bVar10) == bVar11;
         if (bVar10) {
-          plVar4 = (long *)func_0x00101f50();
+          plVar4 = (long *)func_0x00101c70();
           lVar7 = 0;
           lVar5 = *plVar4;
           if (param_1 == 0) {
@@ -234,7 +234,7 @@ joined_r0x0010cf22:
         else {
           lVar5 = 6;
           pbVar8 = param_6;
-          pbVar9 = &UNK_001175ea;
+          pbVar9 = &UNK_00114f37;
           do {
             if (lVar5 == 0) break;
             lVar5 = lVar5 + -1;
@@ -246,7 +246,7 @@ joined_r0x0010cf22:
           bVar11 = false;
           bVar10 = (!bVar12 && !bVar10) == bVar12;
           if (bVar10) {
-            plVar4 = (long *)func_0x00101f50();
+            plVar4 = (long *)func_0x00101c70();
             lVar7 = 0;
             lVar5 = *plVar4;
             if (param_1 == 0) {
@@ -273,7 +273,7 @@ joined_r0x0010cf22:
           else {
             lVar5 = 6;
             pbVar8 = param_6;
-            pbVar9 = &UNK_00117627;
+            pbVar9 = &UNK_00114f74;
             do {
               if (lVar5 == 0) break;
               lVar5 = lVar5 + -1;
@@ -285,7 +285,7 @@ joined_r0x0010cf22:
             bVar12 = false;
             bVar10 = (!bVar11 && !bVar10) == bVar11;
             if (bVar10) {
-              plVar4 = (long *)func_0x00101f50();
+              plVar4 = (long *)func_0x00101c70();
               lVar7 = 0;
               lVar5 = *plVar4;
               if (param_1 == 0) {
@@ -312,7 +312,7 @@ joined_r0x0010cf22:
             else {
               lVar5 = 6;
               pbVar8 = param_6;
-              pbVar9 = &UNK_0011760e;
+              pbVar9 = &UNK_00114f5b;
               do {
                 if (lVar5 == 0) break;
                 lVar5 = lVar5 + -1;
@@ -324,7 +324,7 @@ joined_r0x0010cf22:
               bVar11 = false;
               bVar10 = (!bVar12 && !bVar10) == bVar12;
               if (bVar10) {
-                plVar4 = (long *)func_0x00101f50();
+                plVar4 = (long *)func_0x00101c70();
                 lVar7 = 0;
                 lVar5 = *plVar4;
                 if (param_1 == 0) {
@@ -351,7 +351,7 @@ joined_r0x0010cf22:
               else {
                 lVar5 = 6;
                 pbVar8 = param_6;
-                pbVar9 = &UNK_001175f0;
+                pbVar9 = &UNK_00114f3d;
                 do {
                   if (lVar5 == 0) break;
                   lVar5 = lVar5 + -1;
@@ -363,7 +363,7 @@ joined_r0x0010cf22:
                 bVar12 = false;
                 bVar10 = (!bVar11 && !bVar10) == bVar11;
                 if (bVar10) {
-                  plVar4 = (long *)func_0x00101f50();
+                  plVar4 = (long *)func_0x00101c70();
                   lVar7 = 0;
                   lVar5 = *plVar4;
                   if (param_1 == 0) {
@@ -390,7 +390,7 @@ joined_r0x0010cf22:
                 else {
                   lVar5 = 6;
                   pbVar8 = param_6;
-                  pbVar9 = &UNK_00117614;
+                  pbVar9 = &UNK_00114f61;
                   do {
                     if (lVar5 == 0) break;
                     lVar5 = lVar5 + -1;
@@ -400,7 +400,7 @@ joined_r0x0010cf22:
                     pbVar9 = pbVar9 + (ulong)bVar13 * -2 + 1;
                   } while (bVar10);
                   if ((!bVar12 && !bVar10) == bVar12) {
-                    plVar4 = (long *)func_0x00101f50();
+                    plVar4 = (long *)func_0x00101c70();
                     lVar7 = 0;
                     lVar5 = *plVar4;
                     if (param_1 == 0) {
@@ -426,9 +426,9 @@ joined_r0x0010cf22:
                     }
                   }
                   else {
-                    iVar2 = func_0x00101d40(param_6,&UNK_0011761a);
+                    iVar2 = func_0x00101a80(param_6,&UNK_00114f67);
                     if (iVar2 == 0) {
-                      plVar4 = (long *)func_0x00101f50();
+                      plVar4 = (long *)func_0x00101c70();
                       lVar7 = 0;
                       lVar5 = *plVar4;
                       if (param_1 == 0) {
@@ -454,9 +454,9 @@ joined_r0x0010cf22:
                       }
                     }
                     else {
-                      iVar2 = func_0x00101d40(param_6,&UNK_00117620);
+                      iVar2 = func_0x00101a80(param_6,&UNK_00114f6d);
                       if (iVar2 == 0) {
-                        plVar4 = (long *)func_0x00101f50();
+                        plVar4 = (long *)func_0x00101c70();
                         lVar7 = 0;
                         lVar5 = *plVar4;
                         if (param_1 == 0) {
@@ -482,11 +482,11 @@ joined_r0x0010cf22:
                         }
                       }
                       else {
-                        iVar2 = func_0x00101d40(param_6,&UNK_00117626);
+                        iVar2 = func_0x00101a80(param_6,&UNK_00114f73);
                         if (iVar2 != 0) {
                           return 4;
                         }
-                        plVar4 = (long *)func_0x00101f50();
+                        plVar4 = (long *)func_0x00101c70();
                         lVar7 = 0;
                         lVar5 = *plVar4;
                         if (param_1 == 0) {

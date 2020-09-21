@@ -7,15 +7,15 @@ ulong strcoll_loop(long param_1,long param_2,long param_3,long param_4)
   long lVar3;
   undefined8 uVar4;
   
-  puVar1 = (undefined4 *)func_0x001014b0();
+  puVar1 = (undefined4 *)func_0x00101790();
   while( true ) {
     *puVar1 = 0;
-    uVar4 = func_0x00101670(param_1,param_3);
+    uVar4 = func_0x001019a0(param_1,param_3);
     if ((int)uVar4 != 0) {
       return uVar4;
     }
-    lVar2 = func_0x00101550(param_1);
-    lVar3 = func_0x00101550(param_3);
+    lVar2 = func_0x00101820(param_1);
+    lVar3 = func_0x00101820(param_3);
     param_1 = param_1 + lVar2 + 1;
     param_3 = param_3 + lVar3 + 1;
     param_4 = param_4 - (lVar3 + 1);

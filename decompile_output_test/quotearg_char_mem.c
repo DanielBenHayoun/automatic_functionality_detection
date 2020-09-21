@@ -34,14 +34,14 @@ void quotearg_char_mem(undefined8 param_1,undefined8 param_2,byte param_3)
     *(uint *)((undefined *)register0x00000020 + (ulong)(param_3 >> 5) * 4 + -0x40) =
          (~(uVar1 >> (param_3 & 0x1f)) & 1) << (param_3 & 0x1f) ^ uVar1;
     uVar2 = 0;
-    *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x10a2de;
+    *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x1039be;
     quotearg_n_options(SUB168(default_quoting_options._32_16_,0),0,param_1,param_2);
     param_3 = (byte)(*(ulong *)((undefined *)register0x00000020 + -0x10) ^
                     *(ulong *)(in_FS_OFFSET + 0x28));
     if ((*(ulong *)((undefined *)register0x00000020 + -0x10) ^ *(ulong *)(in_FS_OFFSET + 0x28)) == 0
        ) break;
-    *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x10a2f8;
-    func_0x001021f0();
+    *(undefined8 *)((undefined *)register0x00000020 + -0x50) = 0x1039d8;
+    func_0x001012b0();
     param_2 = 0xffffffffffffffff;
     register0x00000020 = (BADSPACEBASE *)((undefined *)register0x00000020 + -0x48);
     param_1 = uVar2;

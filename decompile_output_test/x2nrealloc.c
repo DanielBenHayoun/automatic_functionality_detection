@@ -15,8 +15,8 @@ long x2nrealloc(long param_1,ulong *param_2,ulong param_3)
   do {
     uVar2 = *param_2;
     if (param_1 == 0) {
-      if (uVar2 == 0) goto code_r0x0010cf38;
-      goto code_r0x0010cf15;
+      if (uVar2 == 0) goto code_r0x001043c8;
+      goto code_r0x001043a5;
     }
     puVar5 = (undefined *)register0x00000020;
     if (uVar2 < SUB168((ZEXT816(0) << 0x40 | ZEXT816(0x5555555555555554)) / ZEXT816(param_3),0)) {
@@ -25,12 +25,12 @@ long x2nrealloc(long param_1,ulong *param_2,ulong param_3)
     else {
       do {
         register0x00000020 = (BADSPACEBASE *)(puVar5 + -8);
-        *(undefined8 *)(puVar5 + -0x10) = 0x10cf34;
+        *(undefined8 *)(puVar5 + -0x10) = 0x1043c4;
         xalloc_die();
-code_r0x0010cf38:
+code_r0x001043c8:
         lVar1 = SUB168((ZEXT816(0) << 0x40 | ZEXT816(0x80)) / ZEXT816(param_3),0);
         uVar2 = (ulong)(lVar1 == 0) + lVar1;
-code_r0x0010cf15:
+code_r0x001043a5:
         puVar5 = (undefined *)register0x00000020;
       } while ((SUB168(ZEXT816(uVar2) * ZEXT816(param_3),0) < 0) ||
               (SUB168(ZEXT816(uVar2) * ZEXT816(param_3) >> 0x40,0) != 0));
@@ -44,24 +44,24 @@ code_r0x0010cf15:
       puVar4 = puVar5;
       *(ulong **)(puVar4 + -8) = puVar3;
       if ((unaff_RBX == (ulong *)0x0) && (param_1 != 0)) {
-        *(undefined8 *)(puVar4 + -0x10) = 0x10ce8d;
-        func_0x00102750();
+        *(undefined8 *)(puVar4 + -0x10) = 0x10431d;
+        func_0x001011e0();
         return 0;
       }
-      *(undefined8 *)(puVar4 + -0x10) = 0x10ce76;
+      *(undefined8 *)(puVar4 + -0x10) = 0x104306;
       puVar6 = unaff_RBX;
-      lVar1 = func_0x00102a40();
+      lVar1 = func_0x001013a0();
       if ((lVar1 != 0) || (unaff_RBX == (ulong *)0x0)) {
         return lVar1;
       }
-      *(undefined8 *)(puVar4 + -0x10) = 0x10ce96;
+      *(undefined8 *)(puVar4 + -0x10) = 0x104326;
       xalloc_die();
       param_2 = SUB168(ZEXT816(puVar6) * ZEXT816(extraout_RDX),0);
     } while ((-1 < (long)param_2) &&
             (puVar3 = unaff_RBX, puVar5 = puVar4 + -8,
             SUB168(ZEXT816(puVar6) * ZEXT816(extraout_RDX) >> 0x40,0) == 0));
     register0x00000020 = (BADSPACEBASE *)(puVar4 + -0x10);
-    *(undefined8 *)(puVar4 + -0x18) = 0x10cec4;
+    *(undefined8 *)(puVar4 + -0x18) = 0x104354;
     xalloc_die();
     param_3 = extraout_RDX_00;
   } while( true );

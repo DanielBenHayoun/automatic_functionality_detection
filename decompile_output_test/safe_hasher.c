@@ -17,7 +17,7 @@ long safe_hasher(long *param_1,long param_2,undefined8 param_3,char param_4)
   if (uVar4 <= (ulong)param_1[2] && param_1[2] != uVar4) {
     return uVar4 * 0x10 + *param_1;
   }
-  func_0x001020a0();
+  func_0x001019a0();
   plVar5 = (long *)safe_hasher();
   *extraout_RDX = plVar5;
   lVar8 = *plVar5;
@@ -34,7 +34,7 @@ long safe_hasher(long *param_1,long param_2,undefined8 param_3,char param_4)
       lVar8 = *plVar6;
       do {
         if (lVar7 == lVar8) {
-code_r0x0010624c:
+code_r0x00107c2c:
           if (param_4 == '\0') {
             return lVar8;
           }
@@ -48,7 +48,7 @@ code_r0x0010624c:
         if (cVar3 != '\0') {
           plVar6 = (long *)plVar5[1];
           lVar8 = *plVar6;
-          goto code_r0x0010624c;
+          goto code_r0x00107c2c;
         }
         plVar5 = (long *)plVar5[1];
         plVar6 = (long *)plVar5[1];

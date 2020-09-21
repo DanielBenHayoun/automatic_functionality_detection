@@ -106,21 +106,21 @@ ulong check_node_accept_bytes_isra_31
               puVar6 = (uint *)0x0;
               do {
                 puVar6 = (uint *)((long)puVar6 + 1);
-                if (puVar6 == puVar7) goto code_r0x0010df27;
+                if (puVar6 == puVar7) goto code_r0x0010bc77;
               } while (uVar4 != (*ppuVar12)[(long)puVar6]);
             }
-code_r0x0010df62:
+code_r0x0010bcb2:
             if ((*(byte *)(ppuVar12 + 4) & 1) != 0) {
               return 0;
             }
             return uVar9;
           }
-code_r0x0010df27:
+code_r0x0010bc77:
           if (0 < (long)ppuVar12[9]) {
             lVar8 = 0;
             do {
-              iVar5 = func_0x00101bc0((ulong)uVar4,*(undefined8 *)(ppuVar12[3] + lVar8 * 2));
-              if (iVar5 != 0) goto code_r0x0010df62;
+              iVar5 = func_0x00101930((ulong)uVar4,*(undefined8 *)(ppuVar12[3] + lVar8 * 2));
+              if (iVar5 != 0) goto code_r0x0010bcb2;
               lVar8 = lVar8 + 1;
             } while (lVar8 < (long)ppuVar12[9]);
             puVar11 = ppuVar12[8];
@@ -129,7 +129,7 @@ code_r0x0010df27:
             puVar7 = (uint *)0x0;
             do {
               if (((int)ppuVar12[1][(long)puVar7] <= (int)uVar4) &&
-                 ((int)uVar4 <= (int)ppuVar12[2][(long)puVar7])) goto code_r0x0010df62;
+                 ((int)uVar4 <= (int)ppuVar12[2][(long)puVar7])) goto code_r0x0010bcb2;
               puVar7 = (uint *)((long)puVar7 + 1);
             } while (puVar7 != puVar11);
           }

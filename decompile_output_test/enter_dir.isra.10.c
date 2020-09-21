@@ -16,7 +16,7 @@ undefined8 enter_dir_isra_10(ulong param_1,undefined8 *param_2,undefined8 *param
     }
   }
   else {
-    puVar2 = (undefined8 *)func_0x00101c40(0x18);
+    puVar2 = (undefined8 *)func_0x00101c20(0x18);
     if (puVar2 == (undefined8 *)0x0) {
       return 0;
     }
@@ -27,7 +27,7 @@ undefined8 enter_dir_isra_10(ulong param_1,undefined8 *param_2,undefined8 *param
     puVar2[1] = param_3[0x10];
     puVar3 = (undefined8 *)hash_insert(uVar1,puVar2);
     if (puVar2 != puVar3) {
-      func_0x00101de0(puVar2);
+      func_0x00101da0(puVar2);
       if (puVar3 == (undefined8 *)0x0) {
         return 0;
       }

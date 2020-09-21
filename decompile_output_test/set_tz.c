@@ -8,7 +8,7 @@ long set_tz(long param_1)
   undefined4 *puVar4;
   long lVar5;
   
-  lVar3 = func_0x00102730(&UNK_0011178e);
+  lVar3 = func_0x00101840(&UNK_00108820);
   if (lVar3 == 0) {
     if (*(char *)(param_1 + 8) == '\0') {
       return 1;
@@ -16,7 +16,7 @@ long set_tz(long param_1)
   }
   else {
     if (*(char *)(param_1 + 8) != '\0') {
-      iVar2 = func_0x00102960(param_1 + 9,lVar3);
+      iVar2 = func_0x00101a50(param_1 + 9,lVar3);
       if (iVar2 == 0) {
         return 1;
       }
@@ -30,10 +30,10 @@ long set_tz(long param_1)
     }
     iVar2 = setenv_TZ(lVar5);
     if (iVar2 == 0) {
-      func_0x00102980();
+      func_0x00101a80();
     }
     else {
-      puVar4 = (undefined4 *)func_0x00102780();
+      puVar4 = (undefined4 *)func_0x00101880();
       uVar1 = *puVar4;
       if (lVar3 != 1) {
         tzfree_part_0(lVar3);

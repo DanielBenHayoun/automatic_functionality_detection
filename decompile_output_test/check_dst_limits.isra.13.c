@@ -25,14 +25,14 @@ check_dst_limits_isra_13
     lVar9 = (lVar7 + lVar8) / 2;
     lVar6 = *(long *)(*(long *)(param_1 + 0xd8) + 8 + lVar9 * 0x28);
     while (lVar10 = lVar9, param_5 <= lVar6) {
-      if (lVar10 <= lVar7) goto code_r0x00109a0b;
+      if (lVar10 <= lVar7) goto code_r0x0010775b;
       lVar9 = (lVar7 + lVar10) / 2;
       lVar6 = *(long *)(*(long *)(param_1 + 0xd8) + 8 + lVar9 * 0x28);
       lVar8 = lVar10;
     }
     lVar7 = lVar10 + 1;
   }
-code_r0x00109a0b:
+code_r0x0010775b:
   if (lVar7 < lVar11) {
     if (param_5 != *(long *)(*(long *)(param_1 + 0xd8) + lVar7 * 0x28 + 8)) {
       lVar7 = -1;
@@ -47,14 +47,14 @@ code_r0x00109a0b:
     lVar10 = (lVar8 + lVar6) / 2;
     lVar9 = *(long *)(*(long *)(param_1 + 0xd8) + 8 + lVar10 * 0x28);
     while (lVar3 = lVar10, param_7 <= lVar9) {
-      if (lVar3 <= lVar8) goto code_r0x00109a94;
+      if (lVar3 <= lVar8) goto code_r0x001077e4;
       lVar10 = (lVar8 + lVar3) / 2;
       lVar9 = *(long *)(*(long *)(param_1 + 0xd8) + 8 + lVar10 * 0x28);
       lVar6 = lVar3;
     }
     lVar8 = lVar3 + 1;
   }
-code_r0x00109a94:
+code_r0x001077e4:
   if (lVar8 < lVar11) {
     if (param_7 != *(long *)(*(long *)(param_1 + 0xd8) + lVar8 * 0x28 + 8)) {
       lVar8 = -1;

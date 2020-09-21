@@ -1,6 +1,6 @@
 
-/* WARNING: Removing unreachable block (ram,0x00103be7) */
-/* WARNING: Removing unreachable block (ram,0x00103bf3) */
+/* WARNING: Removing unreachable block (ram,0x001016f7) */
+/* WARNING: Removing unreachable block (ram,0x00101703) */
 
 void deregister_tm_clones(void)
 

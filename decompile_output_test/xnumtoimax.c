@@ -17,9 +17,9 @@ long xnumtoimax(undefined8 param_1,ulong param_2,long param_3,long param_4,undef
   iVar2 = xstrtoimax(param_1,0,param_2 & 0xffffffff,&lStack72);
   lVar1 = lStack72;
   if (iVar2 == 0) {
-    if ((param_3 <= lStack72) && (lStack72 <= param_4)) goto code_r0x00106c06;
-    puVar6 = (uint *)func_0x00101b20();
-    if (0x3fffffff < lVar1) goto code_r0x00106bc5;
+    if ((param_3 <= lStack72) && (lStack72 <= param_4)) goto code_r0x00104d46;
+    puVar6 = (uint *)func_0x00101400();
+    if (0x3fffffff < lVar1) goto code_r0x00104d05;
     uVar3 = 0x22;
     if (lVar1 < -0x40000000) {
       uVar3 = 0x4b;
@@ -27,9 +27,9 @@ long xnumtoimax(undefined8 param_1,ulong param_2,long param_3,long param_4,undef
     *puVar6 = uVar3;
   }
   else {
-    puVar6 = (uint *)func_0x00101b20();
+    puVar6 = (uint *)func_0x00101400();
     if (iVar2 == 1) {
-code_r0x00106bc5:
+code_r0x00104d05:
       *puVar6 = 0x4b;
     }
     else {
@@ -46,12 +46,12 @@ code_r0x00106bc5:
   if (param_7 == 0) {
     param_7 = 1;
   }
-  func_0x00101e60((ulong)param_7,uVar5,&UNK_00116b3d,param_6,uVar4);
-code_r0x00106c06:
+  func_0x00101630((ulong)param_7,uVar5,&UNK_001060a4,param_6,uVar4);
+code_r0x00104d46:
   if (lStack64 == *(long *)(in_FS_OFFSET + 0x28)) {
     return lStack72;
   }
-  func_0x00101c20();
+  func_0x001014b0();
   uVar4 = xnumtoimax();
   return uVar4;
 }

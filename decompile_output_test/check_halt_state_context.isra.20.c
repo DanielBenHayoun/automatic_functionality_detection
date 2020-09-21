@@ -24,8 +24,8 @@ long check_halt_state_context_isra_20(long param_1,long param_2,long *param_3,un
         }
         if ((uVar5 & 4) == 0) {
           uVar2 = uVar3 & 1;
-          if ((uVar5 & 8) != 0) goto joined_r0x0010b768;
-joined_r0x0010b76e:
+          if ((uVar5 & 8) != 0) goto joined_r0x001094b8;
+joined_r0x001094be:
           if ((((uVar5 & 0x20) == 0) || ((uVar3 & 2) != 0)) &&
              (((uVar1 & 0x8000) == 0 || ((uVar3 & 8) != 0)))) {
             return lVar4;
@@ -34,8 +34,8 @@ joined_r0x0010b76e:
         else {
           if ((uVar3 & 1) != 0) {
             uVar2 = uVar5 & 8;
-joined_r0x0010b768:
-            if (uVar2 == 0) goto joined_r0x0010b76e;
+joined_r0x001094b8:
+            if (uVar2 == 0) goto joined_r0x001094be;
           }
         }
       }

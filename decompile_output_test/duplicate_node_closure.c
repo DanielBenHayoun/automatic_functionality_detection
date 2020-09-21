@@ -24,7 +24,7 @@ undefined8 duplicate_node_closure(long *param_1,long param_2,long param_3,long p
         return 0xc;
       }
       *(undefined8 *)(param_1[3] + param_3 * 8) = *(undefined8 *)(param_1[3] + param_2 * 8);
-code_r0x001091f0:
+code_r0x00106f40:
       cVar3 = re_node_set_insert(param_3 * 0x18 + param_1[5],lVar8);
       param_3 = lVar8;
       param_2 = lStack72;
@@ -51,7 +51,7 @@ code_r0x001091f0:
               if (cVar3 == '\0') {
                 return 0xc;
               }
-              goto code_r0x001091c9;
+              goto code_r0x00106f19;
             }
             lVar4 = lVar4 + lVar8 + -0x20 + param_1[2] * 0x10;
             lVar7 = lVar7 + -1;
@@ -69,13 +69,13 @@ code_r0x001091f0:
         if ((int)uVar5 != 0) {
           return uVar5;
         }
-code_r0x001091c9:
+code_r0x00106f19:
         lStack72 = *(long *)(*(long *)(param_1[5] + 0x10 + param_2 * 0x18) + 8);
         lVar8 = duplicate_node(param_1,lStack72,(ulong)param_5);
         if (lVar8 == -1) {
           return 0xc;
         }
-        goto code_r0x001091f0;
+        goto code_r0x00106f40;
       }
       if ((param_2 == param_4) && (param_2 != param_3)) {
         cVar3 = re_node_set_insert(lVar7 + lVar6,lVar1);

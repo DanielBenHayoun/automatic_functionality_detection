@@ -31,7 +31,7 @@ check_subexp_matching_top_isra_18(long param_1,long *param_2,long *param_3,undef
       lVar7 = *(long *)(param_1 + 0xf8);
       if (lVar9 == *(long *)(param_1 + 0xf0)) {
         lVar4 = lVar9 * 2;
-        lVar7 = func_0x00101e00(lVar7,lVar9 << 4);
+        lVar7 = func_0x00101b30(lVar7,lVar9 << 4);
         if (lVar7 == 0) {
           return 0xc;
         }
@@ -39,7 +39,7 @@ check_subexp_matching_top_isra_18(long param_1,long *param_2,long *param_3,undef
         lVar9 = *(long *)(param_1 + 0xe8);
         *(long *)(param_1 + 0xf0) = lVar4;
       }
-      puVar6 = (undefined8 *)func_0x00101d30(1,0x30);
+      puVar6 = (undefined8 *)func_0x00101a70(1,0x30);
       *(undefined8 **)(lVar7 + lVar9 * 8) = puVar6;
       if (puVar6 == (undefined8 *)0x0) {
         return 0xc;

@@ -23,7 +23,7 @@ undefined8 re_node_set_add_intersect(long *param_1,long param_2,long param_3)
   lVar6 = param_1[2];
   if (*param_1 < lVar5 + lVar11 + lVar4) {
     lVar5 = *param_1 + lVar5 + lVar11;
-    lVar6 = func_0x00101e00(lVar6,lVar5 * 8);
+    lVar6 = func_0x00101b30(lVar6,lVar5 * 8);
     if (lVar6 == 0) {
       return 0xc;
     }
@@ -44,21 +44,21 @@ undefined8 re_node_set_add_intersect(long *param_1,long param_2,long param_3)
   do {
     bVar12 = SBORROW8(lVar4,lVar5);
     lVar3 = lVar4 - lVar5;
-    if (lVar4 == lVar5) goto code_r0x0010a266;
+    if (lVar4 == lVar5) goto code_r0x00107fb6;
     while (bVar12 != lVar3 < 0) {
       lVar11 = lVar11 + -1;
-      if (lVar11 < 0) goto code_r0x0010a2c0;
+      if (lVar11 < 0) goto code_r0x00108010;
       while( true ) {
         lVar5 = *(long *)(lVar2 + lVar11 * 8);
         bVar12 = SBORROW8(lVar4,lVar5);
         lVar3 = lVar4 - lVar5;
         if (lVar3 != 0) break;
-code_r0x0010a266:
+code_r0x00107fb6:
         if (-1 < lVar7) {
           do {
             lVar4 = *(long *)(lVar6 + lVar7 * 8);
             if (lVar4 <= lVar5) {
-              if (lVar4 == lVar5) goto code_r0x0010a290;
+              if (lVar4 == lVar5) goto code_r0x00107fe0;
               break;
             }
             lVar7 = lVar7 + -1;
@@ -66,9 +66,9 @@ code_r0x0010a266:
         }
         lVar9 = lVar9 + -1;
         *(long *)(lVar6 + lVar9 * 8) = lVar5;
-code_r0x0010a290:
+code_r0x00107fe0:
         lVar10 = lVar10 + -1;
-        if ((lVar10 < 0) || (lVar11 = lVar11 + -1, lVar11 < 0)) goto code_r0x0010a2c0;
+        if ((lVar10 < 0) || (lVar11 = lVar11 + -1, lVar11 < 0)) goto code_r0x00108010;
         lVar4 = *(long *)(lVar8 + lVar10 * 8);
       }
     }
@@ -76,7 +76,7 @@ code_r0x0010a290:
     if (lVar10 < 0) break;
     lVar4 = *(long *)(lVar8 + lVar10 * 8);
   } while( true );
-code_r0x0010a2c0:
+code_r0x00108010:
   lVar4 = param_1[1];
   lVar8 = *(long *)(param_2 + 8) + lVar4 + *(long *)(param_3 + 8);
   lVar5 = lVar4 + -1;
@@ -95,7 +95,7 @@ code_r0x0010a2c0:
         *plVar1 = lVar4;
         if (lVar8 == 0) {
           lVar8 = 0;
-          goto code_r0x0010a331;
+          goto code_r0x00108081;
         }
       }
       lVar5 = lVar5 + -1;
@@ -103,8 +103,8 @@ code_r0x0010a2c0:
     } while (lVar5 != -1);
   }
   lVar8 = lVar8 << 3;
-code_r0x0010a331:
-  func_0x00101d70(lVar6,lVar6 + lVar9 * 8,lVar8);
+code_r0x00108081:
+  func_0x00101a90(lVar6,lVar6 + lVar9 * 8,lVar8);
   return 0;
 }
 

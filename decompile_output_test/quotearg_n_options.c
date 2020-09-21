@@ -18,13 +18,13 @@ quotearg_n_options(undefined1 *param_1,undefined8 param_2,undefined8 param_3,uin
   undefined *puVar13;
   
   iVar10 = (int)param_1;
-  puVar13 = &UNK_00109bf1;
-  puVar5 = (undefined4 *)func_0x001020b0();
+  puVar13 = &UNK_001032d1;
+  puVar5 = (undefined4 *)func_0x00101200();
   uVar1 = *puVar5;
   if (-1 < iVar10) {
     puVar8 = slotvec;
     if (nslots <= iVar10) {
-      if (iVar10 == 0x7fffffff) goto code_r0x00109d76;
+      if (iVar10 == 0x7fffffff) goto code_r0x00103456;
       iVar11 = iVar10 + 1;
       if (slotvec == (undefined4 *)slotvec0) {
         puVar8 = (undefined4 *)xrealloc(0,(long)iVar11 << 4);
@@ -39,8 +39,8 @@ quotearg_n_options(undefined1 *param_1,undefined8 param_2,undefined8 param_3,uin
         puVar8 = (undefined4 *)xrealloc(slotvec,(long)iVar11 << 4);
         slotvec = puVar8;
       }
-      puVar13 = &UNK_00109c6e;
-      func_0x001022a0(puVar8 + (long)nslots * 4,0,(long)(iVar11 - nslots) << 4);
+      puVar13 = &UNK_0010334e;
+      func_0x00101300(puVar8 + (long)nslots * 4,0,(long)(iVar11 - nslots) << 4);
       nslots = iVar11;
     }
     uVar2 = param_4[1];
@@ -54,9 +54,9 @@ quotearg_n_options(undefined1 *param_1,undefined8 param_2,undefined8 param_3,uin
       uVar6 = uVar6 + 1;
       *puVar9 = uVar6;
       if (puVar12 != slot0) {
-        func_0x00102070(puVar12);
+        func_0x001011e0(puVar12);
       }
-      puVar13 = &UNK_00109cfc;
+      puVar13 = &UNK_001033dc;
       puVar12 = (undefined1 *)xmalloc(uVar6);
       *(undefined1 **)(puVar9 + 1) = puVar12;
       quotearg_buffer_restyled
@@ -66,10 +66,10 @@ quotearg_n_options(undefined1 *param_1,undefined8 param_2,undefined8 param_3,uin
     *puVar5 = uVar1;
     return puVar12;
   }
-  func_0x001020a0();
-code_r0x00109d76:
+  func_0x001011f0();
+code_r0x00103456:
   xalloc_die();
-  puVar5 = (undefined4 *)func_0x001020b0();
+  puVar5 = (undefined4 *)func_0x00101200();
   uVar1 = *puVar5;
   if (param_1 == (undefined1 *)0x0) {
     param_1 = default_quoting_options;

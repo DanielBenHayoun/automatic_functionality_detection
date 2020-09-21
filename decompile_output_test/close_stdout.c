@@ -9,24 +9,24 @@ void close_stdout(void)
   
   iVar1 = close_stream(stdout);
   if (iVar1 != 0) {
-    unaff_RBX = (uint *)func_0x001020b0();
+    unaff_RBX = (uint *)func_0x00101200();
     if ((ignore_EPIPE == '\0') || (*unaff_RBX != 0x20)) {
-      uVar3 = func_0x00102190(0,&UNK_0010ff6b,5);
-      if (file_name == 0) goto code_r0x00105e2d;
+      uVar3 = func_0x00101280(0,&UNK_00104b30,5);
+      if (file_name == 0) goto code_r0x00101bbd;
       uVar2 = quotearg_colon();
-      func_0x001024a0(0,(ulong)*unaff_RBX,&UNK_0010ff77,uVar2,uVar3);
-      goto code_r0x00105e22;
+      func_0x001013d0(0,(ulong)*unaff_RBX,&UNK_00104b3c,uVar2,uVar3);
+      goto code_r0x00101bb2;
     }
   }
   iVar1 = close_stream(stderr);
   if (iVar1 == 0) {
     return;
   }
-code_r0x00105e22:
+code_r0x00101bb2:
   do {
-    uVar3 = func_0x001020d0((ulong)exit_failure);
-code_r0x00105e2d:
-    func_0x001024a0(0,(ulong)*unaff_RBX,&UNK_00110c4f,uVar3);
+    uVar3 = func_0x00101220((ulong)exit_failure);
+code_r0x00101bbd:
+    func_0x001013d0(0,(ulong)*unaff_RBX,&UNK_00104b40,uVar3);
   } while( true );
 }
 
