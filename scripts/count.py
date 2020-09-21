@@ -25,9 +25,10 @@ def main(files):
 
 	underlimit = 0
 	global_max = 0 #max length of all files
-	local_max = 0
+	print(files)
 	for idx,file in enumerate(files):
 		with open(file,'r') as fp:
+			local_max = 0
 			maxline = 1
 			for j,line in enumerate(fp):
 				count = longest_path(line) #max length of current fucntion

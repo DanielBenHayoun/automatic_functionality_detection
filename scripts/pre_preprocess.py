@@ -65,7 +65,7 @@ def split_data(popular_mapper,output_folder):
 	valfile.close()
 
 #input :-files to scan	   
-#output:-dict with subtoken as key,and the items are a list of fucntions(with function name and paths) corresponding to that ket
+#output:-dict with subtoken as key,and the items are a list of fucntions(with function name and paths) corresponding to that key
 def popular_functions(files):
 	mapper = dict()
 	
