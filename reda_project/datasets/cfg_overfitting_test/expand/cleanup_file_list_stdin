@@ -1,1 +1,0 @@
-cleanup|file|list|stdin DUM,cmp|byte|ptr|rip|+|const_1|0|	|jne|const_0|	|ret|	|CONS|,DUM

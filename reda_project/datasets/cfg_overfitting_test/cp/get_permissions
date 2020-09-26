@@ -1,1 +1,0 @@
-get|permissions DUM,mov|dword|ptr|rcx|edx|	|xor|eax|eax|	|ret|	|CONS|<Bool|__le__|reg_rcx|const_0|>	|<Bool|__eq__|reg_rcx|const_0|>	,DUM

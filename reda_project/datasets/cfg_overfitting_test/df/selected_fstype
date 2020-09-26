@@ -1,1 +1,0 @@
-selected|fstype DUM,push|r12|	|push|rbp|	|push|rbx|	|mov|rbx|qword|ptr|rip|+|const_0|	|test|rbx|rbx|	|sete|al|	|test|rdi|rdi|	|sete|r12b|	|or|r12b|al|	|jne|const_2|	|mov|eax|r12d|	|pop|rbx|	|pop|rbp|	|pop|r12|	|ret|	|CONS|<Bool|__ne__|__and__|ZeroExt|56|__or__|ZeroExt|7|If|__eq__|reg_rdi|const_3|1|0|1|const_1|const_3|>	,DUM

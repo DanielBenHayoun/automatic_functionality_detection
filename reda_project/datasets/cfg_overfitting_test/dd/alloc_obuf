@@ -1,1 +1,0 @@
-alloc|obuf DUM,cmp|qword|ptr|rip|+|const_5|0|	|je|const_7|	|test|byte|ptr|rip|+|const_6|8|	|jne|const_0|	|cmp|qword|ptr|rip|+|const_4|0|	|je|const_2|	|sub|rsp|8|	|call|const_3|	|mov|rax|qword|ptr|rip|+|const_8|	|mov|qword|ptr|rip|+|const_1|rax|	|pop|rax|	|ret|	|CONS|,DUM

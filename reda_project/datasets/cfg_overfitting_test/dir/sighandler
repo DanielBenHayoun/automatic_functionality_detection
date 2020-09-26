@@ -1,1 +1,0 @@
-sighandler DUM,mov|eax|dword|ptr|rip|+|const_1|	|test|eax|eax|	|jne|const_0|	|mov|dword|ptr|rip|+|const_2|edi|	|ret|	|ret|	|CONS|,DUM

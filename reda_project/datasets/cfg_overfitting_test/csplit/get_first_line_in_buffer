@@ -1,1 +1,0 @@
-get|first|line|in|buffer DUM,mov|rax|qword|ptr|rip|+|const_4|	|test|rax|rax|	|je|const_1|	|cmp|byte|ptr|rip|+|const_3|0|	|push|rbx|	|jne|const_5|	|call|const_6|	|test|al|al|	|je|const_5|	|mov|rax|qword|ptr|rip|+|const_0|	|pop|rbx|	|mov|rax|qword|ptr|rax|+|const_2|	|ret|	|CONS|<Bool|Not|__eq__|Extract|7|0|ret_0|0|>	,DUM

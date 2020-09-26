@@ -1,1 +1,0 @@
-cycle|check|init DUM,mov|qword|ptr|rdi|+|const_0|0|	|mov|dword|ptr|rdi|+|const_3|const_4|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_2|>	|<Bool|__le__|__add__|reg_rdi|const_3|const_1|>	|<Bool|__eq__|__add__|reg_rdi|const_3|const_1|>	,DUM

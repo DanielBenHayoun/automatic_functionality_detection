@@ -1,1 +1,0 @@
-set|other|indent DUM,cmp|byte|ptr|rip|+|const_7|0|	|jne|const_2|	|cmp|byte|ptr|rip|+|const_5|0|	|je|const_4|	|cmp|byte|ptr|rip|+|const_0|0|	|mov|eax|dword|ptr|rip|+|const_6|	|je|const_3|	|mov|dword|ptr|rip|+|const_1|eax|	|ret|	|ret|	|CONS|,DUM

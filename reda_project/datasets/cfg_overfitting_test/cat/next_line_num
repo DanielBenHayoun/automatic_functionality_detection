@@ -1,1 +1,0 @@
-next|line|num DUM,mov|rcx|qword|ptr|rip|+|const_1|	|lea|rax|rip|+|const_0|	|jmp|const_4|	|movzx|edx|byte|ptr|rax|	|cmp|dl|const_3|	|jg|const_2|	|add|edx|1|	|mov|byte|ptr|rax|dl|	|ret|	|CONS|,DUM

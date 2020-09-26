@@ -1,1 +1,0 @@
-xstrtod DUM,push|r14|	|push|r13|	|mov|r14|rcx|	|push|r12|	|push|rbp|	|mov|rbp|rdi|	|push|rbx|	|mov|r13|rdx|	|mov|rbx|rsi|	|sub|rsp|const_1|	|mov|rax|qword|ptr|fs:const_3|	|mov|qword|ptr|rsp|+|8|rax|	|xor|eax|eax|	|call|const_2|	|mov|rsi|rsp|	|mov|r12|rax|	|mov|dword|ptr|rax|0|	|mov|rdi|rbp|	|call|r14|	|CONS|<Bool|__eq__|ret_0|const_0|>	,DUM

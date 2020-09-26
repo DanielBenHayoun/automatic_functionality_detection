@@ -1,2 +1,0 @@
-AD|compare DUM,xor|eax|eax|	|mov|rdx|qword|ptr|rsi|+|8|	|cmp|qword|ptr|rdi|+|8|rdx|	|je|const_0|	|mov|rax|qword|ptr|rsi|	|cmp|qword|ptr|rdi|rax|	|sete|al|	|ret|	|CONS|<Bool|__eq__|reg_rsi|const_2|>	|<Bool|__eq__|reg_rdi|const_1|>	|<Bool|__eq__|mem_1|mem_0|>	,DUM
-AD|compare DUM,xor|eax|eax|	|mov|rdx|qword|ptr|rsi|+|8|	|cmp|qword|ptr|rdi|+|8|rdx|	|je|const_0|	|ret|	|CONS|<Bool|__eq__|reg_rsi|const_2|>	|<Bool|__le__|__add__|reg_rdi|const_5|const_4|>	|<Bool|__eq__|__add__|reg_rdi|const_5|const_3|>	|<Bool|__ne__|mem_1|mem_0|>	,DUM

@@ -1,1 +1,0 @@
-exclude|add|pattern|buffer DUM,push|rbp|	|push|rbx|	|mov|rbx|rdi|	|mov|edi|const_1|	|mov|rbp|rsi|	|sub|rsp|8|	|call|const_2|	|mov|rdx|qword|ptr|rbx|+|8|	|mov|qword|ptr|rax|+|8|rbp|	|mov|qword|ptr|rbx|+|8|rax|	|mov|qword|ptr|rax|rdx|	|add|rsp|8|	|pop|rbx|	|pop|rbp|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_3|>	|<Bool|__eq__|ret_0|const_0|>	,DUM

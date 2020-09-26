@@ -1,2 +1,0 @@
-call|chunkfun DUM,test|byte|ptr|rdi|+|const_0|1|	|mov|rax|qword|ptr|rdi|+|const_1|	|jne|const_3|	|mov|rdi|rsi|	|jmp|rax|	|CONS|<Bool|__eq__|reg_rdi|const_2|>	|<Bool|__eq__|Extract|0|0|mem_0|0|>	,DUM
-call|chunkfun DUM,test|byte|ptr|rdi|+|const_0|1|	|mov|rax|qword|ptr|rdi|+|const_1|	|jne|const_3|	|mov|rdi|qword|ptr|rdi|+|const_4|	|jmp|rax|	|CONS|<Bool|__eq__|reg_rdi|const_2|>	|<Bool|Not|__eq__|Extract|0|0|mem_0|0|>	,DUM

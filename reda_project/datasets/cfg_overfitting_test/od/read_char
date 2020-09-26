@@ -1,1 +1,0 @@
-read|char DUM,push|r12|	|mov|r12|rdi|	|push|rbp|	|push|rbx|	|mov|dword|ptr|rdi|const_2|	|mov|ebp|1|	|mov|rdi|qword|ptr|rip|+|const_4|	|test|rdi|rdi|	|jne|const_0|	|jmp|const_3|	|mov|eax|ebp|	|pop|rbx|	|pop|rbp|	|pop|r12|	|ret|	|CONS|<Bool|__le__|reg_rdi|const_1|>	|<Bool|__eq__|reg_rdi|const_1|>	,DUM

@@ -1,1 +1,0 @@
-different DUM,sub|rsp|8|	|mov|rax|qword|ptr|rip|+|const_5|	|cmp|rax|rdx|	|cmovbe|rdx|rax|	|cmp|rax|rcx|	|cmovbe|rcx|rax|	|movzx|eax|byte|ptr|rip|+|const_1|	|mov|r8|rdx|	|test|al|al|	|je|const_3|	|cmp|byte|ptr|rip|+|const_2|0|	|jne|const_0|	|cmp|rdx|rcx|	|mov|eax|1|	|jne|const_4|	|call|const_6|	|test|eax|eax|	|setne|al|	|add|rsp|8|	|ret|	|CONS|,DUM

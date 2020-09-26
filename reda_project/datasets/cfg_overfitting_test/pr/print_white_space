@@ -1,1 +1,0 @@
-print|white|space DUM,push|r12|	|mov|r12d|dword|ptr|rip|+|const_2|	|push|rbp|	|mov|ebp|dword|ptr|rip|+|const_1|	|push|rbx|	|add|r12d|ebp|	|mov|eax|r12d|	|sub|eax|ebp|	|cmp|eax|1|	|jle|const_4|	|add|ebp|1|	|cmp|r12d|ebp|	|jl|const_3|	|pop|rbx|	|mov|dword|ptr|rip|+|const_0|r12d|	|mov|dword|ptr|rip|+|const_5|0|	|pop|rbp|	|pop|r12|	|ret|	|CONS|,DUM

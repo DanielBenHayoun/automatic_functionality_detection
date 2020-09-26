@@ -1,1 +1,0 @@
-base64|length|wrapper DUM,add|edi|2|	|mov|edx|const_0|	|mov|eax|edi|	|sar|edi|const_1|	|imul|edx|	|sub|edx|edi|	|lea|eax|rdx*4|	|ret|	|CONS|,DUM

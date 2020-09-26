@@ -1,1 +1,0 @@
-close|stdout DUM,push|rbp|	|push|rbx|	|sub|rsp|8|	|mov|rdi|qword|ptr|rip|+|const_10|	|call|const_9|	|test|eax|eax|	|je|const_7|	|mov|rdi|qword|ptr|rip|+|const_1|	|call|const_9|	|test|eax|eax|	|jne|const_4|	|add|rsp|8|	|pop|rbx|	|pop|rbp|	|ret|	|CONS|<Bool|__eq__|Extract|31|0|ret_0|const_2|>	|<Bool|__eq__|Extract|31|0|ret_1|const_2|>	,DUM

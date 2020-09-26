@@ -1,1 +1,0 @@
-fwrite|success|callback DUM,sub|rsp|8|	|mov|rcx|rdx|	|mov|rdx|rsi|	|mov|esi|1|	|call|const_0|	|xor|eax|eax|	|add|rsp|8|	|ret|	|CONS|,DUM

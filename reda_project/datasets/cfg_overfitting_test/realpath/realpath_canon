@@ -1,1 +1,0 @@
-realpath|canon DUM,push|rbp|	|push|rbx|	|mov|ebp|esi|	|sub|rsp|8|	|call|const_2|	|cmp|byte|ptr|rip|+|const_1|0|	|mov|rbx|rax|	|je|const_0|	|add|rsp|8|	|mov|rax|rbx|	|pop|rbx|	|pop|rbp|	|ret|	|CONS|,DUM

@@ -1,1 +1,0 @@
-close|output|file DUM,push|r13|	|push|r12|	|push|rbp|	|push|rbx|	|sub|rsp|const_3|	|mov|rdi|qword|ptr|rip|+|const_0|	|mov|rax|qword|ptr|fs:const_4|	|mov|qword|ptr|rsp|+|const_5|rax|	|xor|eax|eax|	|test|rdi|rdi|	|je|const_1|	|mov|rax|qword|ptr|rsp|+|const_5|	|xor|rax|qword|ptr|fs:const_4|	|jne|const_2|	|add|rsp|const_3|	|pop|rbx|	|pop|rbp|	|pop|r12|	|pop|r13|	|ret|	|CONS|,DUM

@@ -1,1 +1,0 @@
-isbase32hex DUM,lea|eax|rdi|-|const_2|	|cmp|al|9|	|setbe|al|	|sub|edi|const_0|	|cmp|dil|const_1|	|setbe|dl|	|or|eax|edx|	|ret|	|CONS|,DUM

@@ -1,3 +1,0 @@
-mark|opt|subexp DUM,cmp|byte|ptr|rsi|+|const_0|const_4|	|je|const_2|	|xor|eax|eax|	|ret|	|CONS|<Bool|__le__|__add__|reg_rsi|const_0|const_3|>	|<Bool|__eq__|__add__|reg_rsi|const_0|const_1|>	|<Bool|__ne__|mem_0|17|>	,DUM
-mark|opt|subexp DUM,cmp|byte|ptr|rsi|+|const_0|const_4|	|je|const_2|	|cmp|rdi|qword|ptr|rsi|+|const_7|	|jne|const_6|	|or|byte|ptr|rsi|+|const_5|8|	|xor|eax|eax|	|ret|	|CONS|<Bool|__eq__|reg_rsi|const_8|>	|<Bool|__eq__|mem_0|17|>	|<Bool|__eq__|reg_rdi|mem_1|>	,DUM
-mark|opt|subexp DUM,cmp|byte|ptr|rsi|+|const_0|const_4|	|je|const_2|	|cmp|rdi|qword|ptr|rsi|+|const_7|	|jne|const_6|	|xor|eax|eax|	|ret|	|CONS|<Bool|__eq__|reg_rsi|const_8|>	|<Bool|__eq__|mem_0|17|>	|<Bool|__eq__|__add__|reg_rsi|const_7|const_9|>	|<Bool|__ne__|reg_rdi|mem_1|>	,DUM

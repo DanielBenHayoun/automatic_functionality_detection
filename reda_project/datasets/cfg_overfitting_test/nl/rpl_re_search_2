@@ -1,1 +1,0 @@
-rpl|re|search|2 DUM,sub|rsp|8|	|push|0|	|push|qword|ptr|rsp|+|const_1|	|push|qword|ptr|rsp|+|const_1|	|push|qword|ptr|rsp|+|const_1|	|call|const_0|	|add|rsp|const_1|	|ret|	|CONS|,DUM

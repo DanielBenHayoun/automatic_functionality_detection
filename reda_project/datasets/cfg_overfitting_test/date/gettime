@@ -1,1 +1,0 @@
-gettime DUM,mov|rsi|rdi|	|xor|edi|edi|	|jmp|const_2|	|jmp|qword|ptr|rip|+|const_0|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|<Bool|__eq__|reg_rdi|const_3|>	|<Bool|__le__|__add__|reg_rdi|const_4|const_1|>	|<Bool|__eq__|__add__|reg_rdi|const_4|const_1|>	,DUM

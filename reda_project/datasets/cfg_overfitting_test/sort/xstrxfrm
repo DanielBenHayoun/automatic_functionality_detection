@@ -1,1 +1,0 @@
-xstrxfrm DUM,push|r13|	|push|r12|	|mov|r13|rdx|	|push|rbp|	|push|rbx|	|mov|r12|rdi|	|mov|rbp|rsi|	|sub|rsp|8|	|call|const_2|	|mov|rdx|r13|	|mov|rbx|rax|	|mov|dword|ptr|rax|0|	|mov|rsi|rbp|	|mov|rdi|r12|	|call|const_1|	|mov|edx|dword|ptr|rbx|	|test|edx|edx|	|jne|const_0|	|add|rsp|8|	|pop|rbx|	|pop|rbp|	|pop|r12|	|pop|r13|	|ret|	|CONS|<Bool|__eq__|ret_0|const_3|>	,DUM

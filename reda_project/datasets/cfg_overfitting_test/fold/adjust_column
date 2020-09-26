@@ -1,4 +1,0 @@
-adjust|column DUM,cmp|byte|ptr|rip|+|const_2|0|	|jne|const_1|	|cmp|sil|8|	|je|const_0|	|lea|rdx|rdi|-|1|	|test|rdi|rdi|	|mov|eax|0|	|cmovne|rax|rdx|	|ret|	|CONS|<Bool|__eq__|reg_rsi|8|>	,DUM
-adjust|column DUM,cmp|byte|ptr|rip|+|const_2|0|	|jne|const_1|	|cmp|sil|8|	|je|const_0|	|xor|eax|eax|	|cmp|sil|const_4|	|je|const_3|	|ret|	|CONS|<Bool|__ne__|reg_rsi|8|>	|<Bool|__eq__|reg_rsi|13|>	,DUM
-adjust|column DUM,cmp|byte|ptr|rip|+|const_2|0|	|jne|const_1|	|cmp|sil|8|	|je|const_0|	|xor|eax|eax|	|cmp|sil|const_4|	|je|const_3|	|cmp|sil|9|	|je|const_5|	|and|rdi|const_6|	|lea|rax|rdi|+|8|	|ret|	|CONS|<Bool|__ne__|reg_rsi|8|>	|<Bool|__ne__|reg_rsi|13|>	|<Bool|__eq__|reg_rsi|9|>	,DUM
-adjust|column DUM,cmp|byte|ptr|rip|+|const_2|0|	|jne|const_1|	|cmp|sil|8|	|je|const_0|	|xor|eax|eax|	|cmp|sil|const_4|	|je|const_3|	|cmp|sil|9|	|je|const_5|	|lea|rax|rdi|+|1|	|ret|	|ret|	|CONS|<Bool|__ne__|reg_rsi|8|>	|<Bool|__ne__|reg_rsi|13|>	|<Bool|__ne__|reg_rsi|9|>	,DUM

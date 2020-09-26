@@ -1,1 +1,0 @@
-save|line|to|file DUM,push|rbp|	|push|rbx|	|mov|rbx|rdi|	|mov|esi|1|	|sub|rsp|8|	|mov|rdx|qword|ptr|rbx|	|mov|rdi|qword|ptr|rdi|+|8|	|mov|rcx|qword|ptr|rip|+|const_16|	|call|const_32|	|mov|rdx|qword|ptr|rbx|	|cmp|rdx|rax|	|jne|const_31|	|add|qword|ptr|rip|+|const_84|rdx|	|add|rsp|8|	|pop|rbx|	|pop|rbp|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_2|>	|<Bool|__eq__|mem_0|ret_0|>	,DUM

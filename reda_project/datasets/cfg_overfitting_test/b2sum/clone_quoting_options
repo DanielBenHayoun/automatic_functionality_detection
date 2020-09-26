@@ -1,1 +1,0 @@
-clone|quoting|options DUM,push|r12|	|push|rbp|	|push|rbx|	|mov|rbx|rdi|	|call|const_1|	|mov|r12d|dword|ptr|rax|	|mov|rbp|rax|	|lea|rax|rip|+|const_3|	|test|rbx|rbx|	|mov|esi|const_2|	|cmove|rbx|rax|	|mov|rdi|rbx|	|call|const_0|	|mov|dword|ptr|rbp|r12d|	|pop|rbx|	|pop|rbp|	|pop|r12|	|ret|	|CONS|<Bool|__eq__|ret_0|const_4|>	,DUM

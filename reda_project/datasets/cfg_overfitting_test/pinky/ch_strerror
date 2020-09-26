@@ -1,1 +1,0 @@
-ch|strerror DUM,mov|edi|dword|ptr|rip|+|const_2|	|jmp|const_1|	|jmp|qword|ptr|rip|+|const_0|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|,DUM
