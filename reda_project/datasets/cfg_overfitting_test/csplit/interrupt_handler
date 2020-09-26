@@ -1,1 +1,0 @@
-interrupt|handler DUM,movzx|eax|byte|ptr|rip|+|const_4|	|push|rbx|	|mov|ebx|edi|	|test|al|al|	|je|const_0|	|mov|edi|ebx|	|xor|esi|esi|	|call|const_1|	|mov|edi|ebx|	|pop|rbx|	|jmp|const_3|	|jmp|qword|ptr|rip|+|const_2|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|,DUM

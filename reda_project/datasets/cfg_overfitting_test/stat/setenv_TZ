@@ -1,2 +1,0 @@
-setenv|TZ DUM,test|rdi|rdi|	|je|const_3|	|lea|rdi|rip|+|const_1|	|jmp|const_2|	|jmp|qword|ptr|rip|+|const_0|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|<Bool|__eq__|reg_rdi|const_4|>	,DUM
-setenv|TZ DUM,test|rdi|rdi|	|je|const_3|	|mov|rsi|rdi|	|lea|rdi|rip|+|const_7|	|mov|edx|1|	|jmp|const_5|	|jmp|qword|ptr|rip|+|const_6|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|<Bool|__ne__|reg_rdi|const_4|>	,DUM

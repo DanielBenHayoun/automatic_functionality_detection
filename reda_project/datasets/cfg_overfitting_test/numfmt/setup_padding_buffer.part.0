@@ -1,1 +1,0 @@
-setup|padding|buffer.part.0 DUM,sub|rsp|8|	|lea|rsi|rdi|+|1|	|mov|rdi|qword|ptr|rip|+|const_1|	|mov|qword|ptr|rip|+|const_2|rsi|	|call|const_0|	|mov|qword|ptr|rip|+|const_3|rax|	|add|rsp|8|	|ret|	|CONS|,DUM

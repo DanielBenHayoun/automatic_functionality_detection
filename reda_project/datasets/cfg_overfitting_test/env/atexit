@@ -1,1 +1,0 @@
-atexit DUM,mov|rdx|qword|ptr|rip|+|const_1|	|xor|esi|esi|	|jmp|const_0|	|jmp|qword|ptr|rip|+|const_2|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|,DUM

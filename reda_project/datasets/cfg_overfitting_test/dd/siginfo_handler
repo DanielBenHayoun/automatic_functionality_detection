@@ -1,1 +1,0 @@
-siginfo|handler DUM,mov|eax|dword|ptr|rip|+|const_1|	|add|eax|1|	|mov|dword|ptr|rip|+|const_0|eax|	|ret|	|CONS|,DUM

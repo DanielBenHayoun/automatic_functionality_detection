@@ -1,3 +1,0 @@
-mmalloca DUM,add|rdi|const_0|	|jb|const_1|	|xor|edx|edx|	|mov|rax|rdx|	|ret|	|CONS|<Bool|__lt__|__add__|reg_rdi|const_0|reg_rdi|>	,DUM
-mmalloca DUM,add|rdi|const_0|	|jb|const_1|	|sub|rsp|8|	|call|const_2|	|xor|edx|edx|	|test|rax|rax|	|je|const_4|	|mov|rax|rdx|	|add|rsp|8|	|ret|	|CONS|<Bool|ULE|reg_rdi|__add__|const_0|reg_rdi|>	|<Bool|__eq__|ret_0|const_3|>	,DUM
-mmalloca DUM,add|rdi|const_0|	|jb|const_1|	|sub|rsp|8|	|call|const_2|	|xor|edx|edx|	|test|rax|rax|	|je|const_4|	|lea|rdx|rax|+|const_7|	|and|rdx|const_5|	|add|rdx|const_7|	|mov|rcx|rdx|	|sub|rcx|rax|	|mov|byte|ptr|rdx|-|1|cl|	|mov|rax|rdx|	|add|rsp|8|	|ret|	|mov|rax|rdx|	|add|rsp|8|	|ret|	|CONS|<Bool|ULE|reg_rdi|__add__|const_0|reg_rdi|>	|<Bool|__eq__|Extract|63|5|__add__|const_7|ret_0|const_6|>	,DUM

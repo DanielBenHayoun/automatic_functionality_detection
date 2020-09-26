@@ -1,1 +1,0 @@
-can|write|any|file DUM,cmp|byte|ptr|rip|+|const_3|0|	|je|const_0|	|sub|rsp|8|	|call|const_4|	|test|eax|eax|	|mov|byte|ptr|rip|+|const_1|1|	|sete|al|	|mov|byte|ptr|rip|+|const_2|al|	|add|rsp|8|	|ret|	|CONS|,DUM

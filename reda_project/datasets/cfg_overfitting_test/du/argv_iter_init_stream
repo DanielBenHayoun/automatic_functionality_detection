@@ -1,2 +1,0 @@
-argv|iter|init|stream DUM,push|rbx|	|mov|rbx|rdi|	|mov|edi|const_3|	|call|const_2|	|test|rax|rax|	|je|const_1|	|pop|rbx|	|ret|	|CONS|<Bool|__eq__|ret_0|const_0|>	,DUM
-argv|iter|init|stream DUM,push|rbx|	|mov|rbx|rdi|	|mov|edi|const_3|	|call|const_2|	|test|rax|rax|	|je|const_1|	|mov|qword|ptr|rax|rbx|	|mov|qword|ptr|rax|+|const_6|0|	|mov|qword|ptr|rax|+|const_5|0|	|mov|qword|ptr|rax|+|8|0|	|mov|qword|ptr|rax|+|const_4|0|	|pop|rbx|	|ret|	|pop|rbx|	|ret|	|CONS|<Bool|__eq__|ret_0|const_7|>	,DUM

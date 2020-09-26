@@ -1,1 +1,0 @@
-free|tree DUM,lea|rdi|rsi|+|const_0|	|sub|rsp|8|	|call|const_1|	|xor|eax|eax|	|add|rsp|8|	|ret|	|CONS|,DUM

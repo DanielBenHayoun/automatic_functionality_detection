@@ -1,1 +1,0 @@
-initbuffer DUM,pxor|xmm0|xmm0|	|mov|qword|ptr|rdi|+|const_1|0|	|movups|xmmword|ptr|rdi|xmm0|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_0|>	|<Bool|__le__|reg_rdi|const_0|>	,DUM

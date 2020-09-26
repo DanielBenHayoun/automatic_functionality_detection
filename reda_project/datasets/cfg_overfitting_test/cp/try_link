@@ -1,1 +1,0 @@
-try|link DUM,mov|rax|rsi|	|mov|rcx|rdi|	|mov|edx|dword|ptr|rsi|+|const_0|	|mov|r8d|dword|ptr|rax|+|const_4|	|mov|rsi|qword|ptr|rsi|+|8|	|mov|edi|dword|ptr|rax|	|jmp|const_3|	|jmp|qword|ptr|rip|+|const_1|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|<Bool|__eq__|reg_rsi|const_2|>	,DUM

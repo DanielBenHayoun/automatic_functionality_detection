@@ -1,1 +1,0 @@
-hash|get|n|buckets|used DUM,mov|rax|qword|ptr|rdi|+|const_0|	|ret|	|CONS|<Bool|__le__|__add__|reg_rdi|const_0|const_1|>	|<Bool|__eq__|__add__|reg_rdi|const_0|const_2|>	,DUM

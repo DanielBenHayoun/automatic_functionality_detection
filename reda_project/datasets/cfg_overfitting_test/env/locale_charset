@@ -1,2 +1,0 @@
-locale|charset DUM,sub|rsp|8|	|mov|edi|const_1|	|call|const_2|	|test|rax|rax|	|je|const_0|	|lea|rax|rip|+|const_3|	|add|rsp|8|	|ret|	|CONS|<Bool|__eq__|ret_0|const_4|>	,DUM
-locale|charset DUM,sub|rsp|8|	|mov|edi|const_1|	|call|const_2|	|test|rax|rax|	|je|const_0|	|cmp|byte|ptr|rax|0|	|lea|rdx|rip|+|const_6|	|cmove|rax|rdx|	|add|rsp|8|	|ret|	|CONS|<Bool|__eq__|ret_0|const_5|>	,DUM

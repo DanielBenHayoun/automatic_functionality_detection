@@ -1,1 +1,0 @@
-z85|decode|ctx|init DUM,push|rbx|	|mov|rbx|rdi|	|mov|qword|ptr|rdi|+|const_0|const_1|	|mov|edi|const_1|	|call|const_2|	|mov|qword|ptr|rbx|1|	|mov|qword|ptr|rbx|+|const_3|rax|	|pop|rbx|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_4|>	,DUM

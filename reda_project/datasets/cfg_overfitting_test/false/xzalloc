@@ -1,1 +1,0 @@
-xzalloc DUM,push|rbx|	|mov|rbx|rdi|	|call|const_4|	|mov|rdx|rbx|	|xor|esi|esi|	|mov|rdi|rax|	|pop|rbx|	|jmp|const_3|	|jmp|qword|ptr|rip|+|const_0|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|<Bool|__eq__|Extract|63|6|reg_rdi|const_1|>	|<Bool|ULE|Extract|5|0|reg_rdi|48|>	|<Bool|__eq__|ret_0|const_2|>	,DUM

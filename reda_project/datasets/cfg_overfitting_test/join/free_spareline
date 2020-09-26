@@ -1,1 +1,0 @@
-free|spareline DUM,push|rbx|	|mov|rbx|qword|ptr|rip|+|const_0|	|test|rbx|rbx|	|je|const_3|	|mov|rbx|qword|ptr|rip|+|const_1|	|test|rbx|rbx|	|je|const_2|	|pop|rbx|	|ret|	|CONS|,DUM

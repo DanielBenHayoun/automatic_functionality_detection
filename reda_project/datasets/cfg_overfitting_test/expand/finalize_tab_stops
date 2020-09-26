@@ -1,1 +1,0 @@
-finalize|tab|stops DUM,sub|rsp|8|	|mov|rsi|qword|ptr|rip|+|const_4|	|mov|rdi|qword|ptr|rip|+|const_2|	|test|rsi|rsi|	|je|const_8|	|mov|rdx|qword|ptr|rip|+|const_0|	|mov|rax|qword|ptr|rip|+|const_3|	|test|rdx|rdx|	|je|const_1|	|test|rax|rax|	|mov|edx|8|	|cmove|rax|rdx|	|jmp|const_5|	|mov|qword|ptr|rip|+|const_6|rax|	|mov|qword|ptr|rip|+|const_7|rax|	|add|rsp|8|	|ret|	|CONS|,DUM

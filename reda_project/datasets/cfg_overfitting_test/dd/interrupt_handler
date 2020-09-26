@@ -1,1 +1,0 @@
-interrupt|handler DUM,mov|dword|ptr|rip|+|const_0|edi|	|ret|	|CONS|,DUM

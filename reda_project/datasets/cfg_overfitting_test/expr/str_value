@@ -1,1 +1,0 @@
-str|value DUM,push|rbp|	|push|rbx|	|mov|rbp|rdi|	|mov|edi|const_0|	|sub|rsp|8|	|call|const_3|	|mov|rdi|rbp|	|mov|rbx|rax|	|mov|dword|ptr|rax|1|	|call|const_2|	|mov|qword|ptr|rbx|+|8|rax|	|add|rsp|8|	|mov|rax|rbx|	|pop|rbx|	|pop|rbp|	|ret|	|CONS|<Bool|__eq__|ret_0|const_1|>	,DUM

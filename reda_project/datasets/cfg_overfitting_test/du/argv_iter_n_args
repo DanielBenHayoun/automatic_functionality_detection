@@ -1,2 +1,0 @@
-argv|iter|n|args DUM,cmp|qword|ptr|rdi|0|	|je|const_1|	|mov|rax|qword|ptr|rdi|+|const_4|	|sub|rax|qword|ptr|rdi|+|const_3|	|sar|rax|3|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_5|>	|<Bool|__eq__|mem_0|const_0|>	|<Bool|__eq__|__add__|reg_rdi|const_3|const_2|>	,DUM
-argv|iter|n|args DUM,cmp|qword|ptr|rdi|0|	|je|const_1|	|mov|rax|qword|ptr|rdi|+|8|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_5|>	|<Bool|Not|__eq__|mem_0|const_0|>	|<Bool|__eq__|__add__|reg_rdi|const_7|const_6|>	,DUM

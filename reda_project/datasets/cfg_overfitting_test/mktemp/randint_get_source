@@ -1,1 +1,0 @@
-randint|get|source DUM,mov|rax|qword|ptr|rdi|	|ret|	|CONS|<Bool|__le__|reg_rdi|const_1|>	|<Bool|__eq__|reg_rdi|const_0|>	,DUM

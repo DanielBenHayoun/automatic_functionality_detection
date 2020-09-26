@@ -1,1 +1,0 @@
-frame|dummy DUM,push|rbp|	|mov|rbp|rsp|	|pop|rbp|	|jmp|const_4|	|lea|rdi|rip|+|const_2|	|lea|rsi|rip|+|const_3|	|push|rbp|	|sub|rsi|rdi|	|mov|rbp|rsp|	|sar|rsi|3|	|mov|rax|rsi|	|shr|rax|const_1|	|add|rsi|rax|	|sar|rsi|1|	|je|const_0|	|pop|rbp|	|ret|	|CONS|,DUM

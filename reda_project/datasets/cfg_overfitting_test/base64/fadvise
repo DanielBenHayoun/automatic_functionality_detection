@@ -1,2 +1,0 @@
-fadvise DUM,test|rdi|rdi|	|je|const_1|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_0|>	,DUM
-fadvise DUM,test|rdi|rdi|	|je|const_1|	|push|rbx|	|mov|ebx|esi|	|call|const_4|	|mov|ecx|ebx|	|xor|edx|edx|	|xor|esi|esi|	|pop|rbx|	|mov|edi|eax|	|jmp|const_2|	|jmp|qword|ptr|rip|+|const_3|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|<Bool|Not|__eq__|reg_rdi|const_0|>	,DUM

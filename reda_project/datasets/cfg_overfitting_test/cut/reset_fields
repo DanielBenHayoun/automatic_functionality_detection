@@ -1,1 +1,0 @@
-reset|fields DUM,sub|rsp|8|	|mov|rdi|qword|ptr|rip|+|const_0|	|mov|qword|ptr|rip|+|const_4|0|	|mov|qword|ptr|rip|+|const_2|0|	|call|const_1|	|mov|qword|ptr|rip|+|const_3|0|	|add|rsp|8|	|ret|	|CONS|,DUM

@@ -1,1 +1,0 @@
-print|sep|string DUM,mov|edx|dword|ptr|rip|+|const_1|	|mov|eax|dword|ptr|rip|+|const_3|	|test|edx|edx|	|jle|const_0|	|test|eax|eax|	|jg|const_2|	|ret|	|CONS|,DUM

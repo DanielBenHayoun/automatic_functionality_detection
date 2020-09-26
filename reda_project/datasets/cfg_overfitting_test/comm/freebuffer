@@ -1,1 +1,0 @@
-freebuffer DUM,mov|rdi|qword|ptr|rdi|+|const_4|	|jmp|const_1|	|jmp|qword|ptr|rip|+|const_3|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|add|byte|ptr|rax|al|	|CONS|<Bool|__le__|__add__|reg_rdi|const_4|const_2|>	|<Bool|__eq__|__add__|reg_rdi|const_4|const_0|>	,DUM

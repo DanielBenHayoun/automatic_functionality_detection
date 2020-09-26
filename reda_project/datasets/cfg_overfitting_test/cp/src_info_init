@@ -1,1 +1,0 @@
-src|info|init DUM,lea|r8|rip|+|const_0|	|lea|rcx|rip|+|const_2|	|xor|esi|esi|	|lea|rdx|rip|+|const_6|	|push|rbx|	|mov|rbx|rdi|	|mov|edi|const_4|	|call|const_5|	|mov|qword|ptr|rbx|+|const_1|rax|	|pop|rbx|	|ret|	|CONS|<Bool|__eq__|reg_rdi|const_3|>	,DUM
