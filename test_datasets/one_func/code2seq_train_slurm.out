@@ -1,0 +1,110 @@
+2020-09-27 07:06:01.502807: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Dictionaries loaded.
+Loaded subtoken vocab. size: 6
+Loaded target word vocab. size: 5
+Loaded nodes vocab. size: 9
+Created model
+Starting training
+WARNING:tensorflow:From /home/eialper/miniconda3/envs/RE_project_1/lib/python3.6/site-packages/tensorflow/python/ops/sparse_ops.py:1165: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+Training batch size:			 512
+Dataset path:				 /home/eialper/final_project/automatic_functionality_detection/test_datasets/one_func/data/dataset/dataset
+Training file path:			 /home/eialper/final_project/automatic_functionality_detection/test_datasets/one_func/data/dataset/dataset.train.c2s
+Validation path:			 /home/eialper/final_project/automatic_functionality_detection/test_datasets/one_func/data/dataset/dataset.train.c2s
+Taking max contexts from each example:	 200
+Random path sampling:			 True
+Embedding size:				 128
+Using BiLSTMs, each of size:		 128
+Decoder size:				 320
+Decoder layers:				 1
+Max path lengths:			 9
+Max subtokens in a token:		 5
+Max target length:			 6
+Embeddings dropout keep_prob:		 0.75
+LSTM dropout keep_prob:			 0.5
+============================================
+Number of trainable params: 1722688
+Initalized variables
+Started reader...
+SINGLE BATCH LOSS 4.811144
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m3s
+Accuracy after 1 epochs: 1.00000
+After 1 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+Saved after 1 epochs in: models/onefunction/model_iter1
+SINGLE BATCH LOSS 4.831231
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m0s
+Accuracy after 2 epochs: 1.00000
+After 2 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+SINGLE BATCH LOSS 4.7933254
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m0s
+Accuracy after 3 epochs: 1.00000
+After 3 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+SINGLE BATCH LOSS 4.7903333
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m0s
+Accuracy after 4 epochs: 1.00000
+After 4 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+SINGLE BATCH LOSS 4.750849
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m0s
+Accuracy after 5 epochs: 1.00000
+After 5 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+SINGLE BATCH LOSS 4.757121
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m0s
+Accuracy after 6 epochs: 1.00000
+After 6 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+SINGLE BATCH LOSS 4.823904
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m0s
+Accuracy after 7 epochs: 1.00000
+After 7 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+SINGLE BATCH LOSS 4.7792845
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m0s
+Accuracy after 8 epochs: 1.00000
+After 8 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+SINGLE BATCH LOSS 4.7555723
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m0s
+Accuracy after 9 epochs: 1.00000
+After 9 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+SINGLE BATCH LOSS 4.7679625
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m0s
+Accuracy after 10 epochs: 1.00000
+After 10 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+SINGLE BATCH LOSS 4.778991
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m0s
+Accuracy after 11 epochs: 1.00000
+After 11 epochs: Precision: 1.00000, recall: 1.00000, F1: 1.00000
+Rouge:  {'rouge-1': {'f': 0.4444444409876544, 'p': 0.2857142857142857, 'r': 1.0}, 'rouge-2': {'f': 0.2857142832653061, 'p': 0.16666666666666666, 'r': 1.0}, 'rouge-l': {'f': 0.999999995, 'p': 1.0, 'r': 1.0}}
+Not improved for 10 epochs, stopping training
+Best scores - epoch 1: 
+Precision: 1.00000, recall: 1.00000, F1: 1.00000

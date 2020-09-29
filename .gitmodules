@@ -1,3 +1,6 @@
 [submodule "cppminer"]
 	path = cppminer
 	url = https://github.com/Kolkir/cppminer.git
+[submodule "code2seq"]
+	path = code2seq
+	url = https://github.com/tech-srl/code2seq
