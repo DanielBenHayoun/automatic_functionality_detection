@@ -1,7 +1,0 @@
-
-void chld(void)
-
-{
-  return;
-}
-

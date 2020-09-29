@@ -5,7 +5,7 @@
 # CODE2SEQ_PATH - the path to train.sh script 
 #
 # to run this script :
-# sbatch -c 10 --gres=gpu:2  -o code2seq_train_slurm.out -J train  train_model_slurm.sh
+# sbatch -c 10 --gres=gpu:1  -o code2seq_train_slurm.out -J train  train.sh
 #
 # NOTE: the train results will be in this folder, unless you edit train.sh to any ouptupt path you wish
 
