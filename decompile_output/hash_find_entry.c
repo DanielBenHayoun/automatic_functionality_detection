@@ -25,7 +25,7 @@ long hash_find_entry(long param_1,long param_2,long **param_3,char param_4)
       lVar6 = *plVar5;
       do {
         if (param_2 == lVar6) {
-code_r0x00107c2c:
+code_r0x0010d8bc:
           if (param_4 == '\0') {
             return lVar6;
           }
@@ -39,7 +39,7 @@ code_r0x00107c2c:
         if (cVar3 != '\0') {
           plVar5 = (long *)plVar4[1];
           lVar6 = *plVar5;
-          goto code_r0x00107c2c;
+          goto code_r0x0010d8bc;
         }
         plVar4 = (long *)plVar4[1];
         plVar5 = (long *)plVar4[1];

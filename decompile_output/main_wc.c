@@ -1,7 +1,7 @@
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
-ulong main(ulong param_1,long *param_2)
+ulong wc(ulong param_1,long *param_2)
 
 {
   undefined uVar1;

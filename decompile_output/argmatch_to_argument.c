@@ -9,7 +9,7 @@ long argmatch_to_argument(undefined8 param_1,long *param_2,long param_3,long par
   if (lVar2 != 0) {
     param_2 = param_2 + 1;
     do {
-      iVar1 = func_0x00101900(param_1,param_3,param_4);
+      iVar1 = func_0x00103550(param_1,param_3,param_4);
       if (iVar1 == 0) {
         return lVar2;
       }

@@ -1,7 +1,7 @@
 
 /* WARNING: Could not reconcile some variable overlaps */
 
-undefined8 main(uint param_1,undefined8 *param_2)
+undefined8 numfmt(uint param_1,undefined8 *param_2)
 
 {
   int *piVar1;

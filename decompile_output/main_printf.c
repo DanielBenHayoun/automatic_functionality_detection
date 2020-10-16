@@ -1,7 +1,7 @@
 
 /* WARNING: Could not reconcile some variable overlaps */
 
-ulong main(int param_1,undefined8 *param_2)
+ulong printf(int param_1,undefined8 *param_2)
 
 {
   char *pcVar1;

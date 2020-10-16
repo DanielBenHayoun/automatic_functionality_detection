@@ -1,7 +1,7 @@
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
-undefined8 main(uint param_1,undefined8 *param_2)
+undefined8 sleep(uint param_1,undefined8 *param_2)
 
 {
   bool bVar1;

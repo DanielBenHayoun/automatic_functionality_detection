@@ -28,13 +28,13 @@ undefined8 transfer_entries(long param_1,long **param_2,char param_3)
               plVar4[1] = *(long *)(param_1 + 0x48);
               *(long **)(param_1 + 0x48) = plVar4;
               plVar4 = plVar3;
-              if (plVar3 == (long *)0x0) goto code_r0x00107dd7;
+              if (plVar3 == (long *)0x0) goto code_r0x0010da67;
             }
             plVar4[1] = plVar2[1];
             *(long **)(plVar2 + 1) = plVar4;
             plVar4 = plVar3;
           } while (plVar3 != (long *)0x0);
-code_r0x00107dd7:
+code_r0x0010da67:
           lVar6 = *plVar5;
         }
         plVar5[1] = 0;
@@ -47,7 +47,7 @@ code_r0x00107dd7:
           else {
             plVar3 = *(long **)(param_1 + 0x48);
             if (plVar3 == (long *)0x0) {
-              plVar3 = (long *)func_0x00101c40(0x10);
+              plVar3 = (long *)func_0x00103888(0x10);
               if (plVar3 == (long *)0x0) {
                 return 0;
               }

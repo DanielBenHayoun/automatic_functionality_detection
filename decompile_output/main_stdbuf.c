@@ -1,7 +1,7 @@
 
 /* WARNING: Could not reconcile some variable overlaps */
 
-ulong main(ulong param_1,undefined1 *param_2)
+ulong stdbuf(ulong param_1,undefined1 *param_2)
 
 {
   ulong uVar1;

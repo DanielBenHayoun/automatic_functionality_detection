@@ -1,7 +1,7 @@
 
 /* WARNING: Could not reconcile some variable overlaps */
 
-ulong main(uint param_1,undefined8 *param_2)
+ulong shred(uint param_1,undefined8 *param_2)
 
 {
   byte *pbVar1;

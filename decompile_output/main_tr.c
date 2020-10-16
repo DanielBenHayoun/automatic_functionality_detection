@@ -1,7 +1,7 @@
 
 /* WARNING: Could not reconcile some variable overlaps */
 
-undefined8 main(int param_1,undefined1 *param_2)
+undefined8 tr(int param_1,undefined1 *param_2)
 
 {
   ushort *puVar1;
