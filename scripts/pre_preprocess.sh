@@ -10,4 +10,4 @@ fi
 INPUT_FOLDER=$1
 OUTPUT_FOLDER=$2
 
-python3 ./pre_preprocess.py
+python3 ./pre_preprocess.py $INPUT_FOLDER $OUTPUT_FOLDER
