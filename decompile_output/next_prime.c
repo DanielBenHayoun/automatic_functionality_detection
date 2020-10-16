@@ -17,7 +17,7 @@ ulong next_prime(ulong param_1)
     }
     uVar1 = param_1 % 3;
     if (param_1 < 10) {
-code_r0x00107b30:
+code_r0x0010d7c0:
       if (uVar1 != 0) {
         return param_1;
       }
@@ -31,7 +31,7 @@ code_r0x00107b30:
           uVar2 = uVar2 + 2;
           uVar1 = param_1 % uVar2;
           uVar3 = uVar3 + lVar4;
-          if (param_1 <= uVar3) goto code_r0x00107b30;
+          if (param_1 <= uVar3) goto code_r0x0010d7c0;
           lVar4 = lVar4 + 8;
         } while (uVar1 != 0);
       }

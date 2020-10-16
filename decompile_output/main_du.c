@@ -1,7 +1,7 @@
 
 /* WARNING: Could not reconcile some variable overlaps */
 
-ulong main(uint param_1,char **param_2)
+ulong du(uint param_1,char **param_2)
 
 {
   ushort uVar1;

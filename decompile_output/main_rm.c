@@ -1,7 +1,7 @@
 
 /* WARNING: Could not reconcile some variable overlaps */
 
-ulong main(ulong param_1,undefined8 *param_2)
+ulong rm(ulong param_1,undefined8 *param_2)
 
 {
   bool bVar1;

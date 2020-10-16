@@ -1,7 +1,7 @@
 
 /* WARNING: Could not reconcile some variable overlaps */
 
-void main(uint param_1,undefined8 *param_2)
+void mkdir(uint param_1,undefined8 *param_2)
 
 {
   code *pcVar1;

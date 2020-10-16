@@ -1,7 +1,7 @@
 
 /* WARNING: Could not reconcile some variable overlaps */
 
-undefined8 main(ulong param_1,ulong *****param_2)
+undefined8 shuf(ulong param_1,ulong *****param_2)
 
 {
   char cVar1;

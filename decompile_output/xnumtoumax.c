@@ -15,12 +15,12 @@ ulong xnumtoumax(undefined8 param_1,ulong param_2,ulong param_3,ulong param_4,un
   iVar1 = xstrtoumax(param_1,0,param_2 & 0xffffffff,&uStack72);
   uVar3 = uStack72;
   if (iVar1 == 0) {
-    if ((param_3 <= uStack72) && (uStack72 <= param_4)) goto code_r0x001080f4;
-    puVar4 = (uint *)func_0x00102450();
+    if ((param_3 <= uStack72) && (uStack72 <= param_4)) goto code_r0x001148c4;
+    puVar4 = (uint *)func_0x001032a0();
     *puVar4 = (-(uint)(uVar3 < 0x40000000) & 0xffffffd7) + 0x4b;
   }
   else {
-    puVar4 = (uint *)func_0x00102450();
+    puVar4 = (uint *)func_0x001032a0();
     if (iVar1 == 1) {
       *puVar4 = 0x4b;
     }
@@ -38,12 +38,12 @@ ulong xnumtoumax(undefined8 param_1,ulong param_2,ulong param_3,ulong param_4,un
   if (param_7 == 0) {
     param_7 = 1;
   }
-  func_0x001026e0((ulong)param_7,uVar3,&UNK_0010dab8,param_6,uVar2);
-code_r0x001080f4:
+  func_0x00103760((ulong)param_7,uVar3,&UNK_00117a46,param_6,uVar2);
+code_r0x001148c4:
   if (lStack64 == *(long *)(in_FS_OFFSET + 0x28)) {
     return uStack72;
   }
-  func_0x00102520();
+  func_0x00103420();
   uVar2 = xnumtoumax();
   return uVar2;
 }

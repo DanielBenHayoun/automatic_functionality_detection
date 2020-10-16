@@ -8,3 +8,4 @@ code2seq/models/
 .nfs*
 *.mdb
 cppminer
+*.rep

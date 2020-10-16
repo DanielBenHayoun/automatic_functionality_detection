@@ -13,10 +13,10 @@ undefined8 check_tuning_isra_0(float **param_1)
   uVar3 = 1;
   if (pfVar2 != (float *)default_tuning) {
     fVar1 = pfVar2[2];
-    if ((((_UNK_0010a2b4 < fVar1) && (fVar1 < _UNK_0010a2b8)) && (_UNK_0010a2bc < pfVar2[3])) &&
-       (_UNK_0010a2c0 <= *pfVar2)) {
-      fVar4 = *pfVar2 + _UNK_0010a2b4;
-      if (((fVar4 < pfVar2[1]) && (pfVar2[1] <= _UNK_0010a2c4)) && (fVar4 < fVar1)) {
+    if ((((_UNK_0011a014 < fVar1) && (fVar1 < _UNK_0011a018)) && (_UNK_0011a01c < pfVar2[3])) &&
+       (_UNK_0011a020 <= *pfVar2)) {
+      fVar4 = *pfVar2 + _UNK_0011a014;
+      if (((fVar4 < pfVar2[1]) && (pfVar2[1] <= _UNK_0011a024)) && (fVar4 < fVar1)) {
         return 1;
       }
     }

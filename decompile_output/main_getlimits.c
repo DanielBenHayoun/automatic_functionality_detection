@@ -1,7 +1,7 @@
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
-undefined  [16] main(uint param_1,undefined8 *param_2)
+undefined  [16] getlimits(uint param_1,undefined8 *param_2)
 
 {
   long lVar1;

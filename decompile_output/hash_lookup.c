@@ -9,7 +9,7 @@ long hash_lookup(long param_1,long param_2)
   plVar2 = (long *)safe_hasher();
   lVar3 = *plVar2;
   if (lVar3 == 0) {
-code_r0x001080ed:
+code_r0x0010dd7d:
     lVar3 = 0;
   }
   else {
@@ -19,7 +19,7 @@ code_r0x001080ed:
         return *plVar2;
       }
       plVar2 = (long *)plVar2[1];
-      if (plVar2 == (long *)0x0) goto code_r0x001080ed;
+      if (plVar2 == (long *)0x0) goto code_r0x0010dd7d;
       lVar3 = *plVar2;
     }
   }

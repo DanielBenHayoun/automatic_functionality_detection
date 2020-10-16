@@ -1,7 +1,7 @@
 
 /* WARNING: Could not reconcile some variable overlaps */
 
-ulong main(uint param_1,ulong *param_2)
+ulong truncate(uint param_1,ulong *param_2)
 
 {
   ulong uVar1;
