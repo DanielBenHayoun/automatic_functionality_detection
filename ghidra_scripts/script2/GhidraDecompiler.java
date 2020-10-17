@@ -1,10 +1,4 @@
 
-/*
- * Decompile a function with Ghidra
- *
- * analyzeHeadless . Test.gpr -import $BINARY_NAME -postScript GhidraDecompiler.java $FUNCTION_ADDRESS -deleteProject -noanalysis
- *
-*/
 
 import ghidra.app.decompiler.ClangLine;
 import ghidra.app.decompiler.DecompInterface;
@@ -50,7 +44,7 @@ public class GhidraDecompiler extends HeadlessScript {
     	//call get_functions and fill functions_name
         List<Function> results=new ArrayList<Function>();
         this.getFunction(results);	
-        
+        // DEBUG
         for (Function function : results) {
     		println("function name: " + function.getName());
         }
@@ -63,12 +57,7 @@ public class GhidraDecompiler extends HeadlessScript {
               // System.err.println(String.format("Function not found at 0x%x", functionAddress));
               return;
             }
-            
-
-            // WriteToFile writeToFileHandler= new WriteToFile(output_path, f.getName());
-            // FileWriter file_obj= null;
-            // file_obj=new FileWriter("/home/daniel/Desktop/project_deco/func_source"+f.getName());
-            // println(String.format("Decompiling %s() at 0x%x", f.getName(), functionAddress));
+    
 
             println("Program: " + di.openProgram(f.getProgram())); // DEBUG
 
@@ -78,16 +67,17 @@ public class GhidraDecompiler extends HeadlessScript {
 
             DecompiledFunction df = dr.getDecompiledFunction();
             String buffer = df.getC();
-            println(buffer);
+            // println(buffer);
             // Assuming each function is unique for all files.
             String func_name;
             if ((f.getName().equals("main"))){
                 func_name="main_"+file_name +".c";
-                String[] string_array = buffer.split("\\r?\\n");
-                println("buffer first line " + string_array[1]); // DEBUD
-                string_array[1]= string_array[1].replace("main",file_name);
-                buffer = String.join("\n",string_array);
-                println("new buffer " + buffer);
+                // String[] string_array = buffer.split("\\r?\\n");
+                // println("DEBUG: buffer first line " + string_array[1]); // DEBUD
+                // string_array[1]= string_array[1].replace("main",file_name);
+                // buffer = String.join("\n",string_array);
+                // println("DEBUG: buffer first line " +  string_array[1]);
+                buffer=verifyOutput(file_name,buffer);
             } else{
                 func_name=f.getName()+".c";
             }
@@ -124,6 +114,20 @@ public class GhidraDecompiler extends HeadlessScript {
         }
         return null;
     }
+
+    String verifyOutput(String file_name , String buffer){
+        String[] string_array = buffer.split("\\r?\\n");
+        println("DEBUG: buffer first line " + string_array[1]); // DEBUG
+        if (string_array[1].contains("/*")){
+            string_array[3]= string_array[3].replace("main",file_name);
+        }else {
+            string_array[1]= string_array[1].replace("main",file_name);
+        }
+        String new_buffer = String.join("\n",string_array);
+        println("DEBUG: buffer first line " +  string_array[1]);
+        return new_buffer;
+    }
+
       class WriteToFile {
         FileWriter file;
         //TODO: save also file name
