@@ -9,8 +9,8 @@
 # this script create paths from cppminer (binary--->AST-->PATHS)
 
 
-SOURCE_PATH=~/automatic_functionality_detection/decompile_output
-OUTPUT_PATH=~/automatic_functionality_detection/cppminer_res
+SOURCE_PATH=~/automatic_functionality_detection/decompile_output_test
+OUTPUT_PATH=~/automatic_functionality_detection/test1
 PROJECT_FOLDER=~/automatic_functionality_detection/
 LIBCLANG_PATH=$HOME/anaconda3/envs/daniel/lib/libclang-cpp.so
 # MAX_PATH_LEN=$1
